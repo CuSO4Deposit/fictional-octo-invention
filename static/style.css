@@ -179,9 +179,100 @@ footer a { color: #7070a0; }
 /* Accuracy highlight */
 .acc-ap { color: #ffd740; }
 
+/* Game cards (index page) */
+.game-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1rem;
+}
+
+.game-card {
+    background: #1a1a24;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #2a2a3a;
+}
+
+.game-card-header {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.arcaea-header { background: linear-gradient(135deg, #2a1a3a, #3a1a4a); }
+.pjsk-header { background: linear-gradient(135deg, #1a2a3a, #1a3a4a); }
+
+.game-card-body { padding: 1rem 1.2rem; }
+
+.game-card-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.game-card-top3 {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.top3-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.top3-item img {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.top3-name {
+    font-size: 0.7rem;
+    color: #b0b0c0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90px;
+}
+
+.top3-score {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.game-card-links {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.game-card-links a {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem;
+    background: #252535;
+    border-radius: 6px;
+    color: #a0a0c0;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background 0.2s;
+}
+
+.game-card-links a:hover { background: #353545; color: #fff; }
+
 /* Responsive */
 @media (max-width: 600px) {
     .cards {
+        grid-template-columns: 1fr;
+    }
+    .game-cards {
         grid-template-columns: 1fr;
     }
     .stats {

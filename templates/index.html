@@ -1,24 +1,75 @@
 {% extends "base.html" %}
-{% block title %}Y-Offline{% endblock %}
+{% block title %}Y-Offline — {{ (arcaea or pjsk).user }}{% endblock %}
 {% block nav %}
 {% if arcaea %}<a href="arcaea_b30.html">Arcaea B30</a><a href="arcaea_r30.html">Arcaea R30</a>{% endif %}
 {% if pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %}
 {% endblock %}
 {% block content %}
 <div class="stats">
-    <h1>Y-Offline</h1>
+    <h1>{{ (arcaea or pjsk).user }}</h1>
 </div>
-<div class="stats">
+<div class="game-cards">
     {% if arcaea %}
-    <div class="stat">
-        <span class="stat-label">Arcaea</span>
-        <span class="stat-value">{{ "%.2f"|format(arcaea.ptt) }}</span>
+    <div class="game-card">
+        <div class="game-card-header arcaea-header">Arcaea</div>
+        <div class="game-card-body">
+            <div class="game-card-stats">
+                <div class="stat">
+                    <span class="stat-label">PTT</span>
+                    <span class="stat-value">{{ "%.2f"|format(arcaea.ptt) }}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">B30</span>
+                    <span class="stat-value">{{ "%.2f"|format(arcaea.b30_ptt) }}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">R10</span>
+                    <span class="stat-value">{{ "%.2f"|format(arcaea.r10_ptt) }}</span>
+                </div>
+            </div>
+            {% if arcaea.b30 %}
+            <div class="game-card-top3">
+                {% for r in arcaea.b30[:3] %}
+                <div class="top3-item">
+                    <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy">
+                    <span class="top3-name">{{ r.name }}</span>
+                    <span class="top3-score">{{ "%.2f"|format(r.play_ptt) }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <div class="game-card-links">
+                <a href="arcaea_b30.html">B30</a>
+                <a href="arcaea_r30.html">R30</a>
+            </div>
+        </div>
     </div>
     {% endif %}
     {% if pjsk %}
-    <div class="stat">
-        <span class="stat-label">PJSK B30</span>
-        <span class="stat-value">{{ pjsk.b30|length }} records</span>
+    <div class="game-card">
+        <div class="game-card-header pjsk-header">Project SEKAI</div>
+        <div class="game-card-body">
+            <div class="game-card-stats">
+                <div class="stat">
+                    <span class="stat-label">Records</span>
+                    <span class="stat-value">{{ pjsk.b30|length }}</span>
+                </div>
+            </div>
+            {% if pjsk.b30 %}
+            <div class="game-card-top3">
+                {% for r in pjsk.b30[:3] %}
+                <div class="top3-item">
+                    <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy">
+                    <span class="top3-name">{{ r.name }}</span>
+                    <span class="top3-score">{{ "%.2f"|format(r.metric) }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <div class="game-card-links">
+                <a href="pjsk_b30.html">B30</a>
+            </div>
+        </div>
     </div>
     {% endif %}
 </div>
