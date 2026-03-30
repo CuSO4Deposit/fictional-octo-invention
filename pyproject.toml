@@ -1,0 +1,12 @@
+[project]
+name = "y-offline-pages"
+version = "0.1.0"
+description = "Static GitHub Pages for Y-Offline rhythm game scores"
+requires-python = ">=3.12"
+dependencies = [
+    "jinja2>=3.1",
+    "y-offline",
+]
+
+[tool.uv.sources]
+y-offline = { git = "https://codeberg.org/cocvu/Y-Offline.git" }

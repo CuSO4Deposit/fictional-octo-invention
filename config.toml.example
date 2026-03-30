@@ -1,0 +1,14 @@
+[y_offline]
+db_path = "/path/to/y_offline.db"
+
+[arcaea]
+arcsong_db_path = "/path/to/arcsong.db"
+
+[pjsk]
+musics_json_path = "/path/to/musics.json"
+music_difficulties_json_path = "/path/to/musicDifficulties.json"
+
+[pages]
+user = "your_user_id"
+# PJSK jacket CDN base URL
+pjsk_jacket_cdn = "https://storage.sekai.best/sekai-jp-assets"

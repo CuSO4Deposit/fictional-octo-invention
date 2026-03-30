@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Y-Offline{% endblock %}
+{% block nav %}
+{% if arcaea %}<a href="arcaea_b30.html">Arcaea B30</a><a href="arcaea_r30.html">Arcaea R30</a>{% endif %}
+{% if pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %}
+{% endblock %}
+{% block content %}
+<div class="stats">
+    <h1>Y-Offline</h1>
+</div>
+<div class="stats">
+    {% if arcaea %}
+    <div class="stat">
+        <span class="stat-label">Arcaea</span>
+        <span class="stat-value">{{ "%.2f"|format(arcaea.ptt) }}</span>
+    </div>
+    {% endif %}
+    {% if pjsk %}
+    <div class="stat">
+        <span class="stat-label">PJSK B30</span>
+        <span class="stat-value">{{ pjsk.b30|length }} records</span>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

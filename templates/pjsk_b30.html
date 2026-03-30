@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}PJSK B30 — {{ data.user }}{% endblock %}
+{% block nav %}
+{% if arcaea %}<a href="arcaea_b30.html">Arcaea B30</a><a href="arcaea_r30.html">Arcaea R30</a>{% endif %}
+<a href="pjsk_b30.html">PJSK B30</a>
+{% endblock %}
+{% block content %}
+<div class="stats">
+    <h1>Project SEKAI B30</h1>
+    <div class="stat">
+        <span class="stat-label">User</span>
+        <span class="stat-value">{{ data.user }}</span>
+    </div>
+    <div class="stat">
+        <span class="stat-label">Records</span>
+        <span class="stat-value">{{ data.b30|length }}</span>
+    </div>
+</div>
+<div class="cards">
+{% for r in data.b30 %}
+    <div class="card">
+        <div class="card-jacket">
+            <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy">
+        </div>
+        <div class="card-body">
+            <div class="card-title">{{ r.name }}</div>
+            <span class="card-diff diff-{{ r.difficulty|lower }}">{{ r.difficulty }} Lv.{{ r.rating }}</span>
+            <div class="card-score">{{ "%.2f"|format(r.metric) }}</div>
+            <div class="card-detail">
+                {{ "%.2f"|format(r.accuracy * 100) }}%
+                {% if r.accuracy >= 1.0 %}<span class="acc-ap">AP</span>{% endif %}
+                · P {{ r.perfect }} G {{ r.great }} Gd {{ r.good }} B {{ r.bad }} M {{ r.miss }}
+            </div>
+            <div class="card-time">#{{ loop.index }} · {{ r.time | time_ago }}</div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}
