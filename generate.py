@@ -1,8 +1,10 @@
 """Generate JSON data from Y-Offline database for static page building."""
 
 import json
+import ssl
 import time
 import tomllib
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -15,6 +17,10 @@ from y_offline.utils import Config
 DATA_DIR = Path("data")
 JACKET_DIR = DATA_DIR / "jackets"
 JACKET_SIZE = 160
+
+_ssl_ctx = ssl.create_default_context()
+_ssl_ctx.check_hostname = False
+_ssl_ctx.verify_mode = ssl.CERT_NONE
 
 ARCAEA_DIFF_NAMES = {0: "Past", 1: "Present", 2: "Future", 3: "Beyond", 4: "Eternal"}
 PJSK_DIFF_NAMES = {
@@ -44,7 +50,7 @@ def download_jacket(url: str, local_path: Path) -> None:
     local_path.parent.mkdir(parents=True, exist_ok=True)
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "y-offline-pages/0.1"})
-        with urllib.request.urlopen(req, timeout=10) as resp:
+        with urllib.request.urlopen(req, timeout=10, context=_ssl_ctx) as resp:
             local_path.write_bytes(resp.read())
         img = Image.open(local_path)
         img.thumbnail((JACKET_SIZE, JACKET_SIZE))
@@ -55,12 +61,30 @@ def download_jacket(url: str, local_path: Path) -> None:
             local_path.unlink()
 
 
-def arcaea_jacket(song_id: str) -> str:
+JACKET_OVERRIDES_PATH = Path("arcaea_jacket_overrides.json")
+
+
+def _load_arcaea_overrides() -> dict[str, str]:
+    """Load song_id -> full jacket URL overrides."""
+    if JACKET_OVERRIDES_PATH.exists():
+        with open(JACKET_OVERRIDES_PATH) as f:
+            return json.load(f)
+    return {}
+
+
+def arcaea_jacket(
+    song_id: str, name_en: str, name_jp: str | None, overrides: dict[str, str]
+) -> str:
     """Download Arcaea jacket and return local relative path."""
-    url = f"https://wiki.arcaea.cn/index.php/Special:FilePath/Songs_{song_id}.jpg"
-    local = JACKET_DIR / "arcaea" / f"{song_id}.jpg"
+    local = JACKET_DIR / "arcaea" / f"{song_id}.webp"
+    if song_id in overrides:
+        url = overrides[song_id]
+    else:
+        page_name = urllib.parse.quote(name_jp or name_en)
+        file_name = urllib.parse.quote(name_en)
+        url = f"https://cdn.wikiwiki.jp/to/w/arcaea/{page_name}/::ref/{file_name}.jpg.webp"
     download_jacket(url, local)
-    return f"jackets/arcaea/{song_id}.jpg"
+    return f"jackets/arcaea/{song_id}.webp"
 
 
 def pjsk_jacket(song_id: str, asset_map: dict[str, str], cdn: str) -> str:
@@ -72,7 +96,14 @@ def pjsk_jacket(song_id: str, asset_map: dict[str, str], cdn: str) -> str:
     return f"jackets/pjsk/{song_id}.webp"
 
 
-def serialize_arcaea_record(r) -> dict:
+def serialize_arcaea_record(
+    r,
+    name_jp_map: dict[str, str | None],
+    name_en_map: dict[str, str],
+    overrides: dict[str, str],
+) -> dict:
+    name_jp = name_jp_map.get(r.song_id)
+    name_en = name_en_map.get(r.song_id, r.name)
     return {
         "song_id": r.song_id,
         "name": r.name,
@@ -87,7 +118,7 @@ def serialize_arcaea_record(r) -> dict:
         "lost": r.lost,
         "accuracy": round(r.accuracy(), 6),
         "time": r.time,
-        "jacket_url": arcaea_jacket(r.song_id),
+        "jacket_url": arcaea_jacket(r.song_id, name_en, name_jp, overrides),
     }
 
 
@@ -123,9 +154,22 @@ def generate_arcaea(config: Config, user: str) -> None:
     r30 = mgr.r30(user)
     r10 = mgr.r10(user)
 
+    # Build song_id -> name maps from chart repo
+    name_jp_map: dict[str, str | None] = {}
+    name_en_map: dict[str, str] = {}
+    for chart in mgr.chart_repo.all_charts():
+        if chart.song_id not in name_jp_map:
+            name_jp_map[chart.song_id] = chart.name_jp
+            name_en_map[chart.song_id] = chart.name_en
+
+    overrides = _load_arcaea_overrides()
+
     b30_ptt = sum(r.play_ptt for r in b30) / max(len(b30), 1)
     r10_ptt = sum(r.play_ptt for r in r10) / max(len(r10), 1)
     ptt = sum(r.play_ptt for r in b30 + r10) / 40
+
+    def ser(r):
+        return serialize_arcaea_record(r, name_jp_map, name_en_map, overrides)
 
     data = {
         "user": user,
@@ -133,8 +177,8 @@ def generate_arcaea(config: Config, user: str) -> None:
         "ptt": round(ptt, 4),
         "b30_ptt": round(b30_ptt, 4),
         "r10_ptt": round(r10_ptt, 4),
-        "b30": [serialize_arcaea_record(r) for r in b30],
-        "r30": [serialize_arcaea_record(r) for r in r30],
+        "b30": [ser(r) for r in b30],
+        "r30": [ser(r) for r in r30],
     }
 
     out = DATA_DIR / "arcaea.json"
