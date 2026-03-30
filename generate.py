@@ -3,13 +3,18 @@
 import json
 import time
 import tomllib
+import urllib.request
 from pathlib import Path
+
+from PIL import Image
 
 from y_offline.arcaea.utils import create_manager as arcaea_create_manager
 from y_offline.pjsk.utils import create_manager as pjsk_create_manager
 from y_offline.utils import Config
 
 DATA_DIR = Path("data")
+JACKET_DIR = DATA_DIR / "jackets"
+JACKET_SIZE = 160
 
 ARCAEA_DIFF_NAMES = {0: "Past", 1: "Present", 2: "Future", 3: "Beyond", 4: "Eternal"}
 PJSK_DIFF_NAMES = {
@@ -32,13 +37,39 @@ def load_config() -> tuple[Config, dict]:
     return config, pages
 
 
-def arcaea_jacket_url(song_id: str) -> str:
-    return f"https://wiki.arcaea.cn/index.php/Special:FilePath/Songs_{song_id}.jpg"
+def download_jacket(url: str, local_path: Path) -> None:
+    """Download jacket image if not already cached, resize to JACKET_SIZE."""
+    if local_path.exists():
+        return
+    local_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "y-offline-pages/0.1"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            local_path.write_bytes(resp.read())
+        img = Image.open(local_path)
+        img.thumbnail((JACKET_SIZE, JACKET_SIZE))
+        img.save(local_path)
+    except Exception as e:
+        print(f"  Warning: failed to download {url}: {e}")
+        if local_path.exists():
+            local_path.unlink()
 
 
-def pjsk_jacket_url(song_id: str, asset_map: dict[str, str], cdn: str) -> str:
+def arcaea_jacket(song_id: str) -> str:
+    """Download Arcaea jacket and return local relative path."""
+    url = f"https://wiki.arcaea.cn/index.php/Special:FilePath/Songs_{song_id}.jpg"
+    local = JACKET_DIR / "arcaea" / f"{song_id}.jpg"
+    download_jacket(url, local)
+    return f"jackets/arcaea/{song_id}.jpg"
+
+
+def pjsk_jacket(song_id: str, asset_map: dict[str, str], cdn: str) -> str:
+    """Download PJSK jacket and return local relative path."""
     name = asset_map.get(song_id, f"jacket_s_{int(song_id):03d}")
-    return f"{cdn}/music/jacket/{name}/{name}.webp"
+    url = f"{cdn}/music/jacket/{name}/{name}.webp"
+    local = JACKET_DIR / "pjsk" / f"{song_id}.webp"
+    download_jacket(url, local)
+    return f"jackets/pjsk/{song_id}.webp"
 
 
 def serialize_arcaea_record(r) -> dict:
@@ -56,7 +87,7 @@ def serialize_arcaea_record(r) -> dict:
         "lost": r.lost,
         "accuracy": round(r.accuracy(), 6),
         "time": r.time,
-        "jacket_url": arcaea_jacket_url(r.song_id),
+        "jacket_url": arcaea_jacket(r.song_id),
     }
 
 
@@ -75,7 +106,7 @@ def serialize_pjsk_record(r, asset_map: dict[str, str], cdn: str) -> dict:
         "miss": r.miss,
         "accuracy": round(r.accuracy(), 6),
         "time": r.time,
-        "jacket_url": pjsk_jacket_url(r.song_id, asset_map, cdn),
+        "jacket_url": pjsk_jacket(r.song_id, asset_map, cdn),
     }
 
 

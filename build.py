@@ -71,6 +71,14 @@ def main():
     if STATIC_DIR.exists():
         shutil.copytree(STATIC_DIR, dist_static)
 
+    # Copy jacket images
+    jackets_src = DATA_DIR / "jackets"
+    jackets_dst = DIST_DIR / "jackets"
+    if jackets_dst.exists():
+        shutil.rmtree(jackets_dst)
+    if jackets_src.exists():
+        shutil.copytree(jackets_src, jackets_dst)
+
     pages = list(DIST_DIR.glob("*.html"))
     print(f"Built {len(pages)} pages in {DIST_DIR}/")
 
