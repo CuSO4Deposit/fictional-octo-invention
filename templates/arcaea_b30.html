@@ -29,12 +29,14 @@
         </div>
         <div class="card-body">
             <div class="card-title">{{ r.name }}</div>
-            <span class="card-diff diff-{{ r.difficulty|lower }}">{{ r.difficulty }} {{ "%.1f"|format(r.rating / 10) }}</span>
+            <div class="card-diff-line">
+                <span class="card-diff diff-{{ r.difficulty|lower }}">{{ r.difficulty }} {{ "%.1f"|format(r.rating / 10) }}</span>
+                <span class="card-ptt">→ {{ "%.2f"|format(r.play_ptt) }}</span>
+            </div>
             <div class="card-score">{{ r.score|comma }}</div>
             <div class="card-detail">
-                PTT {{ "%.2f"|format(r.play_ptt) }}
-                · P {{ r.pure }}(+{{ r.max_pure }}) F {{ r.far }} L {{ r.lost }}
-                {% if r.accuracy >= 1.0 %}<span class="acc-ap">· AP {{ "%.2f"|format(r.accuracy * 100) }}%</span>{% endif %}
+                <span class="j-pure">P {{ r.pure }}</span>(<span class="j-mpure">+{{ r.max_pure }}</span>) <span class="j-far">F {{ r.far }}</span> <span class="j-lost">L {{ r.lost }}</span>
+                {% if r.accuracy >= 1.0 %}<span class="acc-ap">AP {{ "%.2f"|format(r.accuracy * 100) }}%</span>{% endif %}
             </div>
             <div class="card-time">#{{ loop.index }} · {{ r.time | time_ago }}</div>
         </div>

@@ -24,12 +24,14 @@
         </div>
         <div class="card-body">
             <div class="card-title">{{ r.name }}</div>
-            <span class="card-diff diff-{{ r.difficulty|lower }}">{{ r.difficulty }} Lv.{{ r.rating }}</span>
-            <div class="card-score">{{ "%.2f"|format(r.metric) }}</div>
+            <div class="card-diff-line">
+                <span class="card-diff diff-{{ r.difficulty|lower }}">{{ r.difficulty }} Lv.{{ r.rating }}</span>
+                <span class="card-ptt">→ {{ "%.2f"|format(r.metric) }}</span>
+            </div>
             <div class="card-detail">
                 {{ "%.2f"|format(r.accuracy * 100) }}%
                 {% if r.accuracy >= 1.0 %}<span class="acc-ap">AP</span>{% endif %}
-                · P {{ r.perfect }} G {{ r.great }} Gd {{ r.good }} B {{ r.bad }} M {{ r.miss }}
+                · <span class="j-perfect">P {{ r.perfect }}</span> <span class="j-great">G {{ r.great }}</span> <span class="j-good">Gd {{ r.good }}</span> <span class="j-bad">B {{ r.bad }}</span> <span class="j-miss">M {{ r.miss }}</span>
             </div>
             <div class="card-time">#{{ loop.index }} · {{ r.time | time_ago }}</div>
         </div>

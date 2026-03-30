@@ -179,6 +179,32 @@ footer a { color: #7070a0; }
 /* Accuracy highlight */
 .acc-ap { color: #ffd740; }
 
+/* Diff + PTT line */
+.card-diff-line {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-ptt {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #c0c0d0;
+}
+
+/* Arcaea judgement colors */
+.j-pure  { color: #e090f0; }
+.j-mpure { color: #f0c0ff; }
+.j-far   { color: #f0c060; }
+.j-lost  { color: #f06060; }
+
+/* PJSK judgement colors */
+.j-perfect { color: #f0c060; }
+.j-great   { color: #60d060; }
+.j-good    { color: #60b0f0; }
+.j-bad     { color: #f09060; }
+.j-miss    { color: #f06060; }
+
 /* Game cards (index page) */
 .game-cards {
     display: grid;
