@@ -38,7 +38,7 @@
                 <span class="j-pure">P {{ r.pure }}</span>(<span class="j-mpure">+{{ r.max_pure }}</span>) <span class="j-far">F {{ r.far }}</span> <span class="j-lost">L {{ r.lost }}</span>
                 {% if r.accuracy >= 1.0 %}<span class="acc-ap">AP {{ "%.2f"|format(r.accuracy * 100) }}%</span>{% endif %}
             </div>
-            <div class="card-time">#{{ loop.index }} · {{ r.time | time_ago }}</div>
+            <div class="card-time" data-time="{{ r.time }}">#{{ loop.index }} · </div>
         </div>
     </div>
 {% endfor %}

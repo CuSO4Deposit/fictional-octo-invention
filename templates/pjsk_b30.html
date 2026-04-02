@@ -33,7 +33,7 @@
                 {% if r.accuracy >= 1.0 %}<span class="acc-ap">AP</span>{% endif %}
                 · <span class="j-perfect">P {{ r.perfect }}</span> <span class="j-great">G {{ r.great }}</span> <span class="j-good">Gd {{ r.good }}</span> <span class="j-bad">B {{ r.bad }}</span> <span class="j-miss">M {{ r.miss }}</span>
             </div>
-            <div class="card-time">#{{ loop.index }} · {{ r.time | time_ago }}</div>
+            <div class="card-time" data-time="{{ r.time }}">#{{ loop.index }} · </div>
         </div>
     </div>
 {% endfor %}

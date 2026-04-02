@@ -2,7 +2,6 @@
 
 import json
 import shutil
-import time
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
@@ -11,17 +10,6 @@ DATA_DIR = Path("data")
 DIST_DIR = Path("dist")
 TEMPLATE_DIR = Path("templates")
 STATIC_DIR = Path("static")
-
-
-def time_ago(timestamp: int) -> str:
-    diff = int(time.time()) - timestamp
-    if diff < 60:
-        return f"{diff}s ago"
-    if diff < 3600:
-        return f"{diff // 60}m ago"
-    if diff < 86400:
-        return f"{diff // 3600}h ago"
-    return f"{diff // 86400}d ago"
 
 
 def load_json(name: str) -> dict | None:
@@ -40,7 +28,6 @@ def main():
     DIST_DIR.mkdir(exist_ok=True)
 
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), autoescape=True)
-    env.filters["time_ago"] = time_ago
     env.filters["comma"] = comma
 
     arcaea = load_json("arcaea.json")
