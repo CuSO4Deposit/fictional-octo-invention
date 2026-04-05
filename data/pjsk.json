@@ -1,6 +1,6 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1775372034,
+  "generated_at": 1775405077,
   "b30": [
     {
       "song_id": "183",
@@ -243,6 +243,22 @@
       "jacket_url": "jackets/pjsk/177.webp"
     },
     {
+      "song_id": "284",
+      "name": "インビジブル",
+      "rating_class": 4,
+      "difficulty": "Master",
+      "rating": 32,
+      "metric": 32.7604,
+      "perfect": 1421,
+      "great": 8,
+      "good": 1,
+      "bad": 1,
+      "miss": 5,
+      "accuracy": 0.993802,
+      "time": 1775376195,
+      "jacket_url": "jackets/pjsk/284.webp"
+    },
+    {
       "song_id": "112",
       "name": "天使のクローバー",
       "rating_class": 4,
@@ -465,22 +481,6 @@
       "accuracy": 0.996908,
       "time": 1724490267,
       "jacket_url": "jackets/pjsk/133.webp"
-    },
-    {
-      "song_id": "78",
-      "name": "ぼうけんのしょがきえました！",
-      "rating_class": 4,
-      "difficulty": "Master",
-      "rating": 31,
-      "metric": 32.359,
-      "perfect": 1085,
-      "great": 5,
-      "good": 0,
-      "bad": 0,
-      "miss": 2,
-      "accuracy": 0.996795,
-      "time": 1698923511,
-      "jacket_url": "jackets/pjsk/78.webp"
     }
   ]
 }
