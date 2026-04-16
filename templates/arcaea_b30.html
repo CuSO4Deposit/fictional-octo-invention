@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block title %}Arcaea B30 — {{ data.user }}{% endblock %}
 {% block nav %}
+{% if recent %}<a href="index.html">Recent</a>{% endif %}
 <a href="arcaea_b30.html">Arcaea B30</a>
 <a href="arcaea_r30.html">Arcaea R30</a>
 {% if pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %}

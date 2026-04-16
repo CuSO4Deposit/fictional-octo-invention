@@ -141,6 +141,23 @@ def serialize_pjsk_record(r, asset_map: dict[str, str], cdn: str) -> dict:
     }
 
 
+def serialize_arcaea_recent_record(
+    r,
+    name_jp_map: dict[str, str | None],
+    name_en_map: dict[str, str],
+    overrides: dict[str, str],
+) -> dict:
+    data = serialize_arcaea_record(r, name_jp_map, name_en_map, overrides)
+    data["game"] = "arcaea"
+    return data
+
+
+def serialize_pjsk_recent_record(r, asset_map: dict[str, str], cdn: str) -> dict:
+    data = serialize_pjsk_record(r, asset_map, cdn)
+    data["game"] = "pjsk"
+    return data
+
+
 def build_pjsk_asset_map(musics_path: Path) -> dict[str, str]:
     """Build song_id -> assetbundleName mapping from musics.json."""
     with open(musics_path) as f:
@@ -202,6 +219,44 @@ def generate_pjsk(config: Config, user: str, cdn: str) -> None:
     print(f"Generated {out} ({len(b30)} b30)")
 
 
+def generate_recent(config: Config, user: str, cdn: str) -> None:
+    recent: list[dict] = []
+
+    if config.arcaea:
+        mgr = arcaea_create_manager(config)
+        name_jp_map: dict[str, str | None] = {}
+        name_en_map: dict[str, str] = {}
+        for chart in mgr.chart_repo.all_charts():
+            if chart.song_id not in name_jp_map:
+                name_jp_map[chart.song_id] = chart.name_jp
+                name_en_map[chart.song_id] = chart.name_en
+        overrides = _load_arcaea_overrides()
+        recent.extend(
+            serialize_arcaea_recent_record(r, name_jp_map, name_en_map, overrides)
+            for r in mgr._select_play_record(
+                "arcaea_record", user=user, limit=30, order=("[time]", "DESC")
+            )
+        )
+
+    if config.pjsk:
+        mgr = pjsk_create_manager(config)
+        asset_map = build_pjsk_asset_map(config.pjsk.musics_json_path)
+        recent.extend(
+            serialize_pjsk_recent_record(r, asset_map, cdn) for r in mgr.records(user)
+        )
+
+    recent.sort(key=lambda r: r["time"], reverse=True)
+    data = {
+        "user": user,
+        "generated_at": int(time.time()),
+        "recent": recent[:30],
+    }
+
+    out = DATA_DIR / "recent.json"
+    out.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+    print(f"Generated {out} ({len(data['recent'])} recent)")
+
+
 def main():
     config, pages = load_config()
     user = pages.get("user", "unknown")
@@ -213,6 +268,8 @@ def main():
         generate_arcaea(config, user)
     if config.pjsk:
         generate_pjsk(config, user, cdn)
+    if config.arcaea or config.pjsk:
+        generate_recent(config, user, cdn)
 
     print("Done.")
 

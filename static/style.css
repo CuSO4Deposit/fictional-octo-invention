@@ -161,6 +161,16 @@ footer a { color: #7070a0; }
     color: #606070;
 }
 
+.card-game {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.card-game-arcaea { color: #b48cff; }
+.card-game-pjsk { color: #61d7ff; }
+
 /* Arcaea difficulty colors */
 .diff-past     { background: #2196f3; color: #fff; }
 .diff-present  { background: #4caf50; color: #fff; }

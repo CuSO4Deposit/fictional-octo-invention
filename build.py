@@ -32,11 +32,17 @@ def main():
 
     arcaea = load_json("arcaea.json")
     pjsk = load_json("pjsk.json")
+    recent = load_json("recent.json")
 
-    ctx = {"arcaea": arcaea, "pjsk": pjsk, "base": ""}
+    ctx = {"arcaea": arcaea, "pjsk": pjsk, "recent": recent, "base": ""}
 
-    # Index
-    html = env.get_template("index.html").render(**ctx)
+    # Index defaults to Recent when available.
+    index_template = "recent.html" if recent else "index.html"
+    index_data = recent if recent else None
+    if index_data is None:
+        html = env.get_template(index_template).render(**ctx)
+    else:
+        html = env.get_template(index_template).render(data=index_data, **ctx)
     (DIST_DIR / "index.html").write_text(html)
 
     # Arcaea pages
@@ -50,6 +56,10 @@ def main():
     if pjsk:
         html = env.get_template("pjsk_b30.html").render(data=pjsk, **ctx)
         (DIST_DIR / "pjsk_b30.html").write_text(html)
+
+    if recent:
+        html = env.get_template("recent.html").render(data=recent, **ctx)
+        (DIST_DIR / "recent.html").write_text(html)
 
     # Copy static assets
     dist_static = DIST_DIR / "static"

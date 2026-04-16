@@ -1,12 +1,19 @@
 {% extends "base.html" %}
 {% block title %}Y-Offline — {{ (arcaea or pjsk).user }}{% endblock %}
 {% block nav %}
+{% if recent %}<a href="index.html">Recent</a>{% endif %}
 {% if arcaea %}<a href="arcaea_b30.html">Arcaea B30</a><a href="arcaea_r30.html">Arcaea R30</a>{% endif %}
 {% if pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %}
 {% endblock %}
 {% block content %}
 <div class="stats">
     <h1>{{ (arcaea or pjsk).user }}</h1>
+    {% if recent %}
+    <div class="stat">
+        <span class="stat-label">Recent</span>
+        <span class="stat-value">{{ recent.recent|length }}</span>
+    </div>
+    {% endif %}
 </div>
 <div class="game-cards">
     {% if arcaea %}

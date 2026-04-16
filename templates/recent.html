@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Recent — {{ data.user }}{% endblock %}
+{% block nav %}
+<a href="index.html">Recent</a>
+{% if arcaea %}<a href="arcaea_b30.html">Arcaea B30</a><a href="arcaea_r30.html">Arcaea R30</a>{% endif %}
+{% if pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %}
+{% endblock %}
+{% block content %}
+<div class="stats">
+    <h1>Recent 30</h1>
+    <div class="stat">
+        <span class="stat-label">User</span>
+        <span class="stat-value">{{ data.user }}</span>
+    </div>
+    <div class="stat">
+        <span class="stat-label">Records</span>
+        <span class="stat-value">{{ data.recent|length }}</span>
+    </div>
+</div>
+<div class="cards">
+{% for r in data.recent %}
+    <div class="card">
+        <div class="card-jacket">
+            <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy">
+        </div>
+        <div class="card-body">
+            <div class="card-game card-game-{{ r.game }}">{{ "Arcaea" if r.game == "arcaea" else "PJSK" }}</div>
+            <div class="card-title">{{ r.name }}</div>
+            <div class="card-diff-line">
+                <span class="card-diff diff-{{ r.difficulty|lower }}">
+                    {{ r.difficulty }}
+                    {% if r.game == "arcaea" %}
+                    {{ "%.1f"|format(r.rating / 10) }}
+                    {% else %}
+                    Lv.{{ r.rating }}
+                    {% endif %}
+                </span>
+                <span class="card-ptt">
+                    {% if r.game == "arcaea" %}
+                    → {{ "%.2f"|format(r.play_ptt) }}
+                    {% else %}
+                    → {{ "%.2f"|format(r.metric) }}
+                    {% endif %}
+                </span>
+            </div>
+            {% if r.game == "arcaea" %}
+            <div class="card-score">{{ r.score|comma }}</div>
+            <div class="card-detail">
+                <span class="j-pure">P {{ r.pure }}</span>(<span class="j-mpure">+{{ r.max_pure }}</span>) <span class="j-far">F {{ r.far }}</span> <span class="j-lost">L {{ r.lost }}</span>
+                {% if r.accuracy >= 1.0 %}<span class="acc-ap">AP {{ "%.2f"|format(r.accuracy * 100) }}%</span>{% endif %}
+            </div>
+            {% else %}
+            <div class="card-detail">
+                {{ "%.2f"|format(r.accuracy * 100) }}%
+                {% if r.accuracy >= 1.0 %}<span class="acc-ap">AP</span>{% endif %}
+                · <span class="j-perfect">P {{ r.perfect }}</span> <span class="j-great">G {{ r.great }}</span> <span class="j-good">Gd {{ r.good }}</span> <span class="j-bad">B {{ r.bad }}</span> <span class="j-miss">M {{ r.miss }}</span>
+            </div>
+            {% endif %}
+            <div class="card-time" data-time="{{ r.time }}">#{{ loop.index }} · </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}
