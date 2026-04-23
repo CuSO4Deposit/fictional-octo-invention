@@ -1,6 +1,6 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1776432939,
+  "generated_at": 1776950773,
   "b30": [
     {
       "song_id": "183",
@@ -355,6 +355,22 @@
       "jacket_url": "jackets/pjsk/288.webp"
     },
     {
+      "song_id": "154",
+      "name": "地球最後の告白を",
+      "rating_class": 4,
+      "difficulty": "Master",
+      "rating": 31,
+      "metric": 32.6907,
+      "perfect": 1161,
+      "great": 1,
+      "good": 1,
+      "bad": 0,
+      "miss": 1,
+      "accuracy": 0.998454,
+      "time": 1776948458,
+      "jacket_url": "jackets/pjsk/154.webp"
+    },
+    {
       "song_id": "206",
       "name": "君色マリンスノウ",
       "rating_class": 4,
@@ -433,22 +449,6 @@
       "accuracy": 0.99813,
       "time": 1696677597,
       "jacket_url": "jackets/pjsk/173.webp"
-    },
-    {
-      "song_id": "154",
-      "name": "地球最後の告白を",
-      "rating_class": 4,
-      "difficulty": "Master",
-      "rating": 31,
-      "metric": 32.5876,
-      "perfect": 1156,
-      "great": 8,
-      "good": 0,
-      "bad": 0,
-      "miss": 0,
-      "accuracy": 0.997938,
-      "time": 1775749758,
-      "jacket_url": "jackets/pjsk/154.webp"
     },
     {
       "song_id": "165",

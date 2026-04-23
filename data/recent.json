@@ -1,7 +1,24 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1776432939,
+  "generated_at": 1776950773,
   "recent": [
+    {
+      "song_id": "154",
+      "name": "地球最後の告白を",
+      "rating_class": 4,
+      "difficulty": "Master",
+      "rating": 31,
+      "metric": 32.6907,
+      "perfect": 1161,
+      "great": 1,
+      "good": 1,
+      "bad": 0,
+      "miss": 1,
+      "accuracy": 0.998454,
+      "time": 1776948458,
+      "jacket_url": "jackets/pjsk/154.webp",
+      "game": "pjsk"
+    },
     {
       "song_id": "swansong",
       "name": "Swan Song",
@@ -494,23 +511,6 @@
       "time": 1775663833,
       "jacket_url": "jackets/pjsk/595.webp",
       "game": "pjsk"
-    },
-    {
-      "song_id": "lilly",
-      "name": "Lilly",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9867786,
-      "play_ptt": 11.2389,
-      "pure": 1284,
-      "max_pure": 1171,
-      "far": 21,
-      "lost": 7,
-      "accuracy": 0.986662,
-      "time": 1775661209,
-      "jacket_url": "jackets/arcaea/lilly.webp",
-      "game": "arcaea"
     }
   ]
 }
