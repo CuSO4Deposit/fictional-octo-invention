@@ -1,6 +1,6 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1777195127,
+  "generated_at": 1777339396,
   "b30": [
     {
       "song_id": "183",
@@ -275,6 +275,22 @@
       "jacket_url": "jackets/pjsk/172.webp"
     },
     {
+      "song_id": "562",
+      "name": "アンヘル",
+      "rating_class": 4,
+      "difficulty": "Master",
+      "rating": 31,
+      "metric": 32.7978,
+      "perfect": 1183,
+      "great": 4,
+      "good": 0,
+      "bad": 0,
+      "miss": 0,
+      "accuracy": 0.998989,
+      "time": 1777301778,
+      "jacket_url": "jackets/pjsk/562.webp"
+    },
+    {
       "song_id": "177",
       "name": "右肩の蝶",
       "rating_class": 4,
@@ -465,22 +481,6 @@
       "accuracy": 0.997533,
       "time": 1695891054,
       "jacket_url": "jackets/pjsk/165.webp"
-    },
-    {
-      "song_id": "99",
-      "name": "モア！ジャンプ！モア！",
-      "rating_class": 4,
-      "difficulty": "Master",
-      "rating": 31,
-      "metric": 32.4909,
-      "perfect": 1251,
-      "great": 4,
-      "good": 0,
-      "bad": 0,
-      "miss": 2,
-      "accuracy": 0.997454,
-      "time": 1704808359,
-      "jacket_url": "jackets/pjsk/99.webp"
     }
   ]
 }
