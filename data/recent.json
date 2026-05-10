@@ -1,6 +1,6 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1778387277,
+  "generated_at": 1778387380,
   "recent": [
     {
       "song_id": "451",
@@ -8,14 +8,14 @@
       "rating_class": 4,
       "difficulty": "Master",
       "rating": 32,
-      "metric": 31.3099,
-      "perfect": 1179,
+      "metric": 33.315,
+      "perfect": 1191,
       "great": 2,
       "good": 1,
       "bad": 0,
-      "miss": 15,
-      "accuracy": 0.98655,
-      "time": 1778387200,
+      "miss": 3,
+      "accuracy": 0.996575,
+      "time": 1778387368,
       "jacket_url": "jackets/pjsk/451.webp",
       "game": "pjsk"
     },

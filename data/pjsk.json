@@ -1,6 +1,6 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1778387277,
+  "generated_at": 1778387380,
   "b30": [
     {
       "song_id": "183",
@@ -49,6 +49,22 @@
       "accuracy": 0.997245,
       "time": 1696691858,
       "jacket_url": "jackets/pjsk/248.webp"
+    },
+    {
+      "song_id": "451",
+      "name": "熱異常",
+      "rating_class": 4,
+      "difficulty": "Master",
+      "rating": 32,
+      "metric": 33.315,
+      "perfect": 1191,
+      "great": 2,
+      "good": 1,
+      "bad": 0,
+      "miss": 3,
+      "accuracy": 0.996575,
+      "time": 1778387368,
+      "jacket_url": "jackets/pjsk/451.webp"
     },
     {
       "song_id": "408",
@@ -241,22 +257,6 @@
       "accuracy": 0.999185,
       "time": 1704806921,
       "jacket_url": "jackets/pjsk/353.webp"
-    },
-    {
-      "song_id": "451",
-      "name": "熱異常",
-      "rating_class": 4,
-      "difficulty": "Master",
-      "rating": 32,
-      "metric": 32.8304,
-      "perfect": 1179,
-      "great": 15,
-      "good": 1,
-      "bad": 0,
-      "miss": 2,
-      "accuracy": 0.994152,
-      "time": 1776190131,
-      "jacket_url": "jackets/pjsk/451.webp"
     },
     {
       "song_id": "172",
