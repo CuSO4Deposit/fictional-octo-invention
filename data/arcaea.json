@@ -1,9 +1,9 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1778343922,
-  "ptt": 11.5256,
+  "generated_at": 1778387277,
+  "ptt": 11.5249,
   "b30_ptt": 11.5367,
-  "r10_ptt": 11.4921,
+  "r10_ptt": 11.4896,
   "b30": [
     {
       "song_id": "viyellastears",
@@ -488,6 +488,54 @@
   ],
   "r30": [
     {
+      "song_id": "hivemind",
+      "name": "HIVEMIND",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 100,
+      "score": 9757466,
+      "play_ptt": 10.8582,
+      "pure": 1206,
+      "max_pure": 1077,
+      "far": 31,
+      "lost": 15,
+      "accuracy": 0.975639,
+      "time": 1778386808,
+      "jacket_url": "jackets/arcaea/hivemind.webp"
+    },
+    {
+      "song_id": "scarletcage",
+      "name": "Scarlet Cage",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 98,
+      "score": 9787634,
+      "play_ptt": 10.7588,
+      "pure": 1156,
+      "max_pure": 1024,
+      "far": 27,
+      "lost": 12,
+      "accuracy": 0.978661,
+      "time": 1778386000,
+      "jacket_url": "jackets/arcaea/scarletcage.webp"
+    },
+    {
+      "song_id": "nhelv",
+      "name": "Nhelv",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9797919,
+      "play_ptt": 10.8931,
+      "pure": 1077,
+      "max_pure": 988,
+      "far": 17,
+      "lost": 14,
+      "accuracy": 0.979693,
+      "time": 1778385680,
+      "jacket_url": "jackets/arcaea/nhelv.webp"
+    },
+    {
       "song_id": "gothiveofra",
       "name": "Got hive of Ra",
       "rating_class": 2,
@@ -840,38 +888,6 @@
       "jacket_url": "jackets/arcaea/cyberneciacatharsis.webp"
     },
     {
-      "song_id": "renegade",
-      "name": "Renegade",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 96,
-      "score": 9865076,
-      "play_ptt": 10.9254,
-      "pure": 976,
-      "max_pure": 891,
-      "far": 9,
-      "lost": 9,
-      "accuracy": 0.986419,
-      "time": 1777171107,
-      "jacket_url": "jackets/arcaea/renegade.webp"
-    },
-    {
-      "song_id": "omakeno",
-      "name": "OMAKENO Stroke",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 95,
-      "score": 9868410,
-      "play_ptt": 10.8421,
-      "pure": 852,
-      "max_pure": 747,
-      "far": 11,
-      "lost": 6,
-      "accuracy": 0.986766,
-      "time": 1777170864,
-      "jacket_url": "jackets/arcaea/omakeno.webp"
-    },
-    {
       "song_id": "vindication",
       "name": "Vindication",
       "rating_class": 2,
@@ -950,22 +966,6 @@
       "accuracy": 0.995243,
       "time": 1775287786,
       "jacket_url": "jackets/arcaea/purgatorium.webp"
-    },
-    {
-      "song_id": "swansong",
-      "name": "Swan Song",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9894963,
-      "play_ptt": 11.3748,
-      "pure": 1203,
-      "max_pure": 1086,
-      "far": 18,
-      "lost": 4,
-      "accuracy": 0.989388,
-      "time": 1775278175,
-      "jacket_url": "jackets/arcaea/swansong.webp"
     }
   ]
 }
