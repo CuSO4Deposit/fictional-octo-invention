@@ -1,9 +1,9 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1780223020,
-  "ptt": 11.517,
+  "generated_at": 1780224753,
+  "ptt": 11.5177,
   "b30_ptt": 11.5391,
-  "r10_ptt": 11.4508,
+  "r10_ptt": 11.4537,
   "b30": [
     {
       "song_id": "viyellastears",
@@ -488,6 +488,22 @@
   ],
   "r30": [
     {
+      "song_id": "nulctrl",
+      "name": "NULCTRL",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 95,
+      "score": 9965692,
+      "play_ptt": 11.3285,
+      "pure": 712,
+      "max_pure": 658,
+      "far": 1,
+      "lost": 2,
+      "accuracy": 0.996503,
+      "time": 1780224740,
+      "jacket_url": "jackets/arcaea/nulctrl.webp"
+    },
+    {
       "song_id": "thirdsun",
       "name": "Third Sun",
       "rating_class": 2,
@@ -853,22 +869,6 @@
       "lost": 1,
       "accuracy": 0.999045,
       "time": 1779019825,
-      "jacket_url": "jackets/arcaea/floatingworld.webp"
-    },
-    {
-      "song_id": "floatingworld",
-      "name": "Floating World",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 93,
-      "score": 9991477,
-      "play_ptt": 11.2574,
-      "pure": 1046,
-      "max_pure": 1029,
-      "far": 0,
-      "lost": 1,
-      "accuracy": 0.999045,
-      "time": 1779019637,
       "jacket_url": "jackets/arcaea/floatingworld.webp"
     },
     {

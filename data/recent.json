@@ -1,7 +1,24 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1780223023,
+  "generated_at": 1780224754,
   "recent": [
+    {
+      "song_id": "nulctrl",
+      "name": "NULCTRL",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 95,
+      "score": 9965692,
+      "play_ptt": 11.3285,
+      "pure": 712,
+      "max_pure": 658,
+      "far": 1,
+      "lost": 2,
+      "accuracy": 0.996503,
+      "time": 1780224740,
+      "jacket_url": "jackets/arcaea/nulctrl.webp",
+      "game": "arcaea"
+    },
     {
       "song_id": "collide",
       "name": "Collide",
@@ -500,23 +517,6 @@
       "lost": 2,
       "accuracy": 0.997135,
       "time": 1779019209,
-      "jacket_url": "jackets/arcaea/floatingworld.webp",
-      "game": "arcaea"
-    },
-    {
-      "song_id": "floatingworld",
-      "name": "Floating World",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 93,
-      "score": 9967590,
-      "play_ptt": 11.138,
-      "pure": 1043,
-      "max_pure": 1019,
-      "far": 1,
-      "lost": 3,
-      "accuracy": 0.996657,
-      "time": 1779019004,
       "jacket_url": "jackets/arcaea/floatingworld.webp",
       "game": "arcaea"
     }
