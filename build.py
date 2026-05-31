@@ -32,9 +32,16 @@ def main():
 
     arcaea = load_json("arcaea.json")
     pjsk = load_json("pjsk.json")
+    cytus2 = load_json("cytus2.json")
     recent = load_json("recent.json")
 
-    ctx = {"arcaea": arcaea, "pjsk": pjsk, "recent": recent, "base": ""}
+    ctx = {
+        "arcaea": arcaea,
+        "pjsk": pjsk,
+        "cytus2": cytus2,
+        "recent": recent,
+        "base": "",
+    }
 
     # Index defaults to Recent when available.
     index_template = "recent.html" if recent else "index.html"
@@ -56,6 +63,11 @@ def main():
     if pjsk:
         html = env.get_template("pjsk_b30.html").render(data=pjsk, **ctx)
         (DIST_DIR / "pjsk_b30.html").write_text(html)
+
+    # Cytus II pages
+    if cytus2:
+        html = env.get_template("cytus2_b30.html").render(data=cytus2, **ctx)
+        (DIST_DIR / "cytus2_b30.html").write_text(html)
 
     if recent:
         html = env.get_template("recent.html").render(data=recent, **ctx)

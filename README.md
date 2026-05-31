@@ -6,6 +6,7 @@ Static GitHub Pages for [Y-Offline](https://codeberg.org/cocvu/Y-Offline) rhythm
 
 - **Arcaea** — B30 + R30
 - **Project SEKAI** — B30
+- **Cytus II** — B30
 
 ## Setup
 
@@ -42,6 +43,9 @@ arcsong_db_path = "/path/to/arcsong.db"
 [pjsk]
 musics_json_path = "/path/to/musics.json"
 music_difficulties_json_path = "/path/to/musicDifficulties.json"
+
+[cytus2]
+charts_json_path = "/path/to/cytus2/charts.json"
 
 [pages]
 user = "your_user_id"

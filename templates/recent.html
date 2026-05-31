@@ -4,6 +4,7 @@
 <a href="index.html">Recent</a>
 {% if arcaea %}<a href="arcaea_b30.html">Arcaea B30</a><a href="arcaea_r30.html">Arcaea R30</a>{% endif %}
 {% if pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %}
+{% if cytus2 %}<a href="cytus2_b30.html">Cytus II B30</a>{% endif %}
 {% endblock %}
 {% block content %}
 <div class="stats">
@@ -24,13 +25,20 @@
             <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy">
         </div>
         <div class="card-body">
-            <div class="card-game card-game-{{ r.game }}">{{ "Arcaea" if r.game == "arcaea" else "PJSK" }}</div>
+            <div class="card-game card-game-{{ r.game }}">
+                {% if r.game == "arcaea" %}Arcaea
+                {%- elif r.game == "pjsk" %}PJSK
+                {%- else %}Cytus II
+                {%- endif %}
+            </div>
             <div class="card-title">{{ r.name }}</div>
             <div class="card-diff-line">
                 <span class="card-diff diff-{{ r.difficulty|lower }}">
                     {{ r.difficulty }}
                     {% if r.game == "arcaea" %}
                     {{ "%.1f"|format(r.rating / 10) }}
+                    {% elif r.game == "cytus2" %}
+                    {% if r.rating > 0 %}Lv.{{ r.rating }}{% else %}Lv.?{% endif %}
                     {% else %}
                     Lv.{{ r.rating }}
                     {% endif %}
@@ -48,6 +56,12 @@
             <div class="card-detail">
                 <span class="j-pure">P {{ r.pure }}</span>(<span class="j-mpure">+{{ r.max_pure }}</span>) <span class="j-far">F {{ r.far }}</span> <span class="j-lost">L {{ r.lost }}</span>
                 {% if r.accuracy >= 1.0 %}<span class="acc-ap">AP {{ "%.2f"|format(r.accuracy * 100) }}%</span>{% endif %}
+            </div>
+            {% elif r.game == "cytus2" %}
+            <div class="card-detail">
+                TP {{ "%.2f"|format(r.accuracy * 100) }}
+                {% if r.accuracy >= 1.0 %}<span class="acc-ap">TP100</span>{% endif %}
+                · <span class="j-sp">SP {{ r.sp }}</span> <span class="j-p">P {{ r.p }}</span> <span class="j-g">G {{ r.g }}</span> <span class="j-b">B {{ r.b }}</span> <span class="j-m">M {{ r.m }}</span>
             </div>
             {% else %}
             <div class="card-detail">
