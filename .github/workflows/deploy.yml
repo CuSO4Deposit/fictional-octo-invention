@@ -2,7 +2,12 @@ name: Deploy Pages
 
 on:
   push:
-    paths: ['data/**']
+    paths:
+      - 'data/**'
+      - 'templates/**'
+      - 'static/**'
+      - 'build.py'
+      - '.github/workflows/deploy.yml'
     branches: [main]
   workflow_dispatch:
 

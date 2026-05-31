@@ -179,7 +179,7 @@ footer a { color: #7070a0; }
 .diff-present  { background: #4caf50; color: #fff; }
 .diff-future   { background: #9c27b0; color: #fff; }
 .diff-beyond   { background: #e53935; color: #fff; }
-.diff-eternal  { background: #c9a832; color: #000; }
+.diff-eternal  { background: #6e6e80; color: #fff; }
 
 /* PJSK difficulty colors */
 .diff-easy     { background: #2196f3; color: #fff; }
