@@ -8,6 +8,9 @@ arcsong_db_path = "/path/to/arcsong.db"
 musics_json_path = "/path/to/musics.json"
 music_difficulties_json_path = "/path/to/musicDifficulties.json"
 
+[cytus2]
+charts_json_path = "/path/to/cytus2/charts.json"
+
 [pages]
 user = "your_user_id"
 # PJSK jacket CDN base URL
