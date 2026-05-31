@@ -151,6 +151,8 @@ footer a { color: #7070a0; }
     color: #fff;
 }
 
+.card-score-ap { color: #7adcff; }
+
 .card-detail {
     font-size: 0.7rem;
     color: #909090;
@@ -170,7 +172,7 @@ footer a { color: #7070a0; }
 
 .card-game-arcaea { color: #b48cff; }
 .card-game-pjsk { color: #61d7ff; }
-.card-game-cytus2 { color: #ff9a5a; }
+.card-game-cytus2 { color: #2dd4bf; }
 
 /* Arcaea difficulty colors */
 .diff-past     { background: #2196f3; color: #fff; }
@@ -187,13 +189,13 @@ footer a { color: #7070a0; }
 .diff-master   { background: #9c27b0; color: #fff; }
 .diff-append   { background: #e91e8f; color: #fff; }
 
-/* Cytus II difficulty colors (Easy/Hard share names with PJSK above) */
-.diff-chaos    { background: #d32f2f; color: #fff; }
-.diff-glitch   { background: #7c3aed; color: #fff; }
-.diff-crash    { background: #ff4081; color: #fff; }
-
-/* Accuracy highlight */
-.acc-ap { color: #ffd740; }
+/* Cytus II difficulty colors */
+.diff-c2-easy   { background: #2196f3; color: #fff; }
+.diff-c2-hard   { background: #e53935; color: #fff; }
+.diff-c2-chaos  { background: #9c27b0; color: #fff; }
+.diff-c2-glitch { background: #4caf50; color: #fff; }
+.diff-c2-crash  { background: #fbc02d; color: #000; }
+.diff-c2-dream  { background: #9aa0a6; color: #000; }
 
 /* Diff + PTT line */
 .card-diff-line {
@@ -222,11 +224,11 @@ footer a { color: #7070a0; }
 .j-miss    { color: #f06060; }
 
 /* Cytus II judgement colors */
-.j-sp { color: #61d7ff; }
-.j-p  { color: #f0c060; }
-.j-g  { color: #60d060; }
-.j-b  { color: #f09060; }
-.j-m  { color: #f06060; }
+.j-c2-p   { color: #f0c060; }
+.j-c2-mp  { color: #f0e0a0; }
+.j-c2-g   { color: #60d060; }
+.j-c2-b   { color: #f09060; }
+.j-c2-m   { color: #f06060; }
 
 /* Game cards (index page) */
 .game-cards {

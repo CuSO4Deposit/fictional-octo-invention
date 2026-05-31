@@ -31,16 +31,17 @@
         <div class="card-body">
             <div class="card-title">{{ r.name }}</div>
             <div class="card-diff-line">
-                <span class="card-diff diff-{{ r.difficulty|lower }}">
-                    {{ r.difficulty }}
+                <span class="card-diff diff-c2-{{ r.difficulty|lower }}">
+                    {{ r.difficulty|upper }}
                     {% if r.rating > 0 %}Lv.{{ r.rating }}{% else %}Lv.?{% endif %}
                 </span>
                 <span class="card-ptt">→ {{ "%.2f"|format(r.metric) }}</span>
             </div>
+            <div class="card-score{% if r.accuracy >= 1.0 %} card-score-ap{% endif %}">
+                TP {{ "%.2f"|format(r.accuracy * 100) }}%
+            </div>
             <div class="card-detail">
-                TP {{ "%.2f"|format(r.accuracy * 100) }}
-                {% if r.accuracy >= 1.0 %}<span class="acc-ap">TP100</span>{% endif %}
-                · <span class="j-sp">SP {{ r.sp }}</span> <span class="j-p">P {{ r.p }}</span> <span class="j-g">G {{ r.g }}</span> <span class="j-b">B {{ r.b }}</span> <span class="j-m">M {{ r.m }}</span>
+                <span class="j-c2-p">P {{ r.sp + r.p }}</span>(<span class="j-c2-mp">+{{ r.sp }}</span>) <span class="j-c2-g">G {{ r.g }}</span> <span class="j-c2-b">B {{ r.b }}</span> <span class="j-c2-m">M {{ r.m }}</span>
             </div>
             <div class="card-time" data-time="{{ r.time }}">#{{ loop.index }} · </div>
         </div>
