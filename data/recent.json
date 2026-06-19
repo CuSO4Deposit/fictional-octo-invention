@@ -1,7 +1,24 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1781840377,
+  "generated_at": 1781840937,
   "recent": [
+    {
+      "song_id": "breachoffaith",
+      "name": "Breach of Faith",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 103,
+      "score": 9797276,
+      "play_ptt": 11.2909,
+      "pure": 1327,
+      "max_pure": 1209,
+      "far": 36,
+      "lost": 10,
+      "accuracy": 0.979607,
+      "time": 1781840925,
+      "jacket_url": "jackets/arcaea/breachoffaith.webp",
+      "game": "arcaea"
+    },
     {
       "song_id": "snowwhite",
       "name": "Snow White",
@@ -500,23 +517,6 @@
       "lost": 1,
       "accuracy": 0.996993,
       "time": 1780209986,
-      "jacket_url": "jackets/arcaea/rainofconflict.webp",
-      "game": "arcaea"
-    },
-    {
-      "song_id": "rainofconflict",
-      "name": "Rain of Conflict in a Radiant Abyss",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 95,
-      "score": 9966749,
-      "play_ptt": 11.3337,
-      "pure": 1160,
-      "max_pure": 1114,
-      "far": 0,
-      "lost": 4,
-      "accuracy": 0.996564,
-      "time": 1780209512,
       "jacket_url": "jackets/arcaea/rainofconflict.webp",
       "game": "arcaea"
     }

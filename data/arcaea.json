@@ -1,9 +1,9 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1781840375,
-  "ptt": 11.4991,
+  "generated_at": 1781840937,
+  "ptt": 11.5045,
   "b30_ptt": 11.5391,
-  "r10_ptt": 11.3792,
+  "r10_ptt": 11.4009,
   "b30": [
     {
       "song_id": "viyellastears",
@@ -488,6 +488,22 @@
   ],
   "r30": [
     {
+      "song_id": "breachoffaith",
+      "name": "Breach of Faith",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 103,
+      "score": 9797276,
+      "play_ptt": 11.2909,
+      "pure": 1327,
+      "max_pure": 1209,
+      "far": 36,
+      "lost": 10,
+      "accuracy": 0.979607,
+      "time": 1781840925,
+      "jacket_url": "jackets/arcaea/breachoffaith.webp"
+    },
+    {
       "song_id": "snowwhite",
       "name": "Snow White",
       "rating_class": 3,
@@ -837,22 +853,6 @@
       "lost": 3,
       "accuracy": 0.991985,
       "time": 1780211057,
-      "jacket_url": "jackets/arcaea/thirdsun.webp"
-    },
-    {
-      "song_id": "thirdsun",
-      "name": "Third Sun",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 94,
-      "score": 9914423,
-      "play_ptt": 10.9721,
-      "pure": 800,
-      "max_pure": 737,
-      "far": 8,
-      "lost": 3,
-      "accuracy": 0.991369,
-      "time": 1780210850,
       "jacket_url": "jackets/arcaea/thirdsun.webp"
     },
     {
