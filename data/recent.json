@@ -1,7 +1,41 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1783338054,
+  "generated_at": 1783680306,
   "recent": [
+    {
+      "song_id": "protoflicker",
+      "name": "Protoflicker",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 98,
+      "score": 9698568,
+      "play_ptt": 10.4619,
+      "pure": 1000,
+      "max_pure": 872,
+      "far": 21,
+      "lost": 21,
+      "accuracy": 0.96977,
+      "time": 1783680280,
+      "jacket_url": "jackets/arcaea/protoflicker.webp",
+      "game": "arcaea"
+    },
+    {
+      "song_id": "swansong",
+      "name": "Swan Song",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9939860,
+      "play_ptt": 11.5993,
+      "pure": 1213,
+      "max_pure": 1085,
+      "far": 9,
+      "lost": 3,
+      "accuracy": 0.993878,
+      "time": 1783680059,
+      "jacket_url": "jackets/arcaea/swansong.webp",
+      "game": "arcaea"
+    },
     {
       "song_id": "trappola",
       "name": "妖艶魔女 -trappola bewitching-",
@@ -476,40 +510,6 @@
       "accuracy": 0.974632,
       "time": 1782474789,
       "jacket_url": "jackets/arcaea/virtus.webp",
-      "game": "arcaea"
-    },
-    {
-      "song_id": "hybris",
-      "name": "ヒュブリスの頂に聳えるのは",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9883993,
-      "play_ptt": 11.22,
-      "pure": 1175,
-      "max_pure": 1050,
-      "far": 14,
-      "lost": 7,
-      "accuracy": 0.988294,
-      "time": 1782474580,
-      "jacket_url": "jackets/arcaea/hybris.webp",
-      "game": "arcaea"
-    },
-    {
-      "song_id": "ouverture",
-      "name": "Ouvertüre",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9710523,
-      "play_ptt": 10.5017,
-      "pure": 873,
-      "max_pure": 775,
-      "far": 27,
-      "lost": 13,
-      "accuracy": 0.970975,
-      "time": 1782474370,
-      "jacket_url": "jackets/arcaea/ouverture.webp",
       "game": "arcaea"
     }
   ]

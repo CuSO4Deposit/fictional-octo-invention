@@ -1,9 +1,9 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1783338052,
-  "ptt": 11.4949,
-  "b30_ptt": 11.5484,
-  "r10_ptt": 11.3345,
+  "generated_at": 1783680305,
+  "ptt": 11.5029,
+  "b30_ptt": 11.5545,
+  "r10_ptt": 11.348,
   "b30": [
     {
       "song_id": "viyellastears",
@@ -132,6 +132,22 @@
       "accuracy": 0.97989,
       "time": 1772364716,
       "jacket_url": "jackets/arcaea/axiumcrisis.webp"
+    },
+    {
+      "song_id": "swansong",
+      "name": "Swan Song",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9939860,
+      "play_ptt": 11.5993,
+      "pure": 1213,
+      "max_pure": 1085,
+      "far": 9,
+      "lost": 3,
+      "accuracy": 0.993878,
+      "time": 1783680059,
+      "jacket_url": "jackets/arcaea/swansong.webp"
     },
     {
       "song_id": "defection",
@@ -406,22 +422,6 @@
       "jacket_url": "jackets/arcaea/teriqma.webp"
     },
     {
-      "song_id": "swansong",
-      "name": "Swan Song",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9903119,
-      "play_ptt": 11.4156,
-      "pure": 1203,
-      "max_pure": 1079,
-      "far": 20,
-      "lost": 2,
-      "accuracy": 0.990204,
-      "time": 1773401370,
-      "jacket_url": "jackets/arcaea/swansong.webp"
-    },
-    {
       "song_id": "stratoliner",
       "name": "Stratoliner",
       "rating_class": 2,
@@ -487,6 +487,38 @@
     }
   ],
   "r30": [
+    {
+      "song_id": "protoflicker",
+      "name": "Protoflicker",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 98,
+      "score": 9698568,
+      "play_ptt": 10.4619,
+      "pure": 1000,
+      "max_pure": 872,
+      "far": 21,
+      "lost": 21,
+      "accuracy": 0.96977,
+      "time": 1783680280,
+      "jacket_url": "jackets/arcaea/protoflicker.webp"
+    },
+    {
+      "song_id": "swansong",
+      "name": "Swan Song",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9939860,
+      "play_ptt": 11.5993,
+      "pure": 1213,
+      "max_pure": 1085,
+      "far": 9,
+      "lost": 3,
+      "accuracy": 0.993878,
+      "time": 1783680059,
+      "jacket_url": "jackets/arcaea/swansong.webp"
+    },
     {
       "song_id": "trappola",
       "name": "妖艶魔女 -trappola bewitching-",
@@ -824,22 +856,6 @@
       "jacket_url": "jackets/arcaea/telepathy.webp"
     },
     {
-      "song_id": "override",
-      "name": "オーバーライド",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 95,
-      "score": 9722746,
-      "play_ptt": 10.2425,
-      "pure": 884,
-      "max_pure": 827,
-      "far": 15,
-      "lost": 18,
-      "accuracy": 0.972192,
-      "time": 1782614541,
-      "jacket_url": "jackets/arcaea/override.webp"
-    },
-    {
       "song_id": "syro",
       "name": "Syro",
       "rating_class": 2,
@@ -950,22 +966,6 @@
       "accuracy": 0.991679,
       "time": 1781872671,
       "jacket_url": "jackets/arcaea/farawaylight.webp"
-    },
-    {
-      "song_id": "worldfragments",
-      "name": "World Fragments III(radio edit)",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9932795,
-      "play_ptt": 11.464,
-      "pure": 1375,
-      "max_pure": 1289,
-      "far": 5,
-      "lost": 7,
-      "accuracy": 0.993151,
-      "time": 1781872283,
-      "jacket_url": "jackets/arcaea/worldfragments.webp"
     }
   ]
 }
