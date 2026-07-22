@@ -1,9 +1,9 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1784645044,
-  "ptt": 11.5428,
+  "generated_at": 1784722674,
+  "ptt": 11.5361,
   "b30_ptt": 11.5695,
-  "r10_ptt": 11.4626,
+  "r10_ptt": 11.4357,
   "b30": [
     {
       "song_id": "viyellastears",
@@ -488,6 +488,86 @@
   ],
   "r30": [
     {
+      "song_id": "galaxyfriends",
+      "name": "Galaxy Friends",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9877510,
+      "play_ptt": 11.2875,
+      "pure": 997,
+      "max_pure": 906,
+      "far": 7,
+      "lost": 9,
+      "accuracy": 0.98766,
+      "time": 1784722351,
+      "jacket_url": "jackets/arcaea/galaxyfriends.webp"
+    },
+    {
+      "song_id": "modelista",
+      "name": "Modelista",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9822622,
+      "play_ptt": 11.0131,
+      "pure": 980,
+      "max_pure": 840,
+      "far": 24,
+      "lost": 6,
+      "accuracy": 0.982178,
+      "time": 1784721856,
+      "jacket_url": "jackets/arcaea/modelista.webp"
+    },
+    {
+      "song_id": "farawaylight",
+      "name": "Far Away Light",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 98,
+      "score": 9770450,
+      "play_ptt": 10.7015,
+      "pure": 1282,
+      "max_pure": 1162,
+      "far": 19,
+      "lost": 21,
+      "accuracy": 0.976929,
+      "time": 1784721554,
+      "jacket_url": "jackets/arcaea/farawaylight.webp"
+    },
+    {
+      "song_id": "cyberneciacatharsis",
+      "name": "Cybernecia Catharsis",
+      "rating_class": 3,
+      "difficulty": "Beyond",
+      "rating": 98,
+      "score": 9713241,
+      "play_ptt": 10.5108,
+      "pure": 954,
+      "max_pure": 830,
+      "far": 17,
+      "lost": 20,
+      "accuracy": 0.971241,
+      "time": 1784721253,
+      "jacket_url": "jackets/arcaea/cyberneciacatharsis.webp"
+    },
+    {
+      "song_id": "lavie",
+      "name": "ラヴィ",
+      "rating_class": 4,
+      "difficulty": "Eternal",
+      "rating": 99,
+      "score": 9845420,
+      "play_ptt": 11.1271,
+      "pure": 1101,
+      "max_pure": 976,
+      "far": 13,
+      "lost": 11,
+      "accuracy": 0.984444,
+      "time": 1784720933,
+      "jacket_url": "jackets/arcaea/lavie.webp"
+    },
+    {
       "song_id": "morningloom",
       "name": "MORNINGLOOM",
       "rating_class": 4,
@@ -792,22 +872,6 @@
       "jacket_url": "jackets/arcaea/override.webp"
     },
     {
-      "song_id": "kamippoi",
-      "name": "神っぽいな",
-      "rating_class": 4,
-      "difficulty": "Eternal",
-      "rating": 100,
-      "score": 9772429,
-      "play_ptt": 10.9081,
-      "pure": 1078,
-      "max_pure": 924,
-      "far": 25,
-      "lost": 13,
-      "accuracy": 0.977151,
-      "time": 1784440178,
-      "jacket_url": "jackets/arcaea/kamippoi.webp"
-    },
-    {
       "song_id": "lavie",
       "name": "ラヴィ",
       "rating_class": 4,
@@ -822,22 +886,6 @@
       "accuracy": 0.987111,
       "time": 1784439784,
       "jacket_url": "jackets/arcaea/lavie.webp"
-    },
-    {
-      "song_id": "aishite",
-      "name": "愛して愛して愛して",
-      "rating_class": 4,
-      "difficulty": "Eternal",
-      "rating": 105,
-      "score": 9601426,
-      "play_ptt": 10.8381,
-      "pure": 982,
-      "max_pure": 849,
-      "far": 31,
-      "lost": 26,
-      "accuracy": 0.960058,
-      "time": 1784438941,
-      "jacket_url": "jackets/arcaea/aishite.webp"
     },
     {
       "song_id": "kamippoi",
@@ -870,22 +918,6 @@
       "accuracy": 0.995976,
       "time": 1784434194,
       "jacket_url": "jackets/arcaea/renegade.webp"
-    },
-    {
-      "song_id": "drg",
-      "name": "DRG",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 94,
-      "score": 9977861,
-      "play_ptt": 11.2893,
-      "pure": 869,
-      "max_pure": 797,
-      "far": 2,
-      "lost": 1,
-      "accuracy": 0.997706,
-      "time": 1784120416,
-      "jacket_url": "jackets/arcaea/drg.webp"
     },
     {
       "song_id": "rainofconflict",
@@ -934,38 +966,6 @@
       "accuracy": 0.996591,
       "time": 1783836730,
       "jacket_url": "jackets/arcaea/telepathy.webp"
-    },
-    {
-      "song_id": "galaxyfriends",
-      "name": "Galaxy Friends",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9887393,
-      "play_ptt": 11.337,
-      "pure": 993,
-      "max_pure": 918,
-      "far": 17,
-      "lost": 3,
-      "accuracy": 0.988648,
-      "time": 1783770815,
-      "jacket_url": "jackets/arcaea/galaxyfriends.webp"
-    },
-    {
-      "song_id": "lostdesire",
-      "name": "Lost Desire",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9936033,
-      "play_ptt": 11.4802,
-      "pure": 1143,
-      "max_pure": 1025,
-      "far": 7,
-      "lost": 4,
-      "accuracy": 0.993501,
-      "time": 1781946660,
-      "jacket_url": "jackets/arcaea/lostdesire.webp"
     }
   ]
 }
