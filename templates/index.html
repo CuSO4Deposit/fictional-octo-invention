@@ -2,7 +2,7 @@
 {% block title %}Y-Offline — {{ (arcaea or pjsk or cytus2).user }}{% endblock %}
 {% block nav %}
 {% if recent %}<a href="index.html">Recent</a>{% endif %}
-{% if arcaea %}<a href="arcaea_b30.html">Arcaea B30</a><a href="arcaea_r30.html">Arcaea R30</a>{% endif %}
+{% if arcaea %}<a href="arcaea_v7.html">Arcaea v7</a>{% endif %}
 {% if pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %}
 {% if cytus2 %}<a href="cytus2_b30.html">Cytus II B30</a>{% endif %}
 {% endblock %}
@@ -27,17 +27,17 @@
                     <span class="stat-value">{{ "%.2f"|format(arcaea.ptt) }}</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-label">B30</span>
-                    <span class="stat-value">{{ "%.2f"|format(arcaea.b30_ptt) }}</span>
+                    <span class="stat-label">B50</span>
+                    <span class="stat-value">{{ "%.2f"|format(arcaea.b50_ptt) }}</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-label">R10</span>
-                    <span class="stat-value">{{ "%.2f"|format(arcaea.r10_ptt) }}</span>
+                    <span class="stat-label">Top10 ×2</span>
+                    <span class="stat-value">{{ "%.2f"|format(arcaea.top10_ptt) }}</span>
                 </div>
             </div>
-            {% if arcaea.b30 %}
+            {% if arcaea.b50 %}
             <div class="game-card-top3">
-                {% for r in arcaea.b30[:3] %}
+                {% for r in arcaea.b50[:3] %}
                 <div class="top3-item">
                     <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy">
                     <span class="top3-name">{{ r.name }}</span>
@@ -47,8 +47,7 @@
             </div>
             {% endif %}
             <div class="game-card-links">
-                <a href="arcaea_b30.html">B30</a>
-                <a href="arcaea_r30.html">R30</a>
+                <a href="arcaea_v7.html">v7.0</a>
             </div>
         </div>
     </div>

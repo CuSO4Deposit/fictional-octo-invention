@@ -1,10 +1,10 @@
 # y-offline-pages
 
-Static GitHub Pages for [Y-Offline](https://codeberg.org/cocvu/Y-Offline) rhythm game scores. Displays B30/R30 records with song jackets.
+Static GitHub Pages for [Y-Offline](https://codeberg.org/cocvu/Y-Offline) rhythm game scores. Displays best-pool records with song jackets.
 
 ## Supported Games
 
-- **Arcaea** — B30 + R30
+- **Arcaea** — B50 + Top10 (v7.0 potential, experimental page `arcaea_v7.html`)
 - **Project SEKAI** — B30
 - **Cytus II** — B30
 

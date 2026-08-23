@@ -26,6 +26,9 @@ def comma(value: int) -> str:
 
 def main():
     DIST_DIR.mkdir(exist_ok=True)
+    # Stale output would keep dead pages (e.g. the old Arcaea b30/r30) on the site.
+    for stale in DIST_DIR.glob("*.html"):
+        stale.unlink()
 
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), autoescape=True)
     env.filters["comma"] = comma
@@ -52,12 +55,10 @@ def main():
         html = env.get_template(index_template).render(data=index_data, **ctx)
     (DIST_DIR / "index.html").write_text(html)
 
-    # Arcaea pages
+    # Arcaea page (v7.0 potential, experimental)
     if arcaea:
-        html = env.get_template("arcaea_b30.html").render(data=arcaea, **ctx)
-        (DIST_DIR / "arcaea_b30.html").write_text(html)
-        html = env.get_template("arcaea_r30.html").render(data=arcaea, **ctx)
-        (DIST_DIR / "arcaea_r30.html").write_text(html)
+        html = env.get_template("arcaea_v7.html").render(data=arcaea, **ctx)
+        (DIST_DIR / "arcaea_v7.html").write_text(html)
 
     # PJSK pages
     if pjsk:

@@ -11,6 +11,7 @@ from pathlib import Path
 from PIL import Image
 
 from y_offline.arcaea.utils import create_manager as arcaea_create_manager
+from y_offline.base.pool import replay_best
 from y_offline.cytus2.utils import create_manager as cytus2_create_manager
 from y_offline.pjsk.utils import create_manager as pjsk_create_manager
 from y_offline.utils import Config
@@ -251,9 +252,13 @@ def build_pjsk_asset_map(musics_path: Path) -> dict[str, str]:
 
 def generate_arcaea(config: Config, user: str) -> None:
     mgr = arcaea_create_manager(config)
-    b30 = mgr.b30(user)
-    r30 = mgr.r30(user)
-    r10 = mgr.r10(user)
+    # The pool is replayed from records rather than read from the cached `*_best`
+    # table, so the page stays consistent with the trend even when the live pool
+    # has not been reindexed to the v7.0 capacity (30 -> 50). The ptt, top10 and
+    # trend below all share this one replay.
+    steps = replay_best(mgr._records_asc(user), mgr.best_capacity)
+    b50 = steps[-1][1] if steps else []
+    top10 = b50[:10]
 
     # Build song_id -> name maps from chart repo
     name_jp_map: dict[str, str | None] = {}
@@ -265,26 +270,38 @@ def generate_arcaea(config: Config, user: str) -> None:
 
     overrides = _load_arcaea_overrides()
 
-    b30_ptt = sum(r.play_ptt for r in b30) / max(len(b30), 1)
-    r10_ptt = sum(r.play_ptt for r in r10) / max(len(r10), 1)
-    ptt = sum(r.play_ptt for r in b30 + r10) / 40
+    b50_ptt = sum(r.play_ptt for r in b50) / max(len(b50), 1)
+    top10_ptt = sum(r.play_ptt for r in top10) / max(len(top10), 1)
+    # v7.0: the top 10 carry double weight, and the denominator is the number of
+    # summed terms (60 once the pool is full), not the pool size.
+    ptt = (sum(r.play_ptt for r in b50) + sum(r.play_ptt for r in top10)) / max(
+        len(b50) + len(top10), 1
+    )
 
     def ser(r):
         return serialize_arcaea_record(r, name_jp_map, name_en_map, overrides)
+
+    trend = [
+        {"at": p.at, "potential": round(p.potential, 4)}
+        for p in mgr.potential_trend(user)
+    ]
 
     data = {
         "user": user,
         "generated_at": int(time.time()),
         "ptt": round(ptt, 4),
-        "b30_ptt": round(b30_ptt, 4),
-        "r10_ptt": round(r10_ptt, 4),
-        "b30": [ser(r) for r in b30],
-        "r30": [ser(r) for r in r30],
+        "b50_ptt": round(b50_ptt, 4),
+        "top10_ptt": round(top10_ptt, 4),
+        "b50": [ser(r) for r in b50],
+        "top10": [ser(r) for r in top10],
+        "trend": trend,
+        "trend_min": min((p["potential"] for p in trend), default=0.0),
+        "trend_max": max((p["potential"] for p in trend), default=0.0),
     }
 
     out = DATA_DIR / "arcaea.json"
     out.write_text(json.dumps(data, ensure_ascii=False, indent=2))
-    print(f"Generated {out} ({len(b30)} b30, {len(r30)} r30)")
+    print(f"Generated {out} ({len(b50)} b50, top10 double weight)")
 
 
 def generate_pjsk(config: Config, user: str, cdn: str) -> None:
