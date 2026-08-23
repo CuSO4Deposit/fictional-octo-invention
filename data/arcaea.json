@@ -1,10 +1,10 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1787387876,
-  "ptt": 11.526,
-  "b30_ptt": 11.5723,
-  "r10_ptt": 11.3872,
-  "b30": [
+  "generated_at": 1787478866,
+  "ptt": 11.5299,
+  "b50_ptt": 11.4922,
+  "top10_ptt": 11.7185,
+  "b50": [
     {
       "song_id": "viyellastears",
       "name": "Viyella's Tears",
@@ -294,22 +294,6 @@
       "jacket_url": "jackets/arcaea/gothiveofra.webp"
     },
     {
-      "song_id": "rainofconflict",
-      "name": "Rain of Conflict in a Radiant Abyss",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 95,
-      "score": 10001130,
-      "play_ptt": 11.5,
-      "pure": 1164,
-      "max_pure": 1130,
-      "far": 0,
-      "lost": 0,
-      "accuracy": 1.009708,
-      "time": 1783841163,
-      "jacket_url": "jackets/arcaea/rainofconflict.webp"
-    },
-    {
       "song_id": "override",
       "name": "オーバーライド",
       "rating_class": 2,
@@ -324,6 +308,22 @@
       "accuracy": 1.009487,
       "time": 1783839719,
       "jacket_url": "jackets/arcaea/override.webp"
+    },
+    {
+      "song_id": "rainofconflict",
+      "name": "Rain of Conflict in a Radiant Abyss",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 95,
+      "score": 10001130,
+      "play_ptt": 11.5,
+      "pure": 1164,
+      "max_pure": 1130,
+      "far": 0,
+      "lost": 0,
+      "accuracy": 1.009708,
+      "time": 1783841163,
+      "jacket_url": "jackets/arcaea/rainofconflict.webp"
     },
     {
       "song_id": "espebranch",
@@ -484,232 +484,102 @@
       "accuracy": 0.994399,
       "time": 1784644444,
       "jacket_url": "jackets/arcaea/raysofremnant.webp"
-    }
-  ],
-  "r30": [
-    {
-      "song_id": "thesurvivor",
-      "name": "The Survivor (Game Edit)",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9805535,
-      "play_ptt": 10.9277,
-      "pure": 1074,
-      "max_pure": 990,
-      "far": 9,
-      "lost": 17,
-      "accuracy": 0.980455,
-      "time": 1787387841,
-      "jacket_url": "jackets/arcaea/thesurvivor.webp"
     },
     {
-      "song_id": "chronologia",
-      "name": "chronologia",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9871002,
-      "play_ptt": 11.155,
-      "pure": 1205,
-      "max_pure": 1084,
-      "far": 18,
-      "lost": 7,
-      "accuracy": 0.986992,
-      "time": 1787387824,
-      "jacket_url": "jackets/arcaea/chronologia.webp"
-    },
-    {
-      "song_id": "scarletlunar",
-      "name": "朱月ノ姫",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9890006,
-      "play_ptt": 11.25,
-      "pure": 1020,
-      "max_pure": 903,
-      "far": 11,
-      "lost": 6,
-      "accuracy": 0.98891,
-      "time": 1787387808,
-      "jacket_url": "jackets/arcaea/scarletlunar.webp"
-    },
-    {
-      "song_id": "lilly",
-      "name": "Lilly",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9860143,
-      "play_ptt": 11.2007,
-      "pure": 1286,
-      "max_pure": 1150,
-      "far": 15,
-      "lost": 11,
-      "accuracy": 0.985899,
-      "time": 1787387741,
-      "jacket_url": "jackets/arcaea/lilly.webp"
-    },
-    {
-      "song_id": "devillicsphere",
-      "name": "Devillic Sphere",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9744137,
-      "play_ptt": 10.7138,
-      "pure": 1086,
-      "max_pure": 1002,
-      "far": 28,
-      "lost": 15,
-      "accuracy": 0.974314,
-      "time": 1787387727,
-      "jacket_url": "jackets/arcaea/devillicsphere.webp"
-    },
-    {
-      "song_id": "thesurvivor",
-      "name": "The Survivor (Game Edit)",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9778268,
-      "play_ptt": 10.8276,
-      "pure": 1068,
-      "max_pure": 996,
-      "far": 15,
-      "lost": 17,
-      "accuracy": 0.977727,
-      "time": 1787387713,
-      "jacket_url": "jackets/arcaea/thesurvivor.webp"
-    },
-    {
-      "song_id": "remindthesouls",
-      "name": "Remind the Souls (Short Version)",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 96,
-      "score": 9640946,
-      "play_ptt": 10.0698,
-      "pure": 885,
-      "max_pure": 735,
-      "far": 52,
-      "lost": 8,
-      "accuracy": 0.964021,
-      "time": 1787387698,
-      "jacket_url": "jackets/arcaea/remindthesouls.webp"
-    },
-    {
-      "song_id": "purpleverse",
-      "name": "Purple Verse",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 96,
-      "score": 9908005,
-      "play_ptt": 11.14,
-      "pure": 1009,
-      "max_pure": 870,
-      "far": 9,
-      "lost": 5,
-      "accuracy": 0.990714,
-      "time": 1787387682,
-      "jacket_url": "jackets/arcaea/purpleverse.webp"
-    },
-    {
-      "song_id": "eightem",
-      "name": "8-EM",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 95,
-      "score": 9876053,
-      "play_ptt": 10.8803,
-      "pure": 1061,
-      "max_pure": 938,
-      "far": 13,
-      "lost": 7,
-      "accuracy": 0.987512,
-      "time": 1787387668,
-      "jacket_url": "jackets/arcaea/eightem.webp"
-    },
-    {
-      "song_id": "felys",
-      "name": "felys final remix",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 95,
-      "score": 9961209,
-      "play_ptt": 11.306,
-      "pure": 1124,
-      "max_pure": 1033,
-      "far": 3,
+      "song_id": "teriqma",
+      "name": "Teriqma",
+      "rating_class": 3,
+      "difficulty": "Beyond",
+      "rating": 97,
+      "score": 9943202,
+      "play_ptt": 11.416,
+      "pure": 946,
+      "max_pure": 854,
+      "far": 5,
       "lost": 3,
-      "accuracy": 0.996018,
-      "time": 1787387653,
-      "jacket_url": "jackets/arcaea/felys.webp"
+      "accuracy": 0.994235,
+      "time": 1781946195,
+      "jacket_url": "jackets/arcaea/teriqma.webp"
     },
     {
-      "song_id": "thirdsun",
-      "name": "Third Sun",
+      "song_id": "stratoliner",
+      "name": "Stratoliner",
       "rating_class": 2,
       "difficulty": "Future",
-      "rating": 94,
-      "score": 9932908,
-      "play_ptt": 11.0645,
-      "pure": 802,
-      "max_pure": 726,
-      "far": 7,
+      "rating": 96,
+      "score": 9960911,
+      "play_ptt": 11.4046,
+      "pure": 872,
+      "max_pure": 820,
+      "far": 3,
       "lost": 2,
-      "accuracy": 0.993218,
-      "time": 1787387641,
-      "jacket_url": "jackets/arcaea/thirdsun.webp"
+      "accuracy": 0.996009,
+      "time": 1755756502,
+      "jacket_url": "jackets/arcaea/stratoliner.webp"
     },
     {
-      "song_id": "chronologia",
-      "name": "chronologia",
+      "song_id": "renegade",
+      "name": "Renegade",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 96,
+      "score": 9960693,
+      "play_ptt": 11.4035,
+      "pure": 990,
+      "max_pure": 935,
+      "far": 0,
+      "lost": 4,
+      "accuracy": 0.995976,
+      "time": 1784434194,
+      "jacket_url": "jackets/arcaea/renegade.webp"
+    },
+    {
+      "song_id": "halcyon",
+      "name": "Halcyon",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 105,
+      "score": 9768801,
+      "play_ptt": 11.396,
+      "pure": 1187,
+      "max_pure": 1075,
+      "far": 23,
+      "lost": 17,
+      "accuracy": 0.976773,
+      "time": 1770372836,
+      "jacket_url": "jackets/arcaea/halcyon.webp"
+    },
+    {
+      "song_id": "farawaylight",
+      "name": "Far Away Light",
       "rating_class": 2,
       "difficulty": "Future",
       "rating": 98,
-      "score": 9850671,
-      "play_ptt": 11.0534,
-      "pure": 1204,
-      "max_pure": 1078,
-      "far": 15,
-      "lost": 11,
-      "accuracy": 0.984959,
-      "time": 1787387219,
-      "jacket_url": "jackets/arcaea/chronologia.webp"
+      "score": 9918016,
+      "play_ptt": 11.3901,
+      "pure": 1307,
+      "max_pure": 1224,
+      "far": 8,
+      "lost": 7,
+      "accuracy": 0.991679,
+      "time": 1781872671,
+      "jacket_url": "jackets/arcaea/farawaylight.webp"
     },
     {
-      "song_id": "lilly",
-      "name": "Lilly",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9780108,
-      "play_ptt": 10.8337,
-      "pure": 1268,
-      "max_pure": 1145,
-      "far": 30,
-      "lost": 14,
-      "accuracy": 0.977896,
-      "time": 1787386967,
-      "jacket_url": "jackets/arcaea/lilly.webp"
-    },
-    {
-      "song_id": "matenrou",
-      "name": "感情の摩天楼 ～Arr.Demetori",
+      "song_id": "ascent",
+      "name": "Ascent",
       "rating_class": 2,
       "difficulty": "Future",
       "rating": 98,
-      "score": 9823416,
-      "play_ptt": 10.9171,
-      "pure": 1264,
-      "max_pure": 1160,
-      "far": 14,
-      "lost": 16,
-      "accuracy": 0.982226,
-      "time": 1787386755,
-      "jacket_url": "jackets/arcaea/matenrou.webp"
+      "score": 9917868,
+      "play_ptt": 11.3893,
+      "pure": 1011,
+      "max_pure": 957,
+      "far": 7,
+      "lost": 5,
+      "accuracy": 0.991691,
+      "time": 1780209292,
+      "jacket_url": "jackets/arcaea/ascent.webp"
     },
     {
       "song_id": "hybris",
@@ -728,212 +598,20 @@
       "jacket_url": "jackets/arcaea/hybris.webp"
     },
     {
-      "song_id": "matenrou",
-      "name": "感情の摩天楼 ～Arr.Demetori",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9838857,
-      "play_ptt": 10.9943,
-      "pure": 1263,
-      "max_pure": 1145,
-      "far": 20,
-      "lost": 11,
-      "accuracy": 0.983771,
-      "time": 1787386313,
-      "jacket_url": "jackets/arcaea/matenrou.webp"
-    },
-    {
-      "song_id": "modelista",
-      "name": "Modelista",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9847411,
-      "play_ptt": 11.1371,
-      "pure": 989,
-      "max_pure": 877,
-      "far": 11,
-      "lost": 10,
-      "accuracy": 0.984653,
-      "time": 1787386062,
-      "jacket_url": "jackets/arcaea/modelista.webp"
-    },
-    {
-      "song_id": "devillicsphere",
-      "name": "Devillic Sphere",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9854874,
-      "play_ptt": 11.1744,
-      "pure": 1106,
-      "max_pure": 1022,
-      "far": 13,
-      "lost": 10,
-      "accuracy": 0.985385,
-      "time": 1787385659,
-      "jacket_url": "jackets/arcaea/devillicsphere.webp"
-    },
-    {
-      "song_id": "thesurvivor",
-      "name": "The Survivor (Game Edit)",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9696456,
-      "play_ptt": 10.5549,
-      "pure": 1062,
-      "max_pure": 1002,
-      "far": 9,
-      "lost": 29,
-      "accuracy": 0.969545,
-      "time": 1787385446,
-      "jacket_url": "jackets/arcaea/thesurvivor.webp"
-    },
-    {
-      "song_id": "technicolour",
-      "name": "Technicolour",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9772922,
-      "play_ptt": 10.7097,
-      "pure": 1102,
-      "max_pure": 993,
-      "far": 24,
-      "lost": 14,
-      "accuracy": 0.977193,
-      "time": 1787385132,
-      "jacket_url": "jackets/arcaea/technicolour.webp"
-    },
-    {
-      "song_id": "eccentrictale",
-      "name": "Eccentric Tale",
-      "rating_class": 3,
-      "difficulty": "Beyond",
-      "rating": 99,
-      "score": 9578651,
-      "play_ptt": 10.1622,
-      "pure": 933,
-      "max_pure": 762,
-      "far": 40,
-      "lost": 22,
-      "accuracy": 0.957789,
-      "time": 1787297215,
-      "jacket_url": "jackets/arcaea/eccentrictale.webp"
-    },
-    {
-      "song_id": "chronologia",
-      "name": "chronologia",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9793748,
-      "play_ptt": 10.7792,
-      "pure": 1196,
-      "max_pure": 1066,
-      "far": 17,
-      "lost": 17,
-      "accuracy": 0.979268,
-      "time": 1787296859,
-      "jacket_url": "jackets/arcaea/chronologia.webp"
-    },
-    {
-      "song_id": "remindthesouls",
-      "name": "Remind the Souls (Short Version)",
+      "song_id": "energysynergymatrix",
+      "name": "ENERGY SYNERGY MATRIX",
       "rating_class": 2,
       "difficulty": "Future",
       "rating": 96,
-      "score": 9905591,
-      "play_ptt": 11.128,
-      "pure": 930,
-      "max_pure": 830,
-      "far": 12,
-      "lost": 3,
-      "accuracy": 0.990476,
-      "time": 1787296546,
-      "jacket_url": "jackets/arcaea/remindthesouls.webp"
-    },
-    {
-      "song_id": "axiumcrisis",
-      "name": "Axium Crisis",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 106,
-      "score": 9813559,
-      "play_ptt": 11.6678,
-      "pure": 1068,
-      "max_pure": 945,
-      "far": 11,
-      "lost": 15,
-      "accuracy": 0.981261,
-      "time": 1786303101,
-      "jacket_url": "jackets/arcaea/axiumcrisis.webp"
-    },
-    {
-      "song_id": "violaillyria",
-      "name": "Viola Illyria",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 95,
-      "score": 9963094,
-      "play_ptt": 11.3155,
-      "pure": 921,
-      "max_pure": 851,
-      "far": 5,
-      "lost": 1,
-      "accuracy": 0.996224,
-      "time": 1786267728,
-      "jacket_url": "jackets/arcaea/violaillyria.webp"
-    },
-    {
-      "song_id": "andorxor",
-      "name": "ANDORXOR",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9906115,
-      "play_ptt": 11.4306,
-      "pure": 1038,
-      "max_pure": 902,
-      "far": 14,
-      "lost": 3,
-      "accuracy": 0.990521,
-      "time": 1786266634,
-      "jacket_url": "jackets/arcaea/andorxor.webp"
-    },
-    {
-      "song_id": "odysseia",
-      "name": "ΟΔΥΣΣΕΙΑ",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 95,
-      "score": 9973551,
-      "play_ptt": 11.3678,
-      "pure": 1086,
-      "max_pure": 1024,
-      "far": 6,
-      "lost": 0,
-      "accuracy": 0.997253,
-      "time": 1786186794,
-      "jacket_url": "jackets/arcaea/odysseia.webp"
-    },
-    {
-      "song_id": "lilly",
-      "name": "Lilly",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9890653,
-      "play_ptt": 11.3533,
-      "pure": 1292,
-      "max_pure": 1172,
-      "far": 11,
-      "lost": 9,
-      "accuracy": 0.988948,
-      "time": 1785047169,
-      "jacket_url": "jackets/arcaea/lilly.webp"
+      "score": 9957430,
+      "play_ptt": 11.3872,
+      "pure": 916,
+      "max_pure": 814,
+      "far": 4,
+      "lost": 2,
+      "accuracy": 0.995662,
+      "time": 1770893608,
+      "jacket_url": "jackets/arcaea/energysynergymatrix.webp"
     },
     {
       "song_id": "morningloom",
@@ -952,20 +630,1614 @@
       "jacket_url": "jackets/arcaea/morningloom.webp"
     },
     {
-      "song_id": "raysofremnant",
-      "name": "Rays of Remnant",
+      "song_id": "odysseia",
+      "name": "ΟΔΥΣΣΕΙΑ",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 95,
+      "score": 9973551,
+      "play_ptt": 11.3678,
+      "pure": 1086,
+      "max_pure": 1024,
+      "far": 6,
+      "lost": 0,
+      "accuracy": 0.997253,
+      "time": 1786186794,
+      "jacket_url": "jackets/arcaea/odysseia.webp"
+    },
+    {
+      "song_id": "purgatorium",
+      "name": "Purgatorium",
+      "rating_class": 3,
+      "difficulty": "Beyond",
+      "rating": 96,
+      "score": 9953356,
+      "play_ptt": 11.3668,
+      "pure": 1043,
+      "max_pure": 930,
+      "far": 6,
+      "lost": 2,
+      "accuracy": 0.995243,
+      "time": 1775287786,
+      "jacket_url": "jackets/arcaea/purgatorium.webp"
+    },
+    {
+      "song_id": "etherstrike",
+      "name": "Ether Strike",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 103,
+      "score": 9812994,
+      "play_ptt": 11.365,
+      "pure": 1139,
+      "max_pure": 1029,
+      "far": 18,
+      "lost": 13,
+      "accuracy": 0.981197,
+      "time": 1770285942,
+      "jacket_url": "jackets/arcaea/etherstrike.webp"
+    },
+    {
+      "song_id": "melodyoflove",
+      "name": "迷える音色は恋の唄",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 96,
+      "score": 9952510,
+      "play_ptt": 11.3625,
+      "pure": 925,
+      "max_pure": 846,
+      "far": 3,
+      "lost": 3,
+      "accuracy": 0.995166,
+      "time": 1770371710,
+      "jacket_url": "jackets/arcaea/melodyoflove.webp"
+    },
+    {
+      "song_id": "take",
+      "name": "竹",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 100,
+      "score": 9872314,
+      "play_ptt": 11.3616,
+      "pure": 1031,
+      "max_pure": 886,
+      "far": 11,
+      "lost": 8,
+      "accuracy": 0.987143,
+      "time": 1770456299,
+      "jacket_url": "jackets/arcaea/take.webp"
+    },
+    {
+      "song_id": "lilly",
+      "name": "Lilly",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9890653,
+      "play_ptt": 11.3533,
+      "pure": 1292,
+      "max_pure": 1172,
+      "far": 11,
+      "lost": 9,
+      "accuracy": 0.988948,
+      "time": 1785047169,
+      "jacket_url": "jackets/arcaea/lilly.webp"
+    },
+    {
+      "song_id": "carminescythe",
+      "name": "carmine:scythe",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 96,
+      "score": 9949519,
+      "play_ptt": 11.3476,
+      "pure": 1155,
+      "max_pure": 1066,
+      "far": 6,
+      "lost": 3,
+      "accuracy": 0.994845,
+      "time": 1770827177,
+      "jacket_url": "jackets/arcaea/carminescythe.webp"
+    },
+    {
+      "song_id": "neokosmo",
+      "name": "nέο κόsmo",
       "rating_class": 2,
       "difficulty": "Future",
       "rating": 97,
-      "score": 9944887,
-      "play_ptt": 11.4244,
-      "pure": 975,
-      "max_pure": 896,
+      "score": 9929412,
+      "play_ptt": 11.3471,
+      "pure": 968,
+      "max_pure": 914,
+      "far": 8,
+      "lost": 3,
+      "accuracy": 0.99285,
+      "time": 1773246282,
+      "jacket_url": "jackets/arcaea/neokosmo.webp"
+    },
+    {
+      "song_id": "sulfur",
+      "name": "Sulfur",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 97,
+      "score": 9929188,
+      "play_ptt": 11.3459,
+      "pure": 1032,
+      "max_pure": 959,
+      "far": 11,
+      "lost": 2,
+      "accuracy": 0.992823,
+      "time": 1773245938,
+      "jacket_url": "jackets/arcaea/sulfur.webp"
+    },
+    {
+      "song_id": "lethaeus",
+      "name": "Lethaeus",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 97,
+      "score": 9928601,
+      "play_ptt": 11.343,
+      "pure": 890,
+      "max_pure": 824,
+      "far": 7,
+      "lost": 3,
+      "accuracy": 0.992778,
+      "time": 1775970672,
+      "jacket_url": "jackets/arcaea/lethaeus.webp"
+    },
+    {
+      "song_id": "sacrifice",
+      "name": "SACRIFICE feat. ayame",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 97,
+      "score": 9927815,
+      "play_ptt": 11.3391,
+      "pure": 949,
+      "max_pure": 884,
+      "far": 4,
+      "lost": 5,
+      "accuracy": 0.992693,
+      "time": 1764686433,
+      "jacket_url": "jackets/arcaea/sacrifice.webp"
+    }
+  ],
+  "top10": [
+    {
+      "song_id": "viyellastears",
+      "name": "Viyella's Tears",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 103,
+      "score": 9905015,
+      "play_ptt": 11.8251,
+      "pure": 1386,
+      "max_pure": 1238,
+      "far": 7,
+      "lost": 10,
+      "accuracy": 0.990378,
+      "time": 1771249048,
+      "jacket_url": "jackets/arcaea/viyellastears.webp"
+    },
+    {
+      "song_id": "pragmatism",
+      "name": "PRAGMATISM",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 101,
+      "score": 9942476,
+      "play_ptt": 11.8124,
+      "pure": 935,
+      "max_pure": 863,
       "far": 3,
       "lost": 4,
-      "accuracy": 0.994399,
-      "time": 1784644444,
-      "jacket_url": "jackets/arcaea/raysofremnant.webp"
+      "accuracy": 0.994161,
+      "time": 1778343018,
+      "jacket_url": "jackets/arcaea/pragmatism.webp"
+    },
+    {
+      "song_id": "arcahv",
+      "name": "Arcahv",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9982222,
+      "play_ptt": 11.8111,
+      "pure": 1061,
+      "max_pure": 1002,
+      "far": 4,
+      "lost": 0,
+      "accuracy": 0.998122,
+      "time": 1758558781,
+      "jacket_url": "jackets/arcaea/arcahv.webp"
+    },
+    {
+      "song_id": "trapcrow",
+      "name": "Trap Crow",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9977745,
+      "play_ptt": 11.7887,
+      "pure": 1071,
+      "max_pure": 1023,
+      "far": 1,
+      "lost": 2,
+      "accuracy": 0.997672,
+      "time": 1761232869,
+      "jacket_url": "jackets/arcaea/trapcrow.webp"
+    },
+    {
+      "song_id": "antagonism",
+      "name": "Antagonism",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9966001,
+      "play_ptt": 11.73,
+      "pure": 1136,
+      "max_pure": 1028,
+      "far": 4,
+      "lost": 2,
+      "accuracy": 0.996497,
+      "time": 1758818158,
+      "jacket_url": "jackets/arcaea/antagonism.webp"
+    },
+    {
+      "song_id": "linearaccelerator",
+      "name": "Linear Accelerator",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 98,
+      "score": 9978756,
+      "play_ptt": 11.6938,
+      "pure": 901,
+      "max_pure": 856,
+      "far": 4,
+      "lost": 0,
+      "accuracy": 0.99779,
+      "time": 1762353620,
+      "jacket_url": "jackets/arcaea/linearaccelerator.webp"
+    },
+    {
+      "song_id": "axiumcrisis",
+      "name": "Axium Crisis",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 106,
+      "score": 9813559,
+      "play_ptt": 11.6678,
+      "pure": 1068,
+      "max_pure": 945,
+      "far": 11,
+      "lost": 15,
+      "accuracy": 0.981261,
+      "time": 1786303101,
+      "jacket_url": "jackets/arcaea/axiumcrisis.webp"
+    },
+    {
+      "song_id": "swansong",
+      "name": "Swan Song",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9952110,
+      "play_ptt": 11.6606,
+      "pure": 1215,
+      "max_pure": 1090,
+      "far": 8,
+      "lost": 2,
+      "accuracy": 0.995102,
+      "time": 1784443697,
+      "jacket_url": "jackets/arcaea/swansong.webp"
+    },
+    {
+      "song_id": "xxium",
+      "name": "Xxium and Purple haze",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9941928,
+      "play_ptt": 11.6096,
+      "pure": 1175,
+      "max_pure": 1150,
+      "far": 0,
+      "lost": 7,
+      "accuracy": 0.994078,
+      "time": 1764254872,
+      "jacket_url": "jackets/arcaea/xxium.webp"
+    },
+    {
+      "song_id": "defection",
+      "name": "Defection",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 98,
+      "score": 9957216,
+      "play_ptt": 11.5861,
+      "pure": 1133,
+      "max_pure": 1038,
+      "far": 6,
+      "lost": 2,
+      "accuracy": 0.995618,
+      "time": 1758472381,
+      "jacket_url": "jackets/arcaea/defection.webp"
     }
-  ]
+  ],
+  "trend": [
+    {
+      "at": 1704802425,
+      "potential": 10.8713
+    },
+    {
+      "at": 1704802770,
+      "potential": 10.9995
+    },
+    {
+      "at": 1704802975,
+      "potential": 10.9314
+    },
+    {
+      "at": 1704803175,
+      "potential": 10.8763
+    },
+    {
+      "at": 1704803354,
+      "potential": 10.8012
+    },
+    {
+      "at": 1704803537,
+      "potential": 10.7977
+    },
+    {
+      "at": 1704803715,
+      "potential": 10.7216
+    },
+    {
+      "at": 1704803911,
+      "potential": 10.7184
+    },
+    {
+      "at": 1704804096,
+      "potential": 10.7497
+    },
+    {
+      "at": 1704804287,
+      "potential": 10.7618
+    },
+    {
+      "at": 1704872075,
+      "potential": 10.7299
+    },
+    {
+      "at": 1704872276,
+      "potential": 10.7064
+    },
+    {
+      "at": 1704872522,
+      "potential": 10.712
+    },
+    {
+      "at": 1704872739,
+      "potential": 10.726
+    },
+    {
+      "at": 1704872989,
+      "potential": 10.7112
+    },
+    {
+      "at": 1704873190,
+      "potential": 10.7293
+    },
+    {
+      "at": 1705498507,
+      "potential": 10.6906
+    },
+    {
+      "at": 1705498573,
+      "potential": 10.7334
+    },
+    {
+      "at": 1705498601,
+      "potential": 10.7045
+    },
+    {
+      "at": 1706013789,
+      "potential": 10.6865
+    },
+    {
+      "at": 1706013969,
+      "potential": 10.6965
+    },
+    {
+      "at": 1706014057,
+      "potential": 10.7013
+    },
+    {
+      "at": 1706014145,
+      "potential": 10.6946
+    },
+    {
+      "at": 1706275014,
+      "potential": 10.6905
+    },
+    {
+      "at": 1706275199,
+      "potential": 10.7041
+    },
+    {
+      "at": 1706275385,
+      "potential": 10.692
+    },
+    {
+      "at": 1706275628,
+      "potential": 10.691
+    },
+    {
+      "at": 1706275671,
+      "potential": 10.6976
+    },
+    {
+      "at": 1706275910,
+      "potential": 10.7038
+    },
+    {
+      "at": 1706275928,
+      "potential": 10.7102
+    },
+    {
+      "at": 1706276365,
+      "potential": 10.6984
+    },
+    {
+      "at": 1706276384,
+      "potential": 10.6841
+    },
+    {
+      "at": 1706276582,
+      "potential": 10.6986
+    },
+    {
+      "at": 1706276633,
+      "potential": 10.6969
+    },
+    {
+      "at": 1706276830,
+      "potential": 10.7131
+    },
+    {
+      "at": 1706276851,
+      "potential": 10.6962
+    },
+    {
+      "at": 1706277062,
+      "potential": 10.6966
+    },
+    {
+      "at": 1706277086,
+      "potential": 10.6902
+    },
+    {
+      "at": 1706277567,
+      "potential": 10.678
+    },
+    {
+      "at": 1706277867,
+      "potential": 10.6721
+    },
+    {
+      "at": 1706277954,
+      "potential": 10.6669
+    },
+    {
+      "at": 1706278122,
+      "potential": 10.6698
+    },
+    {
+      "at": 1706278201,
+      "potential": 10.6517
+    },
+    {
+      "at": 1706278375,
+      "potential": 10.6434
+    },
+    {
+      "at": 1706278413,
+      "potential": 10.6479
+    },
+    {
+      "at": 1706278638,
+      "potential": 10.6353
+    },
+    {
+      "at": 1706278710,
+      "potential": 10.6321
+    },
+    {
+      "at": 1706352149,
+      "potential": 10.6385
+    },
+    {
+      "at": 1706352192,
+      "potential": 10.6356
+    },
+    {
+      "at": 1706352384,
+      "potential": 10.6478
+    },
+    {
+      "at": 1706352468,
+      "potential": 10.6417
+    },
+    {
+      "at": 1706352653,
+      "potential": 10.6452
+    },
+    {
+      "at": 1706352706,
+      "potential": 10.6513
+    },
+    {
+      "at": 1706353171,
+      "potential": 10.6483
+    },
+    {
+      "at": 1706417091,
+      "potential": 10.6453
+    },
+    {
+      "at": 1706417305,
+      "potential": 10.663
+    },
+    {
+      "at": 1706417498,
+      "potential": 10.6649
+    },
+    {
+      "at": 1706417730,
+      "potential": 10.674
+    },
+    {
+      "at": 1706417920,
+      "potential": 10.6883
+    },
+    {
+      "at": 1706418108,
+      "potential": 10.6976
+    },
+    {
+      "at": 1706418328,
+      "potential": 10.6993
+    },
+    {
+      "at": 1706418747,
+      "potential": 10.7023
+    },
+    {
+      "at": 1706698105,
+      "potential": 10.7043
+    },
+    {
+      "at": 1706698299,
+      "potential": 10.7091
+    },
+    {
+      "at": 1706699660,
+      "potential": 10.7163
+    },
+    {
+      "at": 1706701344,
+      "potential": 10.7188
+    },
+    {
+      "at": 1706885812,
+      "potential": 10.7282
+    },
+    {
+      "at": 1706886017,
+      "potential": 10.7461
+    },
+    {
+      "at": 1706886435,
+      "potential": 10.7525
+    },
+    {
+      "at": 1706887164,
+      "potential": 10.7542
+    },
+    {
+      "at": 1706887457,
+      "potential": 10.7547
+    },
+    {
+      "at": 1706887685,
+      "potential": 10.7711
+    },
+    {
+      "at": 1706887918,
+      "potential": 10.7858
+    },
+    {
+      "at": 1706963810,
+      "potential": 10.7923
+    },
+    {
+      "at": 1706964000,
+      "potential": 10.7923
+    },
+    {
+      "at": 1707042094,
+      "potential": 10.798
+    },
+    {
+      "at": 1707042403,
+      "potential": 10.8015
+    },
+    {
+      "at": 1707042611,
+      "potential": 10.8166
+    },
+    {
+      "at": 1707043189,
+      "potential": 10.825
+    },
+    {
+      "at": 1707043375,
+      "potential": 10.828
+    },
+    {
+      "at": 1707129875,
+      "potential": 10.8328
+    },
+    {
+      "at": 1707133373,
+      "potential": 10.8328
+    },
+    {
+      "at": 1707133577,
+      "potential": 10.8409
+    },
+    {
+      "at": 1707133873,
+      "potential": 10.8492
+    },
+    {
+      "at": 1707135053,
+      "potential": 10.8547
+    },
+    {
+      "at": 1707135220,
+      "potential": 10.8604
+    },
+    {
+      "at": 1707135372,
+      "potential": 10.8614
+    },
+    {
+      "at": 1707135599,
+      "potential": 10.8646
+    },
+    {
+      "at": 1708253798,
+      "potential": 10.8661
+    },
+    {
+      "at": 1708253861,
+      "potential": 10.8711
+    },
+    {
+      "at": 1708612938,
+      "potential": 10.8715
+    },
+    {
+      "at": 1708613980,
+      "potential": 10.8741
+    },
+    {
+      "at": 1709779312,
+      "potential": 10.8753
+    },
+    {
+      "at": 1709779349,
+      "potential": 10.876
+    },
+    {
+      "at": 1709779365,
+      "potential": 10.8798
+    },
+    {
+      "at": 1709779502,
+      "potential": 10.8828
+    },
+    {
+      "at": 1709952406,
+      "potential": 10.8951
+    },
+    {
+      "at": 1709952544,
+      "potential": 10.8985
+    },
+    {
+      "at": 1709952569,
+      "potential": 10.908
+    },
+    {
+      "at": 1709952626,
+      "potential": 10.9141
+    },
+    {
+      "at": 1709952722,
+      "potential": 10.9225
+    },
+    {
+      "at": 1710125562,
+      "potential": 10.9232
+    },
+    {
+      "at": 1710298415,
+      "potential": 10.9232
+    },
+    {
+      "at": 1710298472,
+      "potential": 10.9242
+    },
+    {
+      "at": 1710298496,
+      "potential": 10.9264
+    },
+    {
+      "at": 1710384945,
+      "potential": 10.9287
+    },
+    {
+      "at": 1710384968,
+      "potential": 10.9287
+    },
+    {
+      "at": 1710384988,
+      "potential": 10.9291
+    },
+    {
+      "at": 1710385056,
+      "potential": 10.9303
+    },
+    {
+      "at": 1710385076,
+      "potential": 10.9321
+    },
+    {
+      "at": 1710385098,
+      "potential": 10.9387
+    },
+    {
+      "at": 1710471545,
+      "potential": 10.9451
+    },
+    {
+      "at": 1710471560,
+      "potential": 10.9459
+    },
+    {
+      "at": 1710661326,
+      "potential": 10.9483
+    },
+    {
+      "at": 1710663773,
+      "potential": 10.9559
+    },
+    {
+      "at": 1710664185,
+      "potential": 10.9616
+    },
+    {
+      "at": 1710664764,
+      "potential": 10.9647
+    },
+    {
+      "at": 1710665082,
+      "potential": 10.9703
+    },
+    {
+      "at": 1710665370,
+      "potential": 10.9725
+    },
+    {
+      "at": 1710763706,
+      "potential": 10.9774
+    },
+    {
+      "at": 1710764510,
+      "potential": 10.9801
+    },
+    {
+      "at": 1710764711,
+      "potential": 10.982
+    },
+    {
+      "at": 1710764900,
+      "potential": 10.9862
+    },
+    {
+      "at": 1710846476,
+      "potential": 10.9907
+    },
+    {
+      "at": 1710847207,
+      "potential": 10.9952
+    },
+    {
+      "at": 1710931969,
+      "potential": 10.9957
+    },
+    {
+      "at": 1710932202,
+      "potential": 10.9959
+    },
+    {
+      "at": 1710932429,
+      "potential": 11.0101
+    },
+    {
+      "at": 1710932752,
+      "potential": 11.02
+    },
+    {
+      "at": 1710933710,
+      "potential": 11.0216
+    },
+    {
+      "at": 1711026470,
+      "potential": 11.0238
+    },
+    {
+      "at": 1711026483,
+      "potential": 11.0285
+    },
+    {
+      "at": 1711026513,
+      "potential": 11.0337
+    },
+    {
+      "at": 1711026529,
+      "potential": 11.034
+    },
+    {
+      "at": 1711026607,
+      "potential": 11.0428
+    },
+    {
+      "at": 1711026620,
+      "potential": 11.0466
+    },
+    {
+      "at": 1711026793,
+      "potential": 11.0556
+    },
+    {
+      "at": 1711027220,
+      "potential": 11.0558
+    },
+    {
+      "at": 1711116185,
+      "potential": 11.0572
+    },
+    {
+      "at": 1711117141,
+      "potential": 11.0594
+    },
+    {
+      "at": 1711117356,
+      "potential": 11.0712
+    },
+    {
+      "at": 1711117556,
+      "potential": 11.0757
+    },
+    {
+      "at": 1711119326,
+      "potential": 11.0788
+    },
+    {
+      "at": 1711462188,
+      "potential": 11.0826
+    },
+    {
+      "at": 1711548681,
+      "potential": 11.084
+    },
+    {
+      "at": 1711548729,
+      "potential": 11.0857
+    },
+    {
+      "at": 1711722098,
+      "potential": 11.087
+    },
+    {
+      "at": 1711722185,
+      "potential": 11.0875
+    },
+    {
+      "at": 1711722254,
+      "potential": 11.0883
+    },
+    {
+      "at": 1712579858,
+      "potential": 11.0893
+    },
+    {
+      "at": 1712579908,
+      "potential": 11.0893
+    },
+    {
+      "at": 1712579923,
+      "potential": 11.0919
+    },
+    {
+      "at": 1712666370,
+      "potential": 11.0925
+    },
+    {
+      "at": 1716031663,
+      "potential": 11.0956
+    },
+    {
+      "at": 1716031869,
+      "potential": 11.0981
+    },
+    {
+      "at": 1716108537,
+      "potential": 11.1042
+    },
+    {
+      "at": 1716108752,
+      "potential": 11.1057
+    },
+    {
+      "at": 1716108925,
+      "potential": 11.1089
+    },
+    {
+      "at": 1716109284,
+      "potential": 11.1139
+    },
+    {
+      "at": 1716115582,
+      "potential": 11.1164
+    },
+    {
+      "at": 1717164001,
+      "potential": 11.1194
+    },
+    {
+      "at": 1717210457,
+      "potential": 11.1195
+    },
+    {
+      "at": 1717241902,
+      "potential": 11.1265
+    },
+    {
+      "at": 1717242797,
+      "potential": 11.1279
+    },
+    {
+      "at": 1717244812,
+      "potential": 11.1315
+    },
+    {
+      "at": 1717422555,
+      "potential": 11.1353
+    },
+    {
+      "at": 1717426618,
+      "potential": 11.1403
+    },
+    {
+      "at": 1717496041,
+      "potential": 11.143
+    },
+    {
+      "at": 1717496627,
+      "potential": 11.1453
+    },
+    {
+      "at": 1719979241,
+      "potential": 11.1458
+    },
+    {
+      "at": 1719979988,
+      "potential": 11.1463
+    },
+    {
+      "at": 1755756502,
+      "potential": 11.1526
+    },
+    {
+      "at": 1755774463,
+      "potential": 11.1527
+    },
+    {
+      "at": 1755774494,
+      "potential": 11.1531
+    },
+    {
+      "at": 1755774579,
+      "potential": 11.1645
+    },
+    {
+      "at": 1758472381,
+      "potential": 11.1804
+    },
+    {
+      "at": 1758558781,
+      "potential": 11.2037
+    },
+    {
+      "at": 1758645181,
+      "potential": 11.2191
+    },
+    {
+      "at": 1758818158,
+      "potential": 11.2383
+    },
+    {
+      "at": 1758906711,
+      "potential": 11.2469
+    },
+    {
+      "at": 1758987879,
+      "potential": 11.2498
+    },
+    {
+      "at": 1758988798,
+      "potential": 11.2548
+    },
+    {
+      "at": 1758990084,
+      "potential": 11.2566
+    },
+    {
+      "at": 1758990272,
+      "potential": 11.2596
+    },
+    {
+      "at": 1758990905,
+      "potential": 11.2596
+    },
+    {
+      "at": 1758991662,
+      "potential": 11.2618
+    },
+    {
+      "at": 1758991866,
+      "potential": 11.2654
+    },
+    {
+      "at": 1759073155,
+      "potential": 11.2712
+    },
+    {
+      "at": 1759074155,
+      "potential": 11.2779
+    },
+    {
+      "at": 1759075308,
+      "potential": 11.2787
+    },
+    {
+      "at": 1760365204,
+      "potential": 11.2802
+    },
+    {
+      "at": 1760365706,
+      "potential": 11.2819
+    },
+    {
+      "at": 1760366305,
+      "potential": 11.2851
+    },
+    {
+      "at": 1760882048,
+      "potential": 11.2856
+    },
+    {
+      "at": 1760884103,
+      "potential": 11.2857
+    },
+    {
+      "at": 1760884754,
+      "potential": 11.2866
+    },
+    {
+      "at": 1760970703,
+      "potential": 11.2885
+    },
+    {
+      "at": 1760971245,
+      "potential": 11.2897
+    },
+    {
+      "at": 1761228794,
+      "potential": 11.2924
+    },
+    {
+      "at": 1761230163,
+      "potential": 11.2924
+    },
+    {
+      "at": 1761230659,
+      "potential": 11.2928
+    },
+    {
+      "at": 1761230890,
+      "potential": 11.2934
+    },
+    {
+      "at": 1761231129,
+      "potential": 11.2988
+    },
+    {
+      "at": 1761231498,
+      "potential": 11.2996
+    },
+    {
+      "at": 1761232869,
+      "potential": 11.3058
+    },
+    {
+      "at": 1761318685,
+      "potential": 11.3062
+    },
+    {
+      "at": 1762265949,
+      "potential": 11.307
+    },
+    {
+      "at": 1762266167,
+      "potential": 11.3102
+    },
+    {
+      "at": 1762266329,
+      "potential": 11.3107
+    },
+    {
+      "at": 1762266693,
+      "potential": 11.3116
+    },
+    {
+      "at": 1762353096,
+      "potential": 11.3125
+    },
+    {
+      "at": 1762353437,
+      "potential": 11.319
+    },
+    {
+      "at": 1762353620,
+      "potential": 11.3218
+    },
+    {
+      "at": 1762531117,
+      "potential": 11.323
+    },
+    {
+      "at": 1763008534,
+      "potential": 11.323
+    },
+    {
+      "at": 1763039945,
+      "potential": 11.3293
+    },
+    {
+      "at": 1763040383,
+      "potential": 11.3293
+    },
+    {
+      "at": 1763040575,
+      "potential": 11.3293
+    },
+    {
+      "at": 1763128098,
+      "potential": 11.3314
+    },
+    {
+      "at": 1763129170,
+      "potential": 11.3326
+    },
+    {
+      "at": 1764252590,
+      "potential": 11.338
+    },
+    {
+      "at": 1764253178,
+      "potential": 11.338
+    },
+    {
+      "at": 1764253805,
+      "potential": 11.338
+    },
+    {
+      "at": 1764254872,
+      "potential": 11.3448
+    },
+    {
+      "at": 1764685548,
+      "potential": 11.3455
+    },
+    {
+      "at": 1764686104,
+      "potential": 11.3459
+    },
+    {
+      "at": 1764686433,
+      "potential": 11.3498
+    },
+    {
+      "at": 1765543483,
+      "potential": 11.3508
+    },
+    {
+      "at": 1765638796,
+      "potential": 11.354
+    },
+    {
+      "at": 1766765760,
+      "potential": 11.3556
+    },
+    {
+      "at": 1767424598,
+      "potential": 11.3564
+    },
+    {
+      "at": 1767424797,
+      "potential": 11.3592
+    },
+    {
+      "at": 1767425027,
+      "potential": 11.3592
+    },
+    {
+      "at": 1767429884,
+      "potential": 11.3595
+    },
+    {
+      "at": 1767886522,
+      "potential": 11.3617
+    },
+    {
+      "at": 1767886803,
+      "potential": 11.3645
+    },
+    {
+      "at": 1767888294,
+      "potential": 11.3648
+    },
+    {
+      "at": 1767888570,
+      "potential": 11.3648
+    },
+    {
+      "at": 1768043572,
+      "potential": 11.3678
+    },
+    {
+      "at": 1768057215,
+      "potential": 11.3686
+    },
+    {
+      "at": 1768064200,
+      "potential": 11.3709
+    },
+    {
+      "at": 1768064511,
+      "potential": 11.3748
+    },
+    {
+      "at": 1768124255,
+      "potential": 11.3772
+    },
+    {
+      "at": 1768124668,
+      "potential": 11.383
+    },
+    {
+      "at": 1768145931,
+      "potential": 11.3835
+    },
+    {
+      "at": 1768146232,
+      "potential": 11.384
+    },
+    {
+      "at": 1768622950,
+      "potential": 11.3842
+    },
+    {
+      "at": 1768654563,
+      "potential": 11.3871
+    },
+    {
+      "at": 1769317646,
+      "potential": 11.3872
+    },
+    {
+      "at": 1769442585,
+      "potential": 11.3884
+    },
+    {
+      "at": 1770285942,
+      "potential": 11.3916
+    },
+    {
+      "at": 1770371710,
+      "potential": 11.393
+    },
+    {
+      "at": 1770372134,
+      "potential": 11.3961
+    },
+    {
+      "at": 1770372836,
+      "potential": 11.4009
+    },
+    {
+      "at": 1770454101,
+      "potential": 11.4035
+    },
+    {
+      "at": 1770454649,
+      "potential": 11.4158
+    },
+    {
+      "at": 1770456299,
+      "potential": 11.4197
+    },
+    {
+      "at": 1770627865,
+      "potential": 11.422
+    },
+    {
+      "at": 1770827177,
+      "potential": 11.4256
+    },
+    {
+      "at": 1770893608,
+      "potential": 11.4298
+    },
+    {
+      "at": 1770896209,
+      "potential": 11.4322
+    },
+    {
+      "at": 1771076011,
+      "potential": 11.4325
+    },
+    {
+      "at": 1771249048,
+      "potential": 11.4474
+    },
+    {
+      "at": 1771346779,
+      "potential": 11.4495
+    },
+    {
+      "at": 1771584785,
+      "potential": 11.4507
+    },
+    {
+      "at": 1772364716,
+      "potential": 11.4575
+    },
+    {
+      "at": 1772366046,
+      "potential": 11.458
+    },
+    {
+      "at": 1772807438,
+      "potential": 11.4592
+    },
+    {
+      "at": 1773162872,
+      "potential": 11.4605
+    },
+    {
+      "at": 1773245938,
+      "potential": 11.4609
+    },
+    {
+      "at": 1773246282,
+      "potential": 11.463
+    },
+    {
+      "at": 1773340003,
+      "potential": 11.4637
+    },
+    {
+      "at": 1773400728,
+      "potential": 11.4644
+    },
+    {
+      "at": 1773401370,
+      "potential": 11.465
+    },
+    {
+      "at": 1774438105,
+      "potential": 11.4662
+    },
+    {
+      "at": 1774889345,
+      "potential": 11.4675
+    },
+    {
+      "at": 1775287786,
+      "potential": 11.4679
+    },
+    {
+      "at": 1775358516,
+      "potential": 11.4687
+    },
+    {
+      "at": 1775370806,
+      "potential": 11.4726
+    },
+    {
+      "at": 1775371161,
+      "potential": 11.4763
+    },
+    {
+      "at": 1775970672,
+      "potential": 11.4777
+    },
+    {
+      "at": 1777810635,
+      "potential": 11.4778
+    },
+    {
+      "at": 1778342367,
+      "potential": 11.4824
+    },
+    {
+      "at": 1778342582,
+      "potential": 11.4857
+    },
+    {
+      "at": 1778343018,
+      "potential": 11.4892
+    },
+    {
+      "at": 1778343916,
+      "potential": 11.4903
+    },
+    {
+      "at": 1779001928,
+      "potential": 11.491
+    },
+    {
+      "at": 1779020214,
+      "potential": 11.4914
+    },
+    {
+      "at": 1779020987,
+      "potential": 11.4922
+    },
+    {
+      "at": 1779607116,
+      "potential": 11.4934
+    },
+    {
+      "at": 1779620916,
+      "potential": 11.4937
+    },
+    {
+      "at": 1780209292,
+      "potential": 11.4953
+    },
+    {
+      "at": 1780224740,
+      "potential": 11.4959
+    },
+    {
+      "at": 1781871898,
+      "potential": 11.4984
+    },
+    {
+      "at": 1781872283,
+      "potential": 11.5011
+    },
+    {
+      "at": 1781872671,
+      "potential": 11.5027
+    },
+    {
+      "at": 1781946195,
+      "potential": 11.5046
+    },
+    {
+      "at": 1782473895,
+      "potential": 11.5048
+    },
+    {
+      "at": 1782616773,
+      "potential": 11.5066
+    },
+    {
+      "at": 1783680059,
+      "potential": 11.5099
+    },
+    {
+      "at": 1783770815,
+      "potential": 11.5103
+    },
+    {
+      "at": 1783836730,
+      "potential": 11.5123
+    },
+    {
+      "at": 1783839536,
+      "potential": 11.5128
+    },
+    {
+      "at": 1783839719,
+      "potential": 11.5136
+    },
+    {
+      "at": 1783840731,
+      "potential": 11.5143
+    },
+    {
+      "at": 1783841163,
+      "potential": 11.5153
+    },
+    {
+      "at": 1784434194,
+      "potential": 11.5162
+    },
+    {
+      "at": 1784442991,
+      "potential": 11.5199
+    },
+    {
+      "at": 1784443697,
+      "potential": 11.5219
+    },
+    {
+      "at": 1784644444,
+      "potential": 11.5236
+    },
+    {
+      "at": 1784644650,
+      "potential": 11.5239
+    },
+    {
+      "at": 1784813584,
+      "potential": 11.5243
+    },
+    {
+      "at": 1785047169,
+      "potential": 11.5247
+    },
+    {
+      "at": 1786186794,
+      "potential": 11.5251
+    },
+    {
+      "at": 1786266634,
+      "potential": 11.5268
+    },
+    {
+      "at": 1786303101,
+      "potential": 11.5291
+    },
+    {
+      "at": 1787386530,
+      "potential": 11.5299
+    }
+  ],
+  "trend_min": 10.6321,
+  "trend_max": 11.5299
 }
