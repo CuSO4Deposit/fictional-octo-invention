@@ -30,9 +30,13 @@
     {% set pad = 3 %}
     {% set span = data.trend_max - data.trend_min %}
     {% if span <= 0 %}{% set span = 1 %}{% endif %}
+    {% set t0 = data.trend[0].at %}
+    {% set t1 = data.trend[-1].at %}
+    {% set tspan = t1 - t0 %}
+    {% if tspan <= 0 %}{% set tspan = 1 %}{% endif %}
     <svg width="100%" height="{{ h }}" viewBox="0 0 {{ w }} {{ h }}" preserveAspectRatio="none">
         <polyline fill="none" stroke="currentColor" stroke-width="2"
-            points="{% for p in data.trend %}{{ pad + loop.index0 * (w - 2 * pad) / (data.trend|length - 1) }},{{ h - pad - (p.potential - data.trend_min) * (h - 2 * pad) / span }}{% if not loop.last %} {% endif %}{% endfor %}"/>
+            points="{% for p in data.trend %}{{ pad + (p.at - t0) * (w - 2 * pad) / tspan }},{{ h - pad - (p.potential - data.trend_min) * (h - 2 * pad) / span }}{% if not loop.last %} {% endif %}{% endfor %}"/>
     </svg>
     <div class="trend-caption">
         <span>{{ "%.2f"|format(data.trend[0].potential) }}</span>
