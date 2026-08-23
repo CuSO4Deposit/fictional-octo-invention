@@ -1,7 +1,24 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1787478866,
+  "generated_at": 1787480186,
   "recent": [
+    {
+      "song_id": "lethaeus",
+      "name": "Lethaeus",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 97,
+      "score": 9923047,
+      "play_ptt": 11.3152,
+      "pure": 889,
+      "max_pure": 825,
+      "far": 8,
+      "lost": 3,
+      "accuracy": 0.992222,
+      "time": 1787479778,
+      "jacket_url": "jackets/arcaea/lethaeus.webp",
+      "game": "arcaea"
+    },
     {
       "song_id": "heartjackin",
       "name": "Heart Jackin'",
@@ -493,23 +510,6 @@
       "accuracy": 0.969545,
       "time": 1787385446,
       "jacket_url": "jackets/arcaea/thesurvivor.webp",
-      "game": "arcaea"
-    },
-    {
-      "song_id": "technicolour",
-      "name": "Technicolour",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9772922,
-      "play_ptt": 10.7097,
-      "pure": 1102,
-      "max_pure": 993,
-      "far": 24,
-      "lost": 14,
-      "accuracy": 0.977193,
-      "time": 1787385132,
-      "jacket_url": "jackets/arcaea/technicolour.webp",
       "game": "arcaea"
     }
   ]
