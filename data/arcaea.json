@@ -1,9 +1,9 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1787480186,
-  "ptt": 11.5299,
-  "b50_ptt": 11.4922,
-  "top10_ptt": 11.7185,
+  "generated_at": 1787554366,
+  "ptt": 11.5352,
+  "b50_ptt": 11.4978,
+  "top10_ptt": 11.722,
   "b50": [
     {
       "song_id": "viyellastears",
@@ -132,6 +132,22 @@
       "accuracy": 0.995102,
       "time": 1784443697,
       "jacket_url": "jackets/arcaea/swansong.webp"
+    },
+    {
+      "song_id": "lethaeus",
+      "name": "Lethaeus",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 97,
+      "score": 9984166,
+      "play_ptt": 11.6208,
+      "pure": 897,
+      "max_pure": 833,
+      "far": 3,
+      "lost": 0,
+      "accuracy": 0.998333,
+      "time": 1787552645,
+      "jacket_url": "jackets/arcaea/lethaeus.webp"
     },
     {
       "song_id": "xxium",
@@ -774,22 +790,6 @@
       "jacket_url": "jackets/arcaea/sulfur.webp"
     },
     {
-      "song_id": "lethaeus",
-      "name": "Lethaeus",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 97,
-      "score": 9928601,
-      "play_ptt": 11.343,
-      "pure": 890,
-      "max_pure": 824,
-      "far": 7,
-      "lost": 3,
-      "accuracy": 0.992778,
-      "time": 1775970672,
-      "jacket_url": "jackets/arcaea/lethaeus.webp"
-    },
-    {
       "song_id": "sacrifice",
       "name": "SACRIFICE feat. ayame",
       "rating_class": 2,
@@ -936,6 +936,22 @@
       "jacket_url": "jackets/arcaea/swansong.webp"
     },
     {
+      "song_id": "lethaeus",
+      "name": "Lethaeus",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 97,
+      "score": 9984166,
+      "play_ptt": 11.6208,
+      "pure": 897,
+      "max_pure": 833,
+      "far": 3,
+      "lost": 0,
+      "accuracy": 0.998333,
+      "time": 1787552645,
+      "jacket_url": "jackets/arcaea/lethaeus.webp"
+    },
+    {
       "song_id": "xxium",
       "name": "Xxium and Purple haze",
       "rating_class": 2,
@@ -950,22 +966,6 @@
       "accuracy": 0.994078,
       "time": 1764254872,
       "jacket_url": "jackets/arcaea/xxium.webp"
-    },
-    {
-      "song_id": "defection",
-      "name": "Defection",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9957216,
-      "play_ptt": 11.5861,
-      "pure": 1133,
-      "max_pure": 1038,
-      "far": 6,
-      "lost": 2,
-      "accuracy": 0.995618,
-      "time": 1758472381,
-      "jacket_url": "jackets/arcaea/defection.webp"
     }
   ],
   "trend": [
@@ -2236,8 +2236,12 @@
     {
       "at": 1787386530,
       "potential": 11.5299
+    },
+    {
+      "at": 1787552645,
+      "potential": 11.5352
     }
   ],
   "trend_min": 10.6321,
-  "trend_max": 11.5299
+  "trend_max": 11.5352
 }
