@@ -1,407 +1,531 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #0f0f13;
-    color: #e0e0e0;
-    min-height: 100vh;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f0f13;
+  color: #e0e0e0;
+  min-height: 100vh;
 }
 
 nav {
-    background: #1a1a24;
-    padding: 0.8rem 1.5rem;
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    border-bottom: 1px solid #2a2a3a;
+  background: #1a1a24;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  border-bottom: 1px solid #2a2a3a;
 }
 
 nav a {
-    color: #a0a0c0;
-    text-decoration: none;
-    font-size: 0.9rem;
+  color: #a0a0c0;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
-nav a:hover { color: #fff; }
+nav a:hover {
+  color: #fff;
+}
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
 
 footer {
-    text-align: center;
-    padding: 2rem;
-    color: #606080;
-    font-size: 0.8rem;
+  text-align: center;
+  padding: 2rem;
+  color: #606080;
+  font-size: 0.8rem;
 }
 
-footer a { color: #7070a0; }
+footer a {
+  color: #7070a0;
+}
 
 /* Header stats */
 .stats {
-    background: #1a1a24;
-    border-radius: 8px;
-    padding: 1.2rem 1.5rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    align-items: baseline;
+  background: #1a1a24;
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .stats h1 {
-    font-size: 1.3rem;
-    font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .stats .stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .stats .stat-label {
-    font-size: 0.7rem;
-    color: #808090;
-    text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #808090;
+  text-transform: uppercase;
 }
 
 .stats .stat-value {
-    font-size: 1.4rem;
-    font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 /* Card grid */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.8rem;
 }
 
 .card {
-    background: #1a1a24;
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    border: 1px solid #2a2a3a;
-    transition: border-color 0.2s;
+  background: #1a1a24;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  border: 1px solid #2a2a3a;
+  transition: border-color 0.2s;
 }
 
-.card:hover { border-color: #4a4a6a; }
+.card:hover {
+  border-color: #4a4a6a;
+}
 
 .card-jacket {
-    width: 80px;
-    min-height: 80px;
-    flex-shrink: 0;
-    background: #252535;
+  width: 80px;
+  min-height: 80px;
+  flex-shrink: 0;
+  background: #252535;
 }
 
 .card-jacket img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .card-body {
-    padding: 0.6rem 0.8rem;
-    flex: 1;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
+  padding: 0.6rem 0.8rem;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
 .card-rank {
-    position: absolute;
-    top: 0.3rem;
-    left: 0.3rem;
-    background: rgba(0,0,0,0.6);
-    color: #fff;
-    font-size: 0.65rem;
-    padding: 0.1rem 0.35rem;
-    border-radius: 3px;
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.65rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
 }
 
 .card-title {
-    font-size: 0.85rem;
-    font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-diff {
-    font-size: 0.7rem;
-    font-weight: 600;
-    padding: 0.1rem 0.4rem;
-    border-radius: 3px;
-    display: inline-block;
-    width: fit-content;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  display: inline-block;
+  width: fit-content;
 }
 
 .card-score {
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
 }
 
-.card-score-ap { color: #7adcff; }
+.card-score-ap {
+  color: #7adcff;
+}
 
 .card-detail {
-    font-size: 0.7rem;
-    color: #909090;
+  font-size: 0.7rem;
+  color: #909090;
 }
 
 .card-time {
-    font-size: 0.65rem;
-    color: #606070;
+  font-size: 0.65rem;
+  color: #606070;
 }
 
 .card-game {
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.card-game-arcaea { color: #b48cff; }
-.card-game-pjsk { color: #61d7ff; }
-.card-game-cytus2 { color: #2dd4bf; }
+.card-game-arcaea {
+  color: #b48cff;
+}
+.card-game-pjsk {
+  color: #61d7ff;
+}
+.card-game-cytus2 {
+  color: #2dd4bf;
+}
 
 /* Arcaea difficulty colors */
-.diff-past     { background: #2196f3; color: #fff; }
-.diff-present  { background: #4caf50; color: #fff; }
-.diff-future   { background: #9c27b0; color: #fff; }
-.diff-beyond   { background: #e53935; color: #fff; }
-.diff-eternal  { background: #6e6e80; color: #fff; }
+.diff-past {
+  background: #2196f3;
+  color: #fff;
+}
+.diff-present {
+  background: #4caf50;
+  color: #fff;
+}
+.diff-future {
+  background: #9c27b0;
+  color: #fff;
+}
+.diff-beyond {
+  background: #e53935;
+  color: #fff;
+}
+.diff-eternal {
+  background: #6e6e80;
+  color: #fff;
+}
 
 /* PJSK difficulty colors */
-.diff-easy     { background: #2196f3; color: #fff; }
-.diff-normal   { background: #4caf50; color: #fff; }
-.diff-hard     { background: #ff9800; color: #fff; }
-.diff-expert   { background: #e53935; color: #fff; }
-.diff-master   { background: #9c27b0; color: #fff; }
-.diff-append   { background: #e91e8f; color: #fff; }
+.diff-easy {
+  background: #2196f3;
+  color: #fff;
+}
+.diff-normal {
+  background: #4caf50;
+  color: #fff;
+}
+.diff-hard {
+  background: #ff9800;
+  color: #fff;
+}
+.diff-expert {
+  background: #e53935;
+  color: #fff;
+}
+.diff-master {
+  background: #9c27b0;
+  color: #fff;
+}
+.diff-append {
+  background: #e91e8f;
+  color: #fff;
+}
 
 /* Cytus II difficulty colors */
-.diff-c2-easy   { background: #2196f3; color: #fff; }
-.diff-c2-hard   { background: #e53935; color: #fff; }
-.diff-c2-chaos  { background: #9c27b0; color: #fff; }
-.diff-c2-glitch { background: #4caf50; color: #fff; }
-.diff-c2-crash  { background: #fbc02d; color: #000; }
-.diff-c2-dream  { background: #9aa0a6; color: #000; }
+.diff-c2-easy {
+  background: #2196f3;
+  color: #fff;
+}
+.diff-c2-hard {
+  background: #e53935;
+  color: #fff;
+}
+.diff-c2-chaos {
+  background: #9c27b0;
+  color: #fff;
+}
+.diff-c2-glitch {
+  background: #4caf50;
+  color: #fff;
+}
+.diff-c2-crash {
+  background: #fbc02d;
+  color: #000;
+}
+.diff-c2-dream {
+  background: #9aa0a6;
+  color: #000;
+}
 
 /* Diff + PTT line */
 .card-diff-line {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .card-ptt {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #c0c0d0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #c0c0d0;
 }
 
 /* Arcaea judgement colors */
-.j-pure  { color: #e090f0; }
-.j-mpure { color: #f0c0ff; }
-.j-far   { color: #f0c060; }
-.j-lost  { color: #f06060; }
+.j-pure {
+  color: #e090f0;
+}
+.j-mpure {
+  color: #f0c0ff;
+}
+.j-far {
+  color: #f0c060;
+}
+.j-lost {
+  color: #f06060;
+}
 
 /* PJSK judgement colors */
-.j-perfect { color: #f0c060; }
-.j-great   { color: #60d060; }
-.j-good    { color: #60b0f0; }
-.j-bad     { color: #f09060; }
-.j-miss    { color: #f06060; }
+.j-perfect {
+  color: #f0c060;
+}
+.j-great {
+  color: #60d060;
+}
+.j-good {
+  color: #60b0f0;
+}
+.j-bad {
+  color: #f09060;
+}
+.j-miss {
+  color: #f06060;
+}
 
 /* Cytus II judgement colors */
-.j-c2-p   { color: #f0c060; }
-.j-c2-mp  { color: #f0e0a0; }
-.j-c2-g   { color: #60d060; }
-.j-c2-b   { color: #f09060; }
-.j-c2-m   { color: #f06060; }
+.j-c2-p {
+  color: #f0c060;
+}
+.j-c2-mp {
+  color: #f0e0a0;
+}
+.j-c2-g {
+  color: #60d060;
+}
+.j-c2-b {
+  color: #f09060;
+}
+.j-c2-m {
+  color: #f06060;
+}
 
 /* Game cards (index page) */
 .game-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1rem;
 }
 
 .game-card {
-    background: #1a1a24;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid #2a2a3a;
+  background: #1a1a24;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #2a2a3a;
 }
 
 .game-card-header {
-    padding: 0.8rem 1.2rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
-.arcaea-header { background: linear-gradient(135deg, #2a1a3a, #3a1a4a); }
-.pjsk-header { background: linear-gradient(135deg, #1a2a3a, #1a3a4a); }
-.cytus2-header { background: linear-gradient(135deg, #3a1f1a, #4a2a14); }
+.arcaea-header {
+  background: linear-gradient(135deg, #2a1a3a, #3a1a4a);
+}
+.pjsk-header {
+  background: linear-gradient(135deg, #1a2a3a, #1a3a4a);
+}
+.cytus2-header {
+  background: linear-gradient(135deg, #3a1f1a, #4a2a14);
+}
 
-.game-card-body { padding: 1rem 1.2rem; }
+.game-card-body {
+  padding: 1rem 1.2rem;
+}
 
 .game-card-stats {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .game-card-top3 {
-    display: flex;
-    gap: 0.6rem;
-    margin-bottom: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
 }
 
 .top3-item {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .top3-item img {
-    width: 64px;
-    height: 64px;
-    border-radius: 6px;
-    object-fit: cover;
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
 .top3-name {
-    font-size: 0.7rem;
-    color: #b0b0c0;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 90px;
+  font-size: 0.7rem;
+  color: #b0b0c0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90px;
 }
 
 .top3-score {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
 }
 
 .game-card-links {
-    display: flex;
-    gap: 0.6rem;
+  display: flex;
+  gap: 0.6rem;
 }
 
 .game-card-links a {
-    flex: 1;
-    text-align: center;
-    padding: 0.5rem;
-    background: #252535;
-    border-radius: 6px;
-    color: #a0a0c0;
-    text-decoration: none;
-    font-size: 0.85rem;
-    transition: background 0.2s;
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+  background: #252535;
+  border-radius: 6px;
+  color: #a0a0c0;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.2s;
 }
 
-.game-card-links a:hover { background: #353545; color: #fff; }
-
-/* v7.0 experimental page */
-.badge {
-    font-size: 0.7rem;
-    font-weight: 700;
-    vertical-align: middle;
-    padding: 0.15rem 0.5rem;
-    border-radius: 999px;
-    letter-spacing: 0.05em;
+.game-card-links a:hover {
+  background: #353545;
+  color: #fff;
 }
 
-.badge-exp {
-    background: #3a2a12;
-    color: #f0c060;
-    border: 1px solid #6a4a1a;
-}
-
+/* Arcaea page */
 .card-top10 {
-    border-color: #6a5acd;
+  border-color: #6a5acd;
 }
 
-.card-top10:hover { border-color: #8f7fe8; }
+.card-top10:hover {
+  border-color: #8f7fe8;
+}
 
 .top10-badge {
-    margin-left: 0.4rem;
-    font-size: 0.6rem;
-    font-weight: 800;
-    color: #0f0f13;
-    background: #c0a8ff;
-    padding: 0.05rem 0.35rem;
-    border-radius: 3px;
+  margin-left: 0.4rem;
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: #0f0f13;
+  background: #c0a8ff;
+  padding: 0.05rem 0.35rem;
+  border-radius: 3px;
 }
 
 .trend {
-    background: #1a1a24;
-    border: 1px solid #2a2a3a;
-    border-radius: 8px;
-    padding: 0.8rem 1.2rem;
-    margin-bottom: 1.5rem;
-    color: #c0a8ff;
+  background: #1a1a24;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #c0a8ff;
 }
 
 .trend svg {
-    display: block;
-    height: 60px;
+  display: block;
+  height: 60px;
 }
 
 .trend-caption {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.7rem;
-    color: #808090;
-    margin-top: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: #808090;
+  margin-top: 0.3rem;
 }
 
 .trend-caption .trend-now {
-    color: #c0a8ff;
-    font-weight: 700;
+  color: #c0a8ff;
+  font-weight: 700;
 }
 
 .caveat {
-    margin-top: 1.5rem;
-    font-size: 0.75rem;
-    color: #909090;
-    line-height: 1.5;
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: #909090;
+  line-height: 1.5;
 }
 
 .caveat code {
-    background: #252535;
-    padding: 0.1rem 0.3rem;
-    border-radius: 3px;
-    color: #c0c0d0;
+  background: #252535;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  color: #c0c0d0;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-    .game-cards {
-        grid-template-columns: 1fr;
-    }
-    .stats {
-        flex-direction: column;
-        gap: 0.8rem;
-    }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .game-cards {
+    grid-template-columns: 1fr;
+  }
+  .stats {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+/* Arcaea b50: vertical cards, up to 5 columns, shrinking on smaller screens */
+.cards-b50 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.cards-b50 .card {
+  flex-direction: column;
+}
+
+.cards-b50 .card-jacket {
+  width: 100%;
+  height: 140px;
+}
+
+.cards-b50 .card-body {
+  padding: 0.5rem 0.7rem;
+}
+
+.cards-b50 .card-diff-line {
+  flex-wrap: wrap;
+}
+
+.cards-b50 .card-time {
+  margin-top: auto;
+}
+
+@media (max-width: 480px) {
+  .cards-b50 {
+    grid-template-columns: 1fr;
+  }
 }

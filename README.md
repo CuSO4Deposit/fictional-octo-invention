@@ -4,7 +4,7 @@ Static GitHub Pages for [Y-Offline](https://codeberg.org/cocvu/Y-Offline) rhythm
 
 ## Supported Games
 
-- **Arcaea** — B50 + Top10 (v7.0 potential, experimental page `arcaea_v7.html`)
+- **Arcaea** — B50 + Top10 (`arcaea_v7.html`)
 - **Project SEKAI** — B30
 - **Cytus II** — B30
 

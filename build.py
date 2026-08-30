@@ -55,7 +55,7 @@ def main():
         html = env.get_template(index_template).render(data=index_data, **ctx)
     (DIST_DIR / "index.html").write_text(html)
 
-    # Arcaea page (v7.0 potential, experimental)
+    # Arcaea page
     if arcaea:
         html = env.get_template("arcaea_v7.html").render(data=arcaea, **ctx)
         (DIST_DIR / "arcaea_v7.html").write_text(html)

@@ -1,51 +1,54 @@
-{% extends "base.html" %}
-{% block title %}Cytus II B30 — {{ data.user }}{% endblock %}
-{% block nav %}
-{% if recent %}<a href="index.html">Recent</a>{% endif %}
-{% if arcaea %}<a href="arcaea_v7.html">Arcaea v7</a>{% endif %}
-{% if pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %}
+{% extends "base.html" %} {% block title %}Cytus II B30 — {{ data.user }}{%
+endblock %} {% block nav %} {% if recent %}<a href="index.html">Recent</a>{%
+endif %} {% if arcaea %}<a href="arcaea_v7.html">Arcaea</a>{% endif %} {% if
+pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %}
 <a href="cytus2_b30.html">Cytus II B30</a>
-{% endblock %}
-{% block content %}
+{% endblock %} {% block content %}
 <div class="stats">
-    <h1>Cytus II B30</h1>
-    <div class="stat">
-        <span class="stat-label">User</span>
-        <span class="stat-value">{{ data.user }}</span>
-    </div>
-    <div class="stat">
-        <span class="stat-label">B30</span>
-        <span class="stat-value">{{ "%.2f"|format(data.b30_metric) }}</span>
-    </div>
-    <div class="stat">
-        <span class="stat-label">Records</span>
-        <span class="stat-value">{{ data.b30|length }}</span>
-    </div>
+  <h1>Cytus II B30</h1>
+  <div class="stat">
+    <span class="stat-label">User</span>
+    <span class="stat-value">{{ data.user }}</span>
+  </div>
+  <div class="stat">
+    <span class="stat-label">B30</span>
+    <span class="stat-value">{{ "%.2f"|format(data.b30_metric) }}</span>
+  </div>
+  <div class="stat">
+    <span class="stat-label">Records</span>
+    <span class="stat-value">{{ data.b30|length }}</span>
+  </div>
 </div>
 <div class="cards">
-{% for r in data.b30 %}
-    <div class="card">
-        <div class="card-jacket">
-            <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy">
-        </div>
-        <div class="card-body">
-            <div class="card-title">{{ r.name }}</div>
-            <div class="card-diff-line">
-                <span class="card-diff diff-c2-{{ r.difficulty|lower }}">
-                    {{ r.difficulty|upper }}
-                    {% if r.rating > 0 %}Lv.{{ r.rating }}{% else %}Lv.?{% endif %}
-                </span>
-                <span class="card-ptt">→ {{ "%.2f"|format(r.metric) }}</span>
-            </div>
-            <div class="card-score{% if r.accuracy >= 1.0 %} card-score-ap{% endif %}">
-                TP {{ "%.2f"|format(r.accuracy * 100) }}%
-            </div>
-            <div class="card-detail">
-                <span class="j-c2-p">P {{ r.sp + r.p }}</span>(<span class="j-c2-mp">+{{ r.sp }}</span>) <span class="j-c2-g">G {{ r.g }}</span> <span class="j-c2-b">B {{ r.b }}</span> <span class="j-c2-m">M {{ r.m }}</span>
-            </div>
-            <div class="card-time" data-time="{{ r.time }}">#{{ loop.index }} · </div>
-        </div>
+  {% for r in data.b30 %}
+  <div class="card">
+    <div class="card-jacket">
+      <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy" />
     </div>
-{% endfor %}
+    <div class="card-body">
+      <div class="card-title">{{ r.name }}</div>
+      <div class="card-diff-line">
+        <span class="card-diff diff-c2-{{ r.difficulty|lower }}">
+          {{ r.difficulty|upper }} {% if r.rating > 0 %}Lv.{{ r.rating }}{% else
+          %}Lv.?{% endif %}
+        </span>
+        <span class="card-ptt">→ {{ "%.2f"|format(r.metric) }}</span>
+      </div>
+      <div
+        class="card-score{% if r.accuracy >= 1.0 %} card-score-ap{% endif %}"
+      >
+        TP {{ "%.2f"|format(r.accuracy * 100) }}%
+      </div>
+      <div class="card-detail">
+        <span class="j-c2-p">P {{ r.sp + r.p }}</span>(<span class="j-c2-mp"
+          >+{{ r.sp }}</span
+        >) <span class="j-c2-g">G {{ r.g }}</span>
+        <span class="j-c2-b">B {{ r.b }}</span>
+        <span class="j-c2-m">M {{ r.m }}</span>
+      </div>
+      <div class="card-time" data-time="{{ r.time }}">#{{ loop.index }} ·</div>
+    </div>
+  </div>
+  {% endfor %}
 </div>
 {% endblock %}
