@@ -1,7 +1,41 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1788101816,
+  "generated_at": 1788533568,
   "recent": [
+    {
+      "song_id": "technicolour",
+      "name": "Technicolour",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 98,
+      "score": 9803653,
+      "play_ptt": 10.8183,
+      "pure": 1114,
+      "max_pure": 1022,
+      "far": 7,
+      "lost": 19,
+      "accuracy": 0.980263,
+      "time": 1788530299,
+      "jacket_url": "jackets/arcaea/technicolour.webp",
+      "game": "arcaea"
+    },
+    {
+      "song_id": "chronologia",
+      "name": "chronologia",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 98,
+      "score": 9822199,
+      "play_ptt": 10.911,
+      "pure": 1197,
+      "max_pure": 1061,
+      "far": 22,
+      "lost": 11,
+      "accuracy": 0.982114,
+      "time": 1788530086,
+      "jacket_url": "jackets/arcaea/chronologia.webp",
+      "game": "arcaea"
+    },
     {
       "song_id": "rivenpilgrim",
       "name": "Riven Pilgrimage",
@@ -476,40 +510,6 @@
       "accuracy": 0.980455,
       "time": 1787387841,
       "jacket_url": "jackets/arcaea/thesurvivor.webp",
-      "game": "arcaea"
-    },
-    {
-      "song_id": "chronologia",
-      "name": "chronologia",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9871002,
-      "play_ptt": 11.155,
-      "pure": 1205,
-      "max_pure": 1084,
-      "far": 18,
-      "lost": 7,
-      "accuracy": 0.986992,
-      "time": 1787387824,
-      "jacket_url": "jackets/arcaea/chronologia.webp",
-      "game": "arcaea"
-    },
-    {
-      "song_id": "scarletlunar",
-      "name": "朱月ノ姫",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 98,
-      "score": 9890006,
-      "play_ptt": 11.25,
-      "pure": 1020,
-      "max_pure": 903,
-      "far": 11,
-      "lost": 6,
-      "accuracy": 0.98891,
-      "time": 1787387808,
-      "jacket_url": "jackets/arcaea/scarletlunar.webp",
       "game": "arcaea"
     }
   ]
