@@ -1,6 +1,6 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1788533568,
+  "generated_at": 1788627399,
   "ptt": 11.5352,
   "b50_ptt": 11.4978,
   "top10_ptt": 11.722,
@@ -475,14 +475,14 @@
       "rating_class": 2,
       "difficulty": "Future",
       "rating": 99,
-      "score": 9906115,
-      "play_ptt": 11.4306,
-      "pure": 1038,
-      "max_pure": 902,
-      "far": 14,
-      "lost": 3,
+      "score": 9906152,
+      "play_ptt": 11.4308,
+      "pure": 1040,
+      "max_pure": 939,
+      "far": 10,
+      "lost": 5,
       "accuracy": 0.990521,
-      "time": 1786266634,
+      "time": 1788618485,
       "jacket_url": "jackets/arcaea/andorxor.webp"
     },
     {
@@ -2239,6 +2239,10 @@
     },
     {
       "at": 1787552645,
+      "potential": 11.5352
+    },
+    {
+      "at": 1788618485,
       "potential": 11.5352
     }
   ],
