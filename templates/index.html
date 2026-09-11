@@ -24,15 +24,19 @@ pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %} {% if cytus2 %}<a
       <div class="game-card-stats">
         <div class="stat">
           <span class="stat-label">PTT</span>
-          <span class="stat-value">{{ "%.2f"|format(arcaea.ptt) }}</span>
+          <span class="stat-value num">{{ "%.3f"|format(arcaea.ptt) }}</span>
         </div>
         <div class="stat">
           <span class="stat-label">B50</span>
-          <span class="stat-value">{{ "%.2f"|format(arcaea.b50_ptt) }}</span>
+          <span class="stat-value num"
+            >{{ "%.3f"|format(arcaea.b50_ptt) }}</span
+          >
         </div>
         <div class="stat">
           <span class="stat-label">Top10 ×2</span>
-          <span class="stat-value">{{ "%.2f"|format(arcaea.top10_ptt) }}</span>
+          <span class="stat-value num"
+            >{{ "%.3f"|format(arcaea.top10_ptt) }}</span
+          >
         </div>
       </div>
       {% if arcaea.b50 %}
@@ -41,7 +45,7 @@ pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %} {% if cytus2 %}<a
         <div class="top3-item">
           <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy" />
           <span class="top3-name">{{ r.name }}</span>
-          <span class="top3-score">{{ "%.2f"|format(r.play_ptt) }}</span>
+          <span class="top3-score num">{{ "%.3f"|format(r.play_ptt) }}</span>
         </div>
         {% endfor %}
       </div>
