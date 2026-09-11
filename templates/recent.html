@@ -15,7 +15,7 @@
     </div>
     <div class="stat">
         <span class="stat-label">Records</span>
-        <span class="stat-value">{{ data.recent|length }}</span>
+        <span class="stat-value num">{{ data.recent|length }}</span>
     </div>
 </div>
 <div class="cards">
@@ -43,7 +43,7 @@
                     Lv.{{ r.rating }}
                     {% endif %}
                 </span>
-                <span class="card-ptt{% if r.game == "arcaea" %} num{% endif %}">
+                <span class="card-ptt">
                     {% if r.game == "arcaea" %}
                     → {{ "%.3f"|format(r.play_ptt) }}
                     {% else %}
@@ -52,7 +52,7 @@
                 </span>
             </div>
             {% if r.game == "arcaea" %}
-            <div class="card-score{% if r.accuracy >= 1.0 %} card-score-ap{% endif %} num">{{ r.score|comma }}</div>
+            <div class="card-score{% if r.accuracy >= 1.0 %} card-score-ap{% endif %}">{{ r.score|comma }}</div>
             <div class="card-detail">
                 <span class="j-pure">P {{ r.pure }}</span>(<span class="j-mpure">+{{ r.max_pure }}</span>) <span class="j-far">F {{ r.far }}</span> <span class="j-lost">L {{ r.lost }}</span>
             </div>

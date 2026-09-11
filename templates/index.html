@@ -12,7 +12,7 @@ pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %} {% if cytus2 %}<a
   {% if recent %}
   <div class="stat">
     <span class="stat-label">Recent</span>
-    <span class="stat-value">{{ recent.recent|length }}</span>
+    <span class="stat-value num">{{ recent.recent|length }}</span>
   </div>
   {% endif %}
 </div>
@@ -45,7 +45,7 @@ pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %} {% if cytus2 %}<a
         <div class="top3-item">
           <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy" />
           <span class="top3-name">{{ r.name }}</span>
-          <span class="top3-score num">{{ "%.3f"|format(r.play_ptt) }}</span>
+          <span class="top3-score">{{ "%.3f"|format(r.play_ptt) }}</span>
         </div>
         {% endfor %}
       </div>
@@ -62,7 +62,7 @@ pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %} {% if cytus2 %}<a
       <div class="game-card-stats">
         <div class="stat">
           <span class="stat-label">Records</span>
-          <span class="stat-value">{{ pjsk.b30|length }}</span>
+          <span class="stat-value num">{{ pjsk.b30|length }}</span>
         </div>
       </div>
       {% if pjsk.b30 %}
@@ -88,11 +88,13 @@ pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %} {% if cytus2 %}<a
       <div class="game-card-stats">
         <div class="stat">
           <span class="stat-label">B30</span>
-          <span class="stat-value">{{ "%.2f"|format(cytus2.b30_metric) }}</span>
+          <span class="stat-value num"
+            >{{ "%.2f"|format(cytus2.b30_metric) }}</span
+          >
         </div>
         <div class="stat">
           <span class="stat-label">Records</span>
-          <span class="stat-value">{{ cytus2.b30|length }}</span>
+          <span class="stat-value num">{{ cytus2.b30|length }}</span>
         </div>
       </div>
       {% if cytus2.b30 %}

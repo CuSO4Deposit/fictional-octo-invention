@@ -37,7 +37,10 @@ body {
 }
 
 /* Arcaea number font (official Arcaea web font) */
-.num {
+.num,
+.card-ptt,
+.card-score,
+.top3-score {
   font-family:
     "Titillium Web",
     -apple-system,
@@ -46,6 +49,14 @@ body {
     Roboto,
     sans-serif;
   font-variant-numeric: tabular-nums;
+}
+
+.stats .stat-value.num {
+  font-size: 1.6rem;
+}
+
+.trend-caption .num {
+  font-size: 0.8rem;
 }
 
 nav {
@@ -189,7 +200,7 @@ footer a {
 }
 
 .card-score {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #fff;
 }
@@ -307,7 +318,7 @@ footer a {
 }
 
 .card-ptt {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #c0c0d0;
 }
@@ -433,7 +444,7 @@ footer a {
 }
 
 .top3-score {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #fff;
 }
