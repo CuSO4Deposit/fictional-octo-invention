@@ -1,8 +1,8 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1790350511,
-  "ptt": 11.5374,
-  "b50_ptt": 11.5004,
+  "generated_at": 1790358395,
+  "ptt": 11.5406,
+  "b50_ptt": 11.5043,
   "top10_ptt": 11.722,
   "b50": [
     {
@@ -308,6 +308,22 @@
       "accuracy": 0.994332,
       "time": 1778343916,
       "jacket_url": "jackets/arcaea/gothiveofra.webp"
+    },
+    {
+      "song_id": "ouverture",
+      "name": "Ouvertüre",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 98,
+      "score": 9940596,
+      "play_ptt": 11.503,
+      "pure": 907,
+      "max_pure": 837,
+      "far": 1,
+      "lost": 5,
+      "accuracy": 0.993976,
+      "time": 1790357501,
+      "jacket_url": "jackets/arcaea/ouverture.webp"
     },
     {
       "song_id": "override",
@@ -646,6 +662,22 @@
       "jacket_url": "jackets/arcaea/energysynergymatrix.webp"
     },
     {
+      "song_id": "galaxyfriends",
+      "name": "Galaxy Friends",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9897258,
+      "play_ptt": 11.3863,
+      "pure": 998,
+      "max_pure": 911,
+      "far": 9,
+      "lost": 6,
+      "accuracy": 0.989635,
+      "time": 1790355462,
+      "jacket_url": "jackets/arcaea/galaxyfriends.webp"
+    },
+    {
       "song_id": "chronologia",
       "name": "chronologia",
       "rating_class": 2,
@@ -772,38 +804,6 @@
       "accuracy": 0.988948,
       "time": 1785047169,
       "jacket_url": "jackets/arcaea/lilly.webp"
-    },
-    {
-      "song_id": "carminescythe",
-      "name": "carmine:scythe",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 96,
-      "score": 9949519,
-      "play_ptt": 11.3476,
-      "pure": 1155,
-      "max_pure": 1066,
-      "far": 6,
-      "lost": 3,
-      "accuracy": 0.994845,
-      "time": 1770827177,
-      "jacket_url": "jackets/arcaea/carminescythe.webp"
-    },
-    {
-      "song_id": "neokosmo",
-      "name": "nέο κόsmo",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 97,
-      "score": 9929412,
-      "play_ptt": 11.3471,
-      "pure": 968,
-      "max_pure": 914,
-      "far": 8,
-      "lost": 3,
-      "accuracy": 0.99285,
-      "time": 1773246282,
-      "jacket_url": "jackets/arcaea/neokosmo.webp"
     }
   ],
   "top10": [
@@ -2252,8 +2252,16 @@
     {
       "at": 1790338742,
       "potential": 11.5374
+    },
+    {
+      "at": 1790355462,
+      "potential": 11.538
+    },
+    {
+      "at": 1790357501,
+      "potential": 11.5406
     }
   ],
   "trend_min": 10.6321,
-  "trend_max": 11.5374
+  "trend_max": 11.5406
 }
