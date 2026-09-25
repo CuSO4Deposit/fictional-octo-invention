@@ -1,8 +1,8 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1790270265,
-  "ptt": 11.5352,
-  "b50_ptt": 11.4978,
+  "generated_at": 1790350511,
+  "ptt": 11.5374,
+  "b50_ptt": 11.5004,
   "top10_ptt": 11.722,
   "b50": [
     {
@@ -454,6 +454,22 @@
       "jacket_url": "jackets/arcaea/oshamascramble.webp"
     },
     {
+      "song_id": "dropdead",
+      "name": "overdead.",
+      "rating_class": 3,
+      "difficulty": "Beyond",
+      "rating": 105,
+      "score": 9781774,
+      "play_ptt": 11.4392,
+      "pure": 1456,
+      "max_pure": 1335,
+      "far": 28,
+      "lost": 19,
+      "accuracy": 0.978044,
+      "time": 1790337800,
+      "jacket_url": "jackets/arcaea/dropdead.webp"
+    },
+    {
       "song_id": "telepathy",
       "name": "テレパシ",
       "rating_class": 2,
@@ -630,6 +646,22 @@
       "jacket_url": "jackets/arcaea/energysynergymatrix.webp"
     },
     {
+      "song_id": "chronologia",
+      "name": "chronologia",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 98,
+      "score": 9915735,
+      "play_ptt": 11.3787,
+      "pure": 1212,
+      "max_pure": 1101,
+      "far": 15,
+      "lost": 3,
+      "accuracy": 0.991463,
+      "time": 1790338742,
+      "jacket_url": "jackets/arcaea/chronologia.webp"
+    },
+    {
       "song_id": "morningloom",
       "name": "MORNINGLOOM",
       "rating_class": 4,
@@ -772,38 +804,6 @@
       "accuracy": 0.99285,
       "time": 1773246282,
       "jacket_url": "jackets/arcaea/neokosmo.webp"
-    },
-    {
-      "song_id": "sulfur",
-      "name": "Sulfur",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 97,
-      "score": 9929188,
-      "play_ptt": 11.3459,
-      "pure": 1032,
-      "max_pure": 959,
-      "far": 11,
-      "lost": 2,
-      "accuracy": 0.992823,
-      "time": 1773245938,
-      "jacket_url": "jackets/arcaea/sulfur.webp"
-    },
-    {
-      "song_id": "sacrifice",
-      "name": "SACRIFICE feat. ayame",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 97,
-      "score": 9927815,
-      "play_ptt": 11.3391,
-      "pure": 949,
-      "max_pure": 884,
-      "far": 4,
-      "lost": 5,
-      "accuracy": 0.992693,
-      "time": 1764686433,
-      "jacket_url": "jackets/arcaea/sacrifice.webp"
     }
   ],
   "top10": [
@@ -2244,8 +2244,16 @@
     {
       "at": 1788618485,
       "potential": 11.5352
+    },
+    {
+      "at": 1790337800,
+      "potential": 11.5368
+    },
+    {
+      "at": 1790338742,
+      "potential": 11.5374
     }
   ],
   "trend_min": 10.6321,
-  "trend_max": 11.5352
+  "trend_max": 11.5374
 }
