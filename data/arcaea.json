@@ -1,8 +1,8 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1790408690,
-  "ptt": 11.5414,
-  "b50_ptt": 11.5053,
+  "generated_at": 1790434336,
+  "ptt": 11.5453,
+  "b50_ptt": 11.5099,
   "top10_ptt": 11.722,
   "b50": [
     {
@@ -358,6 +358,22 @@
       "jacket_url": "jackets/arcaea/rainofconflict.webp"
     },
     {
+      "song_id": "un",
+      "name": "un",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9918138,
+      "play_ptt": 11.4907,
+      "pure": 1486,
+      "max_pure": 1361,
+      "far": 7,
+      "lost": 9,
+      "accuracy": 0.991678,
+      "time": 1790430309,
+      "jacket_url": "jackets/arcaea/un.webp"
+    },
+    {
       "song_id": "espebranch",
       "name": "白道、多希望羊と信じありく。",
       "rating_class": 2,
@@ -500,6 +516,22 @@
       "accuracy": 0.990622,
       "time": 1790406694,
       "jacket_url": "jackets/arcaea/galaxyfriends.webp"
+    },
+    {
+      "song_id": "heartjackin",
+      "name": "Heart Jackin'",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 97,
+      "score": 9947014,
+      "play_ptt": 11.4351,
+      "pure": 1101,
+      "max_pure": 971,
+      "far": 10,
+      "lost": 1,
+      "accuracy": 0.994604,
+      "time": 1790429063,
+      "jacket_url": "jackets/arcaea/heartjackin.webp"
     },
     {
       "song_id": "telepathy",
@@ -678,6 +710,22 @@
       "jacket_url": "jackets/arcaea/energysynergymatrix.webp"
     },
     {
+      "song_id": "matenrou",
+      "name": "感情の摩天楼 ～Arr.Demetori",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 98,
+      "score": 9916189,
+      "play_ptt": 11.3809,
+      "pure": 1277,
+      "max_pure": 1197,
+      "far": 12,
+      "lost": 5,
+      "accuracy": 0.991499,
+      "time": 1790428658,
+      "jacket_url": "jackets/arcaea/matenrou.webp"
+    },
+    {
       "song_id": "chronologia",
       "name": "chronologia",
       "rating_class": 2,
@@ -756,54 +804,6 @@
       "accuracy": 0.981197,
       "time": 1770285942,
       "jacket_url": "jackets/arcaea/etherstrike.webp"
-    },
-    {
-      "song_id": "melodyoflove",
-      "name": "迷える音色は恋の唄",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 96,
-      "score": 9952510,
-      "play_ptt": 11.3625,
-      "pure": 925,
-      "max_pure": 846,
-      "far": 3,
-      "lost": 3,
-      "accuracy": 0.995166,
-      "time": 1770371710,
-      "jacket_url": "jackets/arcaea/melodyoflove.webp"
-    },
-    {
-      "song_id": "take",
-      "name": "竹",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 100,
-      "score": 9872314,
-      "play_ptt": 11.3616,
-      "pure": 1031,
-      "max_pure": 886,
-      "far": 11,
-      "lost": 8,
-      "accuracy": 0.987143,
-      "time": 1770456299,
-      "jacket_url": "jackets/arcaea/take.webp"
-    },
-    {
-      "song_id": "lilly",
-      "name": "Lilly",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9890653,
-      "play_ptt": 11.3533,
-      "pure": 1292,
-      "max_pure": 1172,
-      "far": 11,
-      "lost": 9,
-      "accuracy": 0.988948,
-      "time": 1785047169,
-      "jacket_url": "jackets/arcaea/lilly.webp"
     }
   ],
   "top10": [
@@ -2264,8 +2264,20 @@
     {
       "at": 1790406694,
       "potential": 11.5414
+    },
+    {
+      "at": 1790428658,
+      "potential": 11.5419
+    },
+    {
+      "at": 1790429063,
+      "potential": 11.5431
+    },
+    {
+      "at": 1790430309,
+      "potential": 11.5453
     }
   ],
   "trend_min": 10.6321,
-  "trend_max": 11.5414
+  "trend_max": 11.5453
 }
