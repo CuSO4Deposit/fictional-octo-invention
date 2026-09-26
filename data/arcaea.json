@@ -1,8 +1,8 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1790358395,
-  "ptt": 11.5406,
-  "b50_ptt": 11.5043,
+  "generated_at": 1790408690,
+  "ptt": 11.5414,
+  "b50_ptt": 11.5053,
   "top10_ptt": 11.722,
   "b50": [
     {
@@ -486,6 +486,22 @@
       "jacket_url": "jackets/arcaea/dropdead.webp"
     },
     {
+      "song_id": "galaxyfriends",
+      "name": "Galaxy Friends",
+      "rating_class": 2,
+      "difficulty": "Future",
+      "rating": 99,
+      "score": 9907135,
+      "play_ptt": 11.4357,
+      "pure": 1000,
+      "max_pure": 916,
+      "far": 7,
+      "lost": 6,
+      "accuracy": 0.990622,
+      "time": 1790406694,
+      "jacket_url": "jackets/arcaea/galaxyfriends.webp"
+    },
+    {
       "song_id": "telepathy",
       "name": "テレパシ",
       "rating_class": 2,
@@ -660,22 +676,6 @@
       "accuracy": 0.995662,
       "time": 1770893608,
       "jacket_url": "jackets/arcaea/energysynergymatrix.webp"
-    },
-    {
-      "song_id": "galaxyfriends",
-      "name": "Galaxy Friends",
-      "rating_class": 2,
-      "difficulty": "Future",
-      "rating": 99,
-      "score": 9897258,
-      "play_ptt": 11.3863,
-      "pure": 998,
-      "max_pure": 911,
-      "far": 9,
-      "lost": 6,
-      "accuracy": 0.989635,
-      "time": 1790355462,
-      "jacket_url": "jackets/arcaea/galaxyfriends.webp"
     },
     {
       "song_id": "chronologia",
@@ -2260,8 +2260,12 @@
     {
       "at": 1790357501,
       "potential": 11.5406
+    },
+    {
+      "at": 1790406694,
+      "potential": 11.5414
     }
   ],
   "trend_min": 10.6321,
-  "trend_max": 11.5406
+  "trend_max": 11.5414
 }
