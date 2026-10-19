@@ -1,6 +1,6 @@
 {
   "user": "CuSO4D",
-  "generated_at": 1792430680,
+  "generated_at": 1792430895,
   "rks": 15.973,
   "b27": [
     {
@@ -32,7 +32,7 @@
       "miss": 0,
       "note": 1500,
       "accuracy": 0.998833,
-      "time": 1792245402,
+      "time": 1789839016,
       "jacket_url": "jackets/phigros/ChronosCollapseLaCampanella.SunsetRay.webp"
     },
     {
@@ -48,7 +48,7 @@
       "miss": 1,
       "note": 1449,
       "accuracy": 0.998827,
-      "time": 1792245382,
+      "time": 1789838996,
       "jacket_url": "jackets/phigros/DistortedFate.Sakuzyo.webp"
     },
     {
@@ -64,7 +64,7 @@
       "miss": 0,
       "note": 1532,
       "accuracy": 0.998401,
-      "time": 1792245389,
+      "time": 1789839003,
       "jacket_url": "jackets/phigros/DESTRUCTION321.Normal1zervsBrokenNerdz.webp"
     },
     {
@@ -80,7 +80,7 @@
       "miss": 8,
       "note": 2222,
       "accuracy": 0.9964,
-      "time": 1792245262,
+      "time": 1789838882,
       "jacket_url": "jackets/phigros/祈-我ら神祖と共に歩む者なり-.光吉猛修VS穴山大輔VSKaiVS水野健治VS大国奏音.webp"
     },
     {
@@ -96,7 +96,7 @@
       "miss": 1,
       "note": 1358,
       "accuracy": 0.999006,
-      "time": 1792245312,
+      "time": 1789838930,
       "jacket_url": "jackets/phigros/Retribution.nmyKryexe.webp"
     },
     {
@@ -112,8 +112,24 @@
       "miss": 3,
       "note": 1454,
       "accuracy": 0.997455,
-      "time": 1792245418,
+      "time": 1789839031,
       "jacket_url": "jackets/phigros/Adastraperaspera.RabbitHouse.webp"
+    },
+    {
+      "song_id": "Cthugha.USAO",
+      "name": "Cthugha",
+      "rating_class": 3,
+      "difficulty": "AT",
+      "rating": 16.1,
+      "metric": 16.1,
+      "perfect": 1444,
+      "good": 0,
+      "bad": 0,
+      "miss": 0,
+      "note": 1444,
+      "accuracy": 1.0,
+      "time": 1789839004,
+      "jacket_url": "jackets/phigros/Cthugha.USAO.webp"
     },
     {
       "song_id": "WhatdoyouwantmorethanaHappyending.Apo11oHALOprogramft安月名莉子大瀬良あい",
@@ -132,22 +148,6 @@
       "jacket_url": "jackets/phigros/WhatdoyouwantmorethanaHappyending.Apo11oHALOprogramft安月名莉子大瀬良あい.webp"
     },
     {
-      "song_id": "Cthugha.USAO",
-      "name": "Cthugha",
-      "rating_class": 3,
-      "difficulty": "AT",
-      "rating": 16.1,
-      "metric": 16.1,
-      "perfect": 1444,
-      "good": 0,
-      "bad": 0,
-      "miss": 0,
-      "note": 1444,
-      "accuracy": 1.0,
-      "time": 1792245390,
-      "jacket_url": "jackets/phigros/Cthugha.USAO.webp"
-    },
-    {
       "song_id": "Lyrith迷宮リリス.ユメミド",
       "name": "Lyrith -迷宮リリス-",
       "rating_class": 3,
@@ -160,7 +160,7 @@
       "miss": 7,
       "note": 1236,
       "accuracy": 0.994053,
-      "time": 1792245338,
+      "time": 1789838954,
       "jacket_url": "jackets/phigros/Lyrith迷宮リリス.ユメミド.webp"
     },
     {
@@ -176,7 +176,7 @@
       "miss": 1,
       "note": 1026,
       "accuracy": 0.998684,
-      "time": 1792245317,
+      "time": 1789838935,
       "jacket_url": "jackets/phigros/RESSiSTANCE.ぐるたみん.webp"
     },
     {
@@ -192,7 +192,7 @@
       "miss": 0,
       "note": 1034,
       "accuracy": 1.0,
-      "time": 1792245362,
+      "time": 1789838977,
       "jacket_url": "jackets/phigros/GOODRAGE.EBIMAYO.webp"
     },
     {
@@ -208,7 +208,7 @@
       "miss": 0,
       "note": 1333,
       "accuracy": 1.0,
-      "time": 1792245391,
+      "time": 1789839005,
       "jacket_url": "jackets/phigros/Cthugha.USAO.webp"
     },
     {
@@ -224,7 +224,7 @@
       "miss": 8,
       "note": 1305,
       "accuracy": 0.99387,
-      "time": 1792245405,
+      "time": 1789839019,
       "jacket_url": "jackets/phigros/CROSSSOUL.HyuNfeatSyepias.webp"
     },
     {
@@ -240,7 +240,7 @@
       "miss": 3,
       "note": 1235,
       "accuracy": 0.997571,
-      "time": 1792245330,
+      "time": 1789838947,
       "jacket_url": "jackets/phigros/NonMelodicRagezMUGEdit.Normal1zer.webp"
     },
     {
@@ -256,7 +256,7 @@
       "miss": 0,
       "note": 1267,
       "accuracy": 0.997514,
-      "time": 1792245339,
+      "time": 1789838955,
       "jacket_url": "jackets/phigros/Lyrith迷宮リリス.ユメミド.webp"
     },
     {
@@ -272,7 +272,7 @@
       "miss": 1,
       "note": 999,
       "accuracy": 0.998649,
-      "time": 1792245327,
+      "time": 1789838944,
       "jacket_url": "jackets/phigros/PRAGMATISMRESURRECTION.Laur.webp"
     },
     {
@@ -288,7 +288,7 @@
       "miss": 3,
       "note": 1326,
       "accuracy": 0.997474,
-      "time": 1792245401,
+      "time": 1789839015,
       "jacket_url": "jackets/phigros/Chronostasis.黒皇帝.webp"
     },
     {
@@ -304,7 +304,7 @@
       "miss": 4,
       "note": 1018,
       "accuracy": 0.996071,
-      "time": 1792245351,
+      "time": 1789838966,
       "jacket_url": "jackets/phigros/Igallta.SeURa.webp"
     },
     {
@@ -320,7 +320,7 @@
       "miss": 0,
       "note": 1186,
       "accuracy": 0.99882,
-      "time": 1792245315,
+      "time": 1789838933,
       "jacket_url": "jackets/phigros/ReEndofaDream.umavsモリモリあつし.webp"
     },
     {
@@ -352,7 +352,7 @@
       "miss": 0,
       "note": 1066,
       "accuracy": 0.99803,
-      "time": 1792245269,
+      "time": 1789838889,
       "jacket_url": "jackets/phigros/望影の方舟Six.SeURa.webp"
     },
     {
@@ -368,7 +368,7 @@
       "miss": 0,
       "note": 1344,
       "accuracy": 0.999219,
-      "time": 1792245288,
+      "time": 1789838908,
       "jacket_url": "jackets/phigros/YouaretheMiserable.tpazolite.webp"
     },
     {
@@ -384,7 +384,7 @@
       "miss": 3,
       "note": 1243,
       "accuracy": 0.997305,
-      "time": 1792245277,
+      "time": 1789838897,
       "jacket_url": "jackets/phigros/ぱぴぷぴぷぴぱ.ころねぽちWith立秋.webp"
     },
     {
@@ -400,7 +400,7 @@
       "miss": 0,
       "note": 888,
       "accuracy": 1.0,
-      "time": 1792245322,
+      "time": 1789838940,
       "jacket_url": "jackets/phigros/PoisonANDORAffection.LeaF.webp"
     },
     {
@@ -432,11 +432,27 @@
       "miss": 7,
       "note": 1300,
       "accuracy": 0.994346,
-      "time": 1792245311,
+      "time": 1789838929,
       "jacket_url": "jackets/phigros/Rrharil.TeamGrimoire.webp"
     }
   ],
   "phi": [
+    {
+      "song_id": "Cthugha.USAO",
+      "name": "Cthugha",
+      "rating_class": 3,
+      "difficulty": "AT",
+      "rating": 16.1,
+      "metric": 16.1,
+      "perfect": 1444,
+      "good": 0,
+      "bad": 0,
+      "miss": 0,
+      "note": 1444,
+      "accuracy": 1.0,
+      "time": 1789839004,
+      "jacket_url": "jackets/phigros/Cthugha.USAO.webp"
+    },
     {
       "song_id": "WhatdoyouwantmorethanaHappyending.Apo11oHALOprogramft安月名莉子大瀬良あい",
       "name": "What do you want more than a Happy ending?",
@@ -454,22 +470,6 @@
       "jacket_url": "jackets/phigros/WhatdoyouwantmorethanaHappyending.Apo11oHALOprogramft安月名莉子大瀬良あい.webp"
     },
     {
-      "song_id": "Cthugha.USAO",
-      "name": "Cthugha",
-      "rating_class": 3,
-      "difficulty": "AT",
-      "rating": 16.1,
-      "metric": 16.1,
-      "perfect": 1444,
-      "good": 0,
-      "bad": 0,
-      "miss": 0,
-      "note": 1444,
-      "accuracy": 1.0,
-      "time": 1792245390,
-      "jacket_url": "jackets/phigros/Cthugha.USAO.webp"
-    },
-    {
       "song_id": "GOODRAGE.EBIMAYO",
       "name": "GOODRAGE",
       "rating_class": 2,
@@ -482,7 +482,7 @@
       "miss": 0,
       "note": 1034,
       "accuracy": 1.0,
-      "time": 1792245362,
+      "time": 1789838977,
       "jacket_url": "jackets/phigros/GOODRAGE.EBIMAYO.webp"
     }
   ]
