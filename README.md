@@ -7,6 +7,7 @@ Static GitHub Pages for [Y-Offline](https://codeberg.org/cocvu/Y-Offline) rhythm
 - **Arcaea** — B50 + Top10 (`arcaea_v7.html`)
 - **Project SEKAI** — B30
 - **Cytus II** — B30
+- **Phigros** — RKS (B27 + Φ3, `phigros_b30.html`)
 
 ## Setup
 
@@ -46,6 +47,9 @@ music_difficulties_json_path = "/path/to/musicDifficulties.json"
 
 [cytus2]
 charts_json_path = "/path/to/cytus2/charts.json"
+
+[phigros]
+info_dir = "/path/to/phigros"
 
 [pages]
 user = "your_user_id"

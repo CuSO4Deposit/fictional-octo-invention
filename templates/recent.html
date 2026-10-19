@@ -5,6 +5,7 @@
 {% if arcaea %}<a href="arcaea_v7.html">Arcaea</a>{% endif %}
 {% if pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %}
 {% if cytus2 %}<a href="cytus2_b30.html">Cytus II B30</a>{% endif %}
+{% if phigros %}<a href="phigros_b30.html">Phigros</a>{% endif %}
 {% endblock %}
 {% block content %}
 <div class="stats">
@@ -28,6 +29,7 @@
             <div class="card-game card-game-{{ r.game }}">
                 {% if r.game == "arcaea" %}Arcaea
                 {%- elif r.game == "pjsk" %}PJSK
+                {%- elif r.game == "phigros" %}Phigros
                 {%- else %}Cytus II
                 {%- endif %}
             </div>
@@ -39,6 +41,8 @@
                     {{ "%.1f"|format(r.rating / 10) }}
                     {% elif r.game == "cytus2" %}
                     {% if r.rating > 0 %}Lv.{{ r.rating }}{% else %}Lv.?{% endif %}
+                    {% elif r.game == "phigros" %}
+                    {{ r.difficulty|upper }} {{ "%.1f"|format(r.rating) }}
                     {% else %}
                     Lv.{{ r.rating }}
                     {% endif %}
@@ -62,6 +66,13 @@
             </div>
             <div class="card-detail">
                 <span class="j-c2-p">P {{ r.sp + r.p }}</span>(<span class="j-c2-mp">+{{ r.sp }}</span>) <span class="j-c2-g">G {{ r.g }}</span> <span class="j-c2-b">B {{ r.b }}</span> <span class="j-c2-m">M {{ r.m }}</span>
+            </div>
+            {% elif r.game == "phigros" %}
+            <div class="card-score{% if r.accuracy >= 1.0 %} card-score-ap{% endif %}">
+                {{ "%.2f"|format(r.accuracy * 100) }}%
+            </div>
+            <div class="card-detail">
+                <span class="j-perfect">P {{ r.perfect }}</span> <span class="j-great">G {{ r.good }}</span> <span class="j-bad">B {{ r.bad }}</span> <span class="j-miss">M {{ r.miss }}</span>
             </div>
             {% else %}
             <div class="card-score{% if r.accuracy >= 1.0 %} card-score-ap{% endif %}">{{ "%.2f"|format(r.accuracy * 100) }}%</div>

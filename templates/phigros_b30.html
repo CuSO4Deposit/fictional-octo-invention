@@ -1,0 +1,92 @@
+{% extends "base.html" %} {% block title %}Phigros RKS — {{ data.user }}{%
+endblock %} {% block nav %} {% if recent %}<a href="index.html">Recent</a>{%
+endif %} {% if arcaea %}<a href="arcaea_v7.html">Arcaea</a>{% endif %} {% if
+pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %} {% if cytus2 %}<a
+  href="cytus2_b30.html"
+  >Cytus II B30</a
+>{% endif %}
+<a href="phigros_b30.html">Phigros</a>
+{% endblock %} {% block content %}
+<div class="stats">
+  <h1>Phigros RKS</h1>
+  <div class="stat">
+    <span class="stat-label">User</span>
+    <span class="stat-value">{{ data.user }}</span>
+  </div>
+  <div class="stat">
+    <span class="stat-label">RKS</span>
+    <span class="stat-value num">{{ "%.2f"|format(data.rks) }}</span>
+  </div>
+  <div class="stat">
+    <span class="stat-label">B27</span>
+    <span class="stat-value num">{{ data.b27|length }}</span>
+  </div>
+  <div class="stat">
+    <span class="stat-label">Φ3</span>
+    <span class="stat-value num">{{ data.phi|length }}</span>
+  </div>
+</div>
+
+<h2 class="section-title">Best 27</h2>
+<div class="cards cards-b50">
+  {% for r in data.b27 %}
+  <div class="card">
+    <div class="card-jacket">
+      <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-title">{{ r.name }}</div>
+      <div class="card-diff-line">
+        <span class="card-diff diff-{{ r.difficulty|lower }}"
+          >{{ r.difficulty|upper }} {{ "%.1f"|format(r.rating) }}</span
+        >
+        <span class="card-ptt">→ {{ "%.2f"|format(r.metric) }}</span>
+      </div>
+      <div
+        class="card-score{% if r.accuracy >= 1.0 %} card-score-ap{% endif %}"
+      >
+        {{ "%.2f"|format(r.accuracy * 100) }}%
+      </div>
+      <div class="card-detail">
+        <span class="j-perfect">P {{ r.perfect }}</span>
+        <span class="j-great">G {{ r.good }}</span>
+        <span class="j-bad">B {{ r.bad }}</span>
+        <span class="j-miss">M {{ r.miss }}</span>
+      </div>
+      <div class="card-time" data-time="{{ r.time }}">#{{ loop.index }} ·</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% if data.phi %}
+<h2 class="section-title">Phi 3</h2>
+<div class="cards cards-b50">
+  {% for r in data.phi %}
+  <div class="card card-phi">
+    <div class="card-jacket">
+      <img src="{{ r.jacket_url }}" alt="{{ r.name }}" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-title">{{ r.name }}<span class="phi-badge">Φ</span></div>
+      <div class="card-diff-line">
+        <span class="card-diff diff-{{ r.difficulty|lower }}"
+          >{{ r.difficulty|upper }} {{ "%.1f"|format(r.rating) }}</span
+        >
+        <span class="card-ptt">→ {{ "%.2f"|format(r.metric) }}</span>
+      </div>
+      <div class="card-score card-score-ap">
+        {{ "%.2f"|format(r.accuracy * 100) }}%
+      </div>
+      <div class="card-detail">
+        <span class="j-perfect">P {{ r.perfect }}</span>
+        <span class="j-great">G {{ r.good }}</span>
+        <span class="j-bad">B {{ r.bad }}</span>
+        <span class="j-miss">M {{ r.miss }}</span>
+      </div>
+      <div class="card-time" data-time="{{ r.time }}">#{{ loop.index }} ·</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %} {% endblock %}

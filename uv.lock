@@ -317,7 +317,7 @@ wheels = [
 [[package]]
 name = "y-offline"
 version = "0.1.0"
-source = { git = "https://codeberg.org/cocvu/Y-Offline.git#dfa813a692d0a96be20b124b7a51842b7cf8bc15" }
+source = { git = "https://codeberg.org/cocvu/Y-Offline.git#2195571d73960ab33ff45322b87094ce31efbd38" }
 dependencies = [
     { name = "loguru" },
     { name = "pydantic" },

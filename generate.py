@@ -9,10 +9,10 @@ import urllib.request
 from pathlib import Path
 
 from PIL import Image
-
 from y_offline.arcaea.utils import create_manager as arcaea_create_manager
 from y_offline.base.pool import replay_best
 from y_offline.cytus2.utils import create_manager as cytus2_create_manager
+from y_offline.phigros.utils import create_manager as phigros_create_manager
 from y_offline.pjsk.utils import create_manager as pjsk_create_manager
 from y_offline.utils import Config
 
@@ -42,8 +42,20 @@ CYTUS2_DIFF_NAMES = {
     4: "Crash",
 }
 
+PHIGROS_DIFF_NAMES = {
+    -2: "Legacy",
+    -1: "SP",
+    0: "EZ",
+    1: "HD",
+    2: "IN",
+    3: "AT",
+}
+
 DEFAULT_PJSK_CDN = "https://storage.sekai.best/sekai-jp-assets"
 DEFAULT_CYTUS2_CDN = "https://wiki.biligame.com/cytus2/Special:FilePath"
+DEFAULT_PHIGROS_CDN = (
+    "https://cdn.jsdelivr.net/gh/7aGiven/Phigros_Resource@illustrationLowRes"
+)
 
 
 def load_config() -> tuple[Config, dict]:
@@ -86,7 +98,7 @@ def download_jacket(url: str, local_path: Path, crop_square: bool = False) -> No
             img = img.crop((left, top, left + side, top + side))
         img.thumbnail((JACKET_SIZE, JACKET_SIZE))
         img.save(local_path)
-    except Exception as e:
+    except (OSError, ValueError) as e:
         print(f"  Warning: failed to download {url}: {e}")
         if local_path.exists():
             local_path.unlink()
@@ -151,6 +163,20 @@ def cytus2_jacket(song_id: str, name: str, overrides: dict[str, str], cdn: str) 
         url = f"{cdn}/{page_name}.png"
     download_jacket(url, local, crop_square=True)
     return f"jackets/cytus2/{song_id}.webp"
+
+
+def phigros_jacket(song_id: str, cdn: str) -> str:
+    """Download Phigros illustration and return local relative path.
+
+    SP charts are stored as `<song_id>.0`, while the illustration is named after
+    the base song id.
+    """
+    local = JACKET_DIR / "phigros" / f"{song_id}.webp"
+    base_id = song_id.removesuffix(".0")
+    page_name = urllib.parse.quote(base_id)
+    url = f"{cdn}/{page_name}.png"
+    download_jacket(url, local, crop_square=True)
+    return f"jackets/phigros/{song_id}.webp"
 
 
 def serialize_arcaea_record(
@@ -220,6 +246,25 @@ def serialize_cytus2_record(r, overrides: dict[str, str], cdn: str) -> dict:
     }
 
 
+def serialize_phigros_record(r, cdn: str) -> dict:
+    return {
+        "song_id": r.song_id,
+        "name": r.name,
+        "rating_class": r.rating_class,
+        "difficulty": r.difficulty or PHIGROS_DIFF_NAMES.get(r.rating_class, "?"),
+        "rating": r.rating,
+        "metric": round(r.metric(), 4),
+        "perfect": r.perfect,
+        "good": r.good,
+        "bad": r.bad,
+        "miss": r.miss,
+        "note": r.note,
+        "accuracy": round(r.accuracy(), 6),
+        "time": r.time,
+        "jacket_url": phigros_jacket(r.song_id, cdn),
+    }
+
+
 def serialize_arcaea_recent_record(
     r,
     name_jp_map: dict[str, str | None],
@@ -240,6 +285,12 @@ def serialize_pjsk_recent_record(r, asset_map: dict[str, str], cdn: str) -> dict
 def serialize_cytus2_recent_record(r, overrides: dict[str, str], cdn: str) -> dict:
     data = serialize_cytus2_record(r, overrides, cdn)
     data["game"] = "cytus2"
+    return data
+
+
+def serialize_phigros_recent_record(r, cdn: str) -> dict:
+    data = serialize_phigros_record(r, cdn)
+    data["game"] = "phigros"
     return data
 
 
@@ -339,6 +390,26 @@ def generate_cytus2(config: Config, user: str, cdn: str) -> None:
     print(f"Generated {out} ({len(b30)} b30)")
 
 
+def generate_phigros(config: Config, user: str, cdn: str) -> None:
+    mgr = phigros_create_manager(config)
+    result = mgr.rks(user)
+
+    data = {
+        "user": user,
+        "generated_at": int(time.time()),
+        "rks": round(result.value, 4),
+        "b27": [serialize_phigros_record(r, cdn) for r in result.b27],
+        "phi": [serialize_phigros_record(r, cdn) for r in result.phi],
+    }
+
+    out = DATA_DIR / "phigros.json"
+    out.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+    print(
+        f"Generated {out} ({len(result.b27)} b27, {len(result.phi)} phi, "
+        f"rks {result.value:.4f})"
+    )
+
+
 def generate_recent(config: Config, user: str, cdn: str) -> None:
     recent: list[dict] = []
 
@@ -373,6 +444,13 @@ def generate_recent(config: Config, user: str, cdn: str) -> None:
             for r in mgr._select_play_record("cytus2_record", user=user, limit=30)
         )
 
+    if config.phigros:
+        mgr = phigros_create_manager(config)
+        recent.extend(
+            serialize_phigros_recent_record(r, DEFAULT_PHIGROS_CDN)
+            for r in mgr._select_play_record("phigros_record", user=user, limit=30)
+        )
+
     recent.sort(key=lambda r: r["time"], reverse=True)
     data = {
         "user": user,
@@ -398,7 +476,9 @@ def main():
         generate_pjsk(config, user, cdn)
     if config.cytus2:
         generate_cytus2(config, user, DEFAULT_CYTUS2_CDN)
-    if config.arcaea or config.pjsk or config.cytus2:
+    if config.phigros:
+        generate_phigros(config, user, DEFAULT_PHIGROS_CDN)
+    if config.arcaea or config.pjsk or config.cytus2 or config.phigros:
         generate_recent(config, user, cdn)
 
     print("Done.")

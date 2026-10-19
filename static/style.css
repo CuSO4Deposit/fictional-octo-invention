@@ -235,6 +235,9 @@ footer a {
 .card-game-cytus2 {
   color: #2dd4bf;
 }
+.card-game-phigros {
+  color: #f472b6;
+}
 
 /* Arcaea difficulty colors */
 .diff-past {
@@ -308,6 +311,32 @@ footer a {
 .diff-c2-dream {
   background: #9aa0a6;
   color: #000;
+}
+
+/* Phigros difficulty colors */
+.diff-ez {
+  background: #4caf50;
+  color: #fff;
+}
+.diff-hd {
+  background: #2196f3;
+  color: #fff;
+}
+.diff-in {
+  background: #e53935;
+  color: #fff;
+}
+.diff-at {
+  background: #9c27b0;
+  color: #fff;
+}
+.diff-sp {
+  background: #e91e8f;
+  color: #fff;
+}
+.diff-legacy {
+  background: #6e6e80;
+  color: #fff;
 }
 
 /* Diff + PTT line */
@@ -401,6 +430,9 @@ footer a {
 .cytus2-header {
   background: linear-gradient(135deg, #3a1f1a, #4a2a14);
 }
+.phigros-header {
+  background: linear-gradient(135deg, #3a1a2a, #4a1a3a);
+}
 
 .game-card-body {
   padding: 1rem 1.2rem;
@@ -486,6 +518,32 @@ footer a {
   font-weight: 800;
   color: #0f0f13;
   background: #c0a8ff;
+  padding: 0.05rem 0.35rem;
+  border-radius: 3px;
+}
+
+/* Phigros page */
+.section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.8rem;
+  color: #b0b0c0;
+}
+
+.card-phi {
+  border-color: #f472b6;
+}
+
+.card-phi:hover {
+  border-color: #f9a8d4;
+}
+
+.phi-badge {
+  margin-left: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #0f0f13;
+  background: #f9a8d4;
   padding: 0.05rem 0.35rem;
   border-radius: 3px;
 }

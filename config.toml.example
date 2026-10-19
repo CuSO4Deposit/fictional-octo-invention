@@ -11,6 +11,9 @@ music_difficulties_json_path = "/path/to/musicDifficulties.json"
 [cytus2]
 charts_json_path = "/path/to/cytus2/charts.json"
 
+[phigros]
+info_dir = "/path/to/phigros"
+
 [pages]
 user = "your_user_id"
 # PJSK jacket CDN base URL

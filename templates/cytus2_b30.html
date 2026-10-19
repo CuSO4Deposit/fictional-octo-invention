@@ -3,7 +3,8 @@ endblock %} {% block nav %} {% if recent %}<a href="index.html">Recent</a>{%
 endif %} {% if arcaea %}<a href="arcaea_v7.html">Arcaea</a>{% endif %} {% if
 pjsk %}<a href="pjsk_b30.html">PJSK B30</a>{% endif %}
 <a href="cytus2_b30.html">Cytus II B30</a>
-{% endblock %} {% block content %}
+{% if phigros %}<a href="phigros_b30.html">Phigros</a>{% endif %} {% endblock %}
+{% block content %}
 <div class="stats">
   <h1>Cytus II B30</h1>
   <div class="stat">
