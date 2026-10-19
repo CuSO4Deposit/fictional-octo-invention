@@ -315,19 +315,19 @@ footer a {
 
 /* Phigros difficulty colors */
 .diff-ez {
-  background: #4caf50;
-  color: #fff;
-}
-.diff-hd {
   background: #2196f3;
   color: #fff;
 }
+.diff-hd {
+  background: #4caf50;
+  color: #fff;
+}
 .diff-in {
-  background: #e53935;
+  background: #9c27b0;
   color: #fff;
 }
 .diff-at {
-  background: #9c27b0;
+  background: #e53935;
   color: #fff;
 }
 .diff-sp {
