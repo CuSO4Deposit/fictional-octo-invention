@@ -66,7 +66,9 @@ def load_config() -> tuple[Config, dict]:
     return config, pages
 
 
-def download_jacket(url: str, local_path: Path, crop_square: bool = False) -> None:
+def download_jacket(
+    url: str, local_path: Path, crop_square: bool = False, *, warn: bool = True
+) -> bool:
     """Download jacket image if not already cached, resize to JACKET_SIZE.
 
     When crop_square is True, the image is center-cropped to a 1:1 square
@@ -74,7 +76,7 @@ def download_jacket(url: str, local_path: Path, crop_square: bool = False) -> No
     (e.g. bilibili wiki Cytus II banners are sometimes 3:1).
     """
     if local_path.exists():
-        return
+        return True
     local_path.parent.mkdir(parents=True, exist_ok=True)
     try:
         req = urllib.request.Request(
@@ -99,9 +101,12 @@ def download_jacket(url: str, local_path: Path, crop_square: bool = False) -> No
         img.thumbnail((JACKET_SIZE, JACKET_SIZE))
         img.save(local_path)
     except (OSError, ValueError) as e:
-        print(f"  Warning: failed to download {url}: {e}")
+        if warn:
+            print(f"  Warning: failed to download {url}: {e}")
         if local_path.exists():
             local_path.unlink()
+        return False
+    return True
 
 
 JACKET_OVERRIDES_PATH = Path("arcaea_jacket_overrides.json")
@@ -165,17 +170,25 @@ def cytus2_jacket(song_id: str, name: str, overrides: dict[str, str], cdn: str) 
     return f"jackets/cytus2/{song_id}.webp"
 
 
-def phigros_jacket(song_id: str, cdn: str) -> str:
+def phigros_jacket(song_id: str, difficulty: str, cdn: str) -> str:
     """Download Phigros illustration and return local relative path.
 
     SP charts are stored as `<song_id>.0`, while the illustration is named after
-    the base song id.
+    the base song id. A few songs only ship per-difficulty illustrations
+    (`<base>_<difficulty>.png`), so fall back to those when the base image is
+    missing.
     """
     local = JACKET_DIR / "phigros" / f"{song_id}.webp"
     base_id = song_id.removesuffix(".0")
-    page_name = urllib.parse.quote(base_id)
-    url = f"{cdn}/{page_name}.png"
-    download_jacket(url, local, crop_square=True)
+    names = [base_id]
+    if difficulty.upper() in {"EZ", "HD", "IN", "AT"}:
+        names.append(f"{base_id}_{difficulty.upper()}")
+
+    for index, name in enumerate(names):
+        page_name = urllib.parse.quote(name)
+        url = f"{cdn}/{page_name}.png"
+        if download_jacket(url, local, crop_square=True, warn=index == len(names) - 1):
+            break
     return f"jackets/phigros/{song_id}.webp"
 
 
@@ -247,11 +260,12 @@ def serialize_cytus2_record(r, overrides: dict[str, str], cdn: str) -> dict:
 
 
 def serialize_phigros_record(r, cdn: str) -> dict:
+    difficulty = r.difficulty or PHIGROS_DIFF_NAMES.get(r.rating_class, "?")
     return {
         "song_id": r.song_id,
         "name": r.name,
         "rating_class": r.rating_class,
-        "difficulty": r.difficulty or PHIGROS_DIFF_NAMES.get(r.rating_class, "?"),
+        "difficulty": difficulty,
         "rating": r.rating,
         "metric": round(r.metric(), 4),
         "perfect": r.perfect,
@@ -261,7 +275,7 @@ def serialize_phigros_record(r, cdn: str) -> dict:
         "note": r.note,
         "accuracy": round(r.accuracy(), 6),
         "time": r.time,
-        "jacket_url": phigros_jacket(r.song_id, cdn),
+        "jacket_url": phigros_jacket(r.song_id, difficulty, cdn),
     }
 
 
