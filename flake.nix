@@ -32,7 +32,7 @@
           pre-commit.settings = {
             src = ./.;
             hooks = {
-              nixfmt-rfc-style.enable = true;
+              nixfmt.enable = true;
               ruff.enable = true;
               ruff-format.enable = true;
             };
@@ -42,14 +42,27 @@
               buildInputs = with pkgs; [
                 python313
                 uv
-                pythonManylinuxPackages.manylinux2014Package
               ];
               shellHook = ''
                 # install pre-commit hooks
                 ${config.pre-commit.installationScript}
 
-                export LD_LIBRARY_PATH="${pkgs.stdenv.cc.cc.lib.outPath}/lib:${pkgs.pythonManylinuxPackages.manylinux2014Package}/lib:$LD_LIBRARY_PATH";
-                uv venv --allow-existing
+                # Only the C++ runtime and zlib belong here: numpy's manylinux wheels
+                # need them, but a glibc in LD_LIBRARY_PATH shadows the glibc of every
+                # Nix binary in the shell, because the loader checks LD_LIBRARY_PATH
+                # before RUNPATH. That breaks git/nix/coreutils with "GLIBC_2.4x not
+                # found" or stack smashing as soon as the system nixpkgs is newer than
+                # this flake's lock.
+                export LD_LIBRARY_PATH="${
+                  pkgs.lib.makeLibraryPath [
+                    pkgs.stdenv.cc.cc.lib
+                    pkgs.zlib
+                  ]
+                }:$LD_LIBRARY_PATH";
+
+                # Explicit --python so an existing venv built by another interpreter
+                # is switched, not silently kept.
+                uv venv --allow-existing --python ${pkgs.python313}/bin/python
                 . .venv/bin/activate
                 uv sync
               '';
