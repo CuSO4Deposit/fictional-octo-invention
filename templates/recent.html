@@ -36,13 +36,13 @@
             <div class="card-title">{{ r.name }}</div>
             <div class="card-diff-line">
                 <span class="card-diff diff-{% if r.game == "cytus2" %}c2-{% endif %}{{ r.difficulty|lower }}">
-                    {% if r.game == "cytus2" %}{{ r.difficulty|upper }}{% else %}{{ r.difficulty }}{% endif %}
+                    {% if r.game == "cytus2" or r.game == "phigros" %}{{ r.difficulty|upper }}{% else %}{{ r.difficulty }}{% endif %}
                     {% if r.game == "arcaea" %}
                     {{ "%.1f"|format(r.rating / 10) }}
                     {% elif r.game == "cytus2" %}
                     {% if r.rating > 0 %}Lv.{{ r.rating }}{% else %}Lv.?{% endif %}
                     {% elif r.game == "phigros" %}
-                    {{ r.difficulty|upper }} {{ "%.1f"|format(r.rating) }}
+                    {{ "%.1f"|format(r.rating) }}
                     {% else %}
                     Lv.{{ r.rating }}
                     {% endif %}
